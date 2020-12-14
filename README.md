@@ -2,6 +2,8 @@
   <img src="src/assets/img/logo.png" height="150">
 </p>
 
+![Node.js CI](https://github.com/gantoreno/portfolio/workflows/Node.js%20CI/badge.svg)
+
 # Portfolio
 
 Files for my personal portfolio, built with [React](https://www.reactjs.org/) and [Tailwind CSS](https://tailwindcss.com/).
