@@ -19,10 +19,6 @@ const App = () => {
           src="https://kit.fontawesome.com/90fab40786.js"
           crossorigin="anonymous"
         ></script>
-        <link
-          rel="stylesheet"
-          href="//cdn.jsdelivr.net/npm/hack-font@3/build/web/hack.css"
-        />
       </Helmet>
       <Router>
         <Profile />
