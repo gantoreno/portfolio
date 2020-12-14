@@ -32,7 +32,7 @@ const ContactView = () => {
           my social media, I'm constantly updating on each one, so response
           times might be faster.
         </p>
-        <div className="hidden xl:flex xl:flex-col xl:items-center xl:justify-center">
+        <div className="flex xl:flex-col xl:items-center xl:justify-center">
           <div className="w-full mb-12 text-center text-xl text-gray-600">
             <a
               href="https://facebook.com/gantoreno"
