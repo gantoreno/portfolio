@@ -12,7 +12,7 @@ const ProjectsView = () => {
   return (
     <Wrapper>
       <Helmet>
-        <title>Gabriel Moreno - About</title>
+        <title>Gabriel Moreno - Projects</title>
       </Helmet>
       <div className="min-h-1/2 p-24 w-full projects black-fades"></div>
       <div className="h-auto p-6 md:p-24 text-center">
