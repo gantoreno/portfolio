@@ -13,19 +13,19 @@ Files for my personal portfolio, built with [React](https://www.reactjs.org/) an
 To run:
 
 ```sh
-$ yarn start
+$ npm start
 ```
 
 To test with [Jest](https://jestjs.io/):
 
 ```sh
-$ yarn test
+$ npm test
 ```
 
 To build:
 
 ```sh
-$ yarn build
+$ npm build
 ```
 
 ## License
