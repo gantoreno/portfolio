@@ -18,7 +18,7 @@ const AboutView = () => {
           Hello there! {'👋🏻'}
         </h1>
         <h3 className="mb-12 text-xs sm:text-base text-gray-600">
-          I'm Gabriel &mdash; I'll make your dreams come true
+          I'm Gabriel, from {'🇻🇪'} &mdash; I'll make your dreams come true
         </h3>
         <h3 className="mb-6 text-xl sm:text-2xl text-white font-bold text-left">
           What I do
