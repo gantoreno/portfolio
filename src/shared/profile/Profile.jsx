@@ -51,14 +51,6 @@ const Profile = () => {
       <div className="hidden xl:flex xl:flex-col xl:items-center xl:justify-center">
         <div className="w-full mb-6 text-center text-xl text-gray-600">
           <a
-            href="https://facebook.com/gantoreno"
-            target="_blank"
-            rel="noreferrer"
-            className="p-3 hover:text-blue-400"
-          >
-            <i className="fab fa-facebook duration-200"></i>
-          </a>
-          <a
             href="https://instagram.com/gantoreno"
             target="_blank"
             rel="noreferrer"
