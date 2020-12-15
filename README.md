@@ -2,7 +2,7 @@
   <img src="src/assets/img/logo.png" height="150">
 </p>
 
-![Node.js CI](https://github.com/gantoreno/portfolio/workflows/Node.js%20CI/badge.svg) [![Netlify Status](https://api.netlify.com/api/v1/badges/b4ea7f16-2792-4032-92ba-a562ab1b2cda/deploy-status)](https://app.netlify.com/sites/gantoreno/deploys)
+![Node.js CI](https://github.com/gantoreno/portfolio/workflows/Node.js%20CI/badge.svg)
 
 # Portfolio
 
