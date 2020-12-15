@@ -13,7 +13,7 @@ const HomeView = () => {
         <title>Gabriel Moreno - Home</title>
       </Helmet>
       <div className="flex flex-col-reverse xl:flex-row w-full h-full">
-        <div className="flex flex-col items-center justify-center h-1/2 w-full xl:h-full xl:w-1/2 text-center xl:text-left xl:mr-3 xl:flex xl:flex-col xl:items-start xl:justify-center">
+        <div className="flex flex-col items-center justify-center h-1/2 w-full xl:h-full xl:w-1/2 text-center xl:text-left xl:mr-12 xl:flex xl:flex-col xl:items-start xl:justify-center">
           <h1 className="mb-6 text-2xl sm:text-4xl font-bold">
             If you can <u>imagine</u> it, I can <u>create</u> it.
           </h1>
@@ -29,7 +29,7 @@ const HomeView = () => {
             />
           </Link>
         </div>
-        <div className="flex items-center justify-center xl:h-full xl:w-1/2 text-center xl:text-right mb-6 xl:mb-0 xl:ml-3 xl:flex xl:flex-col md:items-start md:justify-center">
+        <div className="flex items-center justify-center xl:h-full xl:w-1/2 text-center xl:text-right mb-6 xl:mb-0 xl:ml-12 xl:flex xl:flex-col md:items-start md:justify-center">
           <img
             className="w-64 xl:w-full xl:h-auto mx-auto rounded-full border-2 border-gray-800"
             src="https://avatars0.githubusercontent.com/u/43397475?v=4"
