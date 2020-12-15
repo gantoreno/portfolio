@@ -75,7 +75,7 @@ const AboutView = () => {
           </li>
         </ul>
         <p className="mb-3 text-left text-xs sm:text-base leading-loose text-gray-400">
-          Altough I can also (and usually) work with:
+          Although I can also (and usually) work with:
         </p>
         <ul className="mb-12 text-left text-xs sm:text-base leading-loose text-gray-400">
           <li>
