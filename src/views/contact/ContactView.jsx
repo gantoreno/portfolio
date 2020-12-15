@@ -27,10 +27,10 @@ const ContactView = () => {
           If you have an idea about{' '}
           <u className="text-white">something you'd like to create</u>,{' '}
           <u className="text-white">a website you have in mind</u>, or{' '}
-          <u className="text-white">a business you want to star</u>, don't worry
-          – <u className="text-white">I got you covered</u>. You can find me on
-          my social media, I'm constantly updating on each one, so response
-          times might be faster.
+          <u className="text-white">a business you want to start</u>, don't
+          worry – <u className="text-white">I got you covered</u>. You can find
+          me on my social media, I'm constantly updating on each one, so
+          response times might be faster.
         </p>
         <div className="flex xl:flex-col xl:items-center xl:justify-center">
           <div className="w-full mb-12 text-center text-xl text-gray-600">
