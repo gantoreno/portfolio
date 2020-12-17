@@ -2,10 +2,10 @@ import './SocialMediaButtons.scss';
 
 import content from './content.json';
 
-const Icon = ({ icon, link, color }) => {
+const Icon = ({ icon, url, color }) => {
   return (
     <a
-      href={link}
+      href={url}
       target="_blank"
       rel="noreferrer"
       className={`p-3 hover:text-${color} cursor-pointer`}
@@ -25,7 +25,7 @@ const SocialMediaButtons = ({ className }) => {
           <Icon
             id={media.id}
             key={media.id}
-            link={media.link}
+            url={media.url}
             icon={media.icon}
             color={media.color}
           />
