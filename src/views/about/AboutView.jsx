@@ -54,7 +54,7 @@ const AboutView = ({ language }) => {
           {parse(
             language === languages.EN
               ? `When I'm not developing commercial applications, I'm working on <a href="https://github.com/gantoreno" target="_blank" rel="noreferrer" class="text-white hover:text-yellow-400 duration-200"><u>personal &amp; open source projects</u></a>, as well as mentoring beginner programmers and students with an awesome team at <u class="text-white">The Electric Hive</u>; but the most important thing is, I'm always discovering, learning, and improving, one day at a time.`
-              : `Cuando no estoy desarrollando proyectos comerciales, estoy trabajando en <a href="https://github.com/gantoreno" target="_blank" rel="noreferrer" class="text-white hover:text-yellow-400 duration-200"><u>proyectos personales &amp; open source</u></a>, al igual que siendo mentor de estudiantes y principiantes de la programación en <u class="text-white">The Electric Hive</u>; pero lo más immportante es, siempre estoy descubriendo, aprendiendo, y mejorando &mdash; un día a la vez.`
+              : `Cuando no estoy desarrollando proyectos comerciales, estoy trabajando en <a href="https://github.com/gantoreno" target="_blank" rel="noreferrer" class="text-white hover:text-yellow-400 duration-200"><u>proyectos personales &amp; open source</u></a>, al igual que siendo mentor de estudiantes y principiantes de la programación en <u class="text-white">The Electric Hive</u>; pero lo más importante es, siempre estoy descubriendo, aprendiendo, y mejorando &mdash; un día a la vez.`
           )}
         </p>
         <h3 className="mb-6 text-xl sm:text-2xl text-white font-bold text-left">

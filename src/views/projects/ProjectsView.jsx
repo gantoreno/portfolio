@@ -95,7 +95,7 @@ const ProjectsView = ({ language }) => {
           {parse(
             language === languages.EN
               ? `<u class="text-white">Open source</u> &amp; <u class="text-white">side projects</u> are important too! I've spent a major part of the past couple years working on <u class="text-white">web development</u>, <u class="text-white">ai-related</u> stuff &amp; <u class="text-white">small interesting projects</u>. Some of them are:`
-              : `El <u class="text-white">open source</u> y los <u class="text-white">proyectos personales</u> también son importantes. He dedicado gran parte de los años pasados trabajando en <u class="text-white">desarrollo web</u>, <u class="text-white">inteligencia artificial</u> y <u class="text-white">pequeños proyectos</u>. Algunos de ellos son:`
+              : `El <u class="text-white">open source</u> y los <u class="text-white">proyectos personales</u> también son importantes. He dedicado gran parte de los años pasados trabajando en <u class="text-white">desarrollo web</u>, <u class="text-white">inteligencia artificial</u> y <u class="text-white">pequeñas aplicaciones</u>. Algunos de estos proyectos son:`
           )}
         </p>
         <div className="mb-12 flex flex-col lg:flex-row">
