@@ -2,9 +2,9 @@ import { NavLink } from 'react-router-dom';
 
 import logo from '../../assets/svg/logo.svg';
 
-import './Profile.scss';
+import './ProfileView.scss';
 
-const Profile = () => {
+const ProfileView = () => {
   return (
     <div className="w-20 xl:w-2/5 p-6 h-full xl:p-24 flex flex-col justify-center items-center bg-gray-900 border-r-2 border-gray-800">
       <img src={logo} className="w-10 mb-12" alt="Logo" />
@@ -99,4 +99,4 @@ const Profile = () => {
   );
 };
 
-export default Profile;
+export default ProfileView;

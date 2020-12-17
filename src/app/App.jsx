@@ -2,8 +2,7 @@ import { Helmet } from 'react-helmet';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
-import Profile from '../shared/profile/Profile';
-
+import ProfileView from '../views/profile/ProfileView';
 import HomeView from '../views/home/HomeView';
 import AboutView from '../views/about/AboutView';
 import ProjectsView from '../views/projects/ProjectsView';
@@ -21,7 +20,7 @@ const App = () => {
         ></script>
       </Helmet>
       <Router>
-        <Profile />
+        <ProfileView />
         <Route
           render={({ location }) => (
             <TransitionGroup className="w-full xl:w-3/5">
