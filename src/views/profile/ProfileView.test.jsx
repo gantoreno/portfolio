@@ -1,7 +1,7 @@
 import { shallow } from 'enzyme';
 
-import Profile from './Profile';
+import ProfileView from './ProfileView';
 
 test('renders without crashing', () => {
-  const wrapper = shallow(<Profile />);
+  const wrapper = shallow(<ProfileView />);
 });
