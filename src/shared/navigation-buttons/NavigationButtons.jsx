@@ -12,7 +12,7 @@ const NavigationButtons = ({ prev, next, color, language }) => {
           <Button
             icon="fas fa-arrow-left"
             text={prev.text[language]}
-            className="hidden"
+            className={prev.shouldBeHidden ? 'hidden' : ''}
           />
         </Link>
       )}
@@ -23,6 +23,7 @@ const NavigationButtons = ({ prev, next, color, language }) => {
             text={next.text[language]}
             hoverBackground={`${color}-400`}
             isOpaque={true}
+            className={next.shouldBeHidden ? 'hidden' : ''}
           />
         </Link>
       )}

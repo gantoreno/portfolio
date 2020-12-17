@@ -119,14 +119,16 @@
       "text": {
         "en": "Back to home",
         "es": "Volver a inicio"
-      }
+      },
+      "shouldBeHidden": true
     },
     "next": {
       "route": "/projects",
       "text": {
         "en": "See my projects",
         "es": "Mis proyectos"
-      }
+      },
+      "shouldBeHidden": false
     }
   }
 }

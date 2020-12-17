@@ -135,14 +135,16 @@
       "text": {
         "en": "Back to about",
         "es": "Volver a acerca de mí"
-      }
+      },
+      "shouldBeHidden": true
     },
     "next": {
       "route": "/contact",
       "text": {
         "en": "Contact me",
         "es": "Contáctame"
-      }
+      },
+      "shouldBeHidden": false
     }
   }
 }

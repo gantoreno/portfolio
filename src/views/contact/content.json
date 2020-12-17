@@ -44,7 +44,8 @@
       "text": {
         "en": "Back to my projects",
         "es": "Volver a mis proyectos"
-      }
+      },
+      "shouldBeHidden": false
     }
   }
 }
