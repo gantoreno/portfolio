@@ -1,8 +1,10 @@
 import Button from '../button/Button';
 
+import languages from '../../extras/languages';
+
 import './Card.scss';
 
-const Card = ({ emoji, title, description, link, className }) => {
+const Card = ({ emoji, title, description, link, className, language }) => {
   return (
     <div
       className={'bg-gray-900 rounded border-2 border-gray-800 ' + className}
@@ -20,7 +22,9 @@ const Card = ({ emoji, title, description, link, className }) => {
         <a href={link} target="_blank" rel="noreferrer">
           <Button
             icon={'fab fa-github'}
-            text={'View on GitHub'}
+            text={
+              language === languages.EN ? `View on GitHub` : `Ver en GitHub`
+            }
             hoverBackground={'red-400'}
             isOpaque={true}
           />

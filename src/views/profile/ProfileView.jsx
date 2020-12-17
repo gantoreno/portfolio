@@ -1,50 +1,65 @@
 import { NavLink } from 'react-router-dom';
+import parse from 'html-react-parser';
+
+import languages from '../../extras/languages';
 
 import logo from '../../assets/svg/logo.svg';
 
 import './ProfileView.scss';
 
-const ProfileView = () => {
+const ProfileView = ({ language }) => {
   return (
     <div className="w-20 xl:w-2/5 p-6 h-full xl:p-24 flex flex-col justify-center items-center bg-gray-900 border-r-2 border-gray-800">
       <img src={logo} className="w-10 mb-12" alt="Logo" />
-      <div className="hidden xl:block">
+      <div className="hidden xl:block text-center">
         <h1 className="mb-6 text-2xl font-bold">Gabriel A. Moreno H.</h1>
         <h3 className="mb-12 text-base text-gray-600">
-          Software Engineer, Web Developer
+          {parse(
+            language === languages.EN
+              ? `Software engineer, web developer`
+              : `Ingeniero de software, desarrollador web`
+          )}
         </h3>
       </div>
       <div className="w-full xl:mb-12 text-gray-600">
         <NavLink exact to="/" activeClassName="text-white">
           <div className="w-full mb-6 flex items-center text-base text-left hover:text-white duration-200">
             <div className="w-8 h-8 flex justify-center items-center bg-green-400 rounded">
-              <i class="fas fa-home text-white"></i>
+              <i className="fas fa-home text-white"></i>
             </div>
-            <span className="hidden xl:block ml-6 font-medium">Home</span>
+            <span className="hidden xl:block ml-6 font-medium">
+              {parse(language === languages.EN ? `Home` : `Inicio`)}
+            </span>
           </div>
         </NavLink>
         <NavLink exact to="/about" activeClassName="text-white">
           <div className="w-full mb-6 flex items-center text-base text-left hover:text-white duration-200">
             <div className="w-8 h-8 flex justify-center items-center bg-yellow-400 rounded">
-              <i class="fas fa-user text-white"></i>
+              <i className="fas fa-user text-white"></i>
             </div>
-            <span className="hidden xl:block ml-6 font-medium">About</span>
+            <span className="hidden xl:block ml-6 font-medium">
+              {parse(language === languages.EN ? `About` : `Acerca de mí`)}
+            </span>
           </div>
         </NavLink>
         <NavLink exact to="/projects" activeClassName="text-white">
           <div className="w-full mb-6 flex items-center text-base text-left hover:text-white duration-200">
             <div className="w-8 h-8 flex justify-center items-center bg-red-400 rounded">
-              <i class="fas fa-code text-white"></i>
+              <i className="fas fa-code text-white"></i>
             </div>
-            <span className="hidden xl:block ml-6 font-medium">Projects</span>
+            <span className="hidden xl:block ml-6 font-medium">
+              {parse(language === languages.EN ? `Projects` : `Proyectos`)}
+            </span>
           </div>
         </NavLink>
         <NavLink exact to="/contact" activeClassName="text-white">
           <div className="w-full flex items-center text-base text-left hover:text-white duration-200">
             <div className="w-8 h-8 flex justify-center items-center bg-indigo-400 rounded">
-              <i class="fas fa-phone-alt text-white"></i>
+              <i className="fas fa-phone-alt text-white"></i>
             </div>
-            <span className="hidden xl:block ml-6 font-medium">Contact</span>
+            <span className="hidden xl:block ml-6 font-medium">
+              {parse(language === languages.EN ? `Contact` : `Contacto`)}
+            </span>
           </div>
         </NavLink>
       </div>

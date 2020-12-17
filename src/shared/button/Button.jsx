@@ -22,7 +22,7 @@ const Button = ({
   ) : (
     <button
       className={
-        'p-3 text-gray-600 hover:text-white duration-200 hidden sm:block ' +
+        'p-3 text-gray-600 text-xs sm:text-base hover:text-white duration-200 sm:block ' +
         className
       }
       {...rest}

@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
@@ -8,9 +9,23 @@ import AboutView from '../views/about/AboutView';
 import ProjectsView from '../views/projects/ProjectsView';
 import ContactView from '../views/contact/ContactView';
 
+import languages from '../extras/languages';
+
 import './App.scss';
 
 const App = () => {
+  const [language, setLanguage] = useState(localStorage.getItem('language'));
+
+  const switchLanguage = () => {
+    if (language === languages.EN) {
+      localStorage.setItem('language', languages.ES);
+    } else {
+      localStorage.setItem('language', languages.EN);
+    }
+
+    setLanguage(localStorage.getItem('language'));
+  };
+
   return (
     <div className="flex h-screen bg-black text-white">
       <Helmet>
@@ -20,16 +35,38 @@ const App = () => {
         ></script>
       </Helmet>
       <Router>
-        <ProfileView />
+        <ProfileView language={language} />
         <Route
           render={({ location }) => (
             <TransitionGroup className="w-full xl:w-3/5">
               <CSSTransition key={location.key} timeout={300} classNames="page">
                 <Switch>
-                  <Route exact path="/" component={HomeView} />
-                  <Route exact path="/about" component={AboutView} />
-                  <Route exact path="/projects" component={ProjectsView} />
-                  <Route exact path="/contact" component={ContactView} />
+                  <Route
+                    exact
+                    path="/"
+                    component={() => (
+                      <HomeView
+                        language={language}
+                        setLanguage={setLanguage}
+                        switchLanguage={switchLanguage}
+                      />
+                    )}
+                  />
+                  <Route
+                    exact
+                    path="/about"
+                    component={() => <AboutView language={language} />}
+                  />
+                  <Route
+                    exact
+                    path="/projects"
+                    component={() => <ProjectsView language={language} />}
+                  />
+                  <Route
+                    exact
+                    path="/contact"
+                    component={() => <ContactView language={language} />}
+                  />
                 </Switch>
               </CSSTransition>
             </TransitionGroup>
