@@ -1,0 +1,50 @@
+{
+  "windowTitle": {
+    "en": "Gabriel Moreno - Contact",
+    "es": "Gabriel Moreno - Contáctame"
+  },
+  "headerPictureUrl": "https://images.unsplash.com/photo-1512758017271-d7b84c2113f1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80",
+  "title": {
+    "en": "Get in touch 📱",
+    "es": "Ponte en contacto 📱"
+  },
+  "subtitle": {
+    "en": "Let's build something awesome",
+    "es": "¡Construyamos algo asombroso!"
+  },
+  "entries": [
+    {
+      "id": "1",
+      "title": {
+        "en": "Social media",
+        "es": "¿Dónde encontrarme?"
+      },
+      "body": {
+        "type": "contact:media",
+        "en": "If you have an idea about <u class=\"text-white\">something you'd like to create</u>, <u class=\"text-white\">a website you have in mind</u>, or <u class=\"text-white\">a business you want to start</u>, don't worry – <u class=\"text-white\">I got you covered</u>. You can find me on my social media, I'm constantly updating on each one, so response times might be faster.",
+        "es": "Si hay algo que <u class=\"text-white\">quisieras crear</u>, <u class=\"text-white\">un sitio web que quieres diseñar</u>, or <u class=\"text-white\">un negocio que quieres empezar</u>, no te preocupes – <u class=\"text-white\">estoy para ayudar</u>. Puedes encontrarme en mis redes sociales, estoy activo constantemente en ellas, con lo cual, los tiempos de respuesta serán más rápidos."
+      }
+    },
+    {
+      "id": "2",
+      "title": {
+        "en": "Leave me a message",
+        "es": "Déjame un mensaje"
+      },
+      "body": {
+        "type": "contact:form",
+        "en": "Alternatively, you can fill in the form below with your message and I'll get back to you as soon as possible to hear more about your ideas – I'm always open to start new projects.",
+        "es": "Alternativamente, puedes llenar el formulario abajo con tu mensaje y estaré contigo lo antes posible para escuchar más de tus ideas – siempre estoy abierto a iniciar nuevos proyectos."
+      }
+    }
+  ],
+  "navigation": {
+    "previous": {
+      "route": "/projects",
+      "text": {
+        "en": "Back to my projects",
+        "es": "Volver a mis proyectos"
+      }
+    }
+  }
+}

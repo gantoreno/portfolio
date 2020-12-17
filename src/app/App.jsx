@@ -3,11 +3,13 @@ import { Helmet } from 'react-helmet';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
-import ProfileView from '../views/profile/ProfileView';
-import HomeView from '../views/home/HomeView';
-import AboutView from '../views/about/AboutView';
-import ProjectsView from '../views/projects/ProjectsView';
-import ContactView from '../views/contact/ContactView';
+import {
+  ProfileView,
+  HomeView,
+  AboutView,
+  ProjectsView,
+  ContactView,
+} from '../views';
 
 import languages from '../extras/languages';
 

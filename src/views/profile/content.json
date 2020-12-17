@@ -1,0 +1,45 @@
+{
+  "name": "Gabriel A. Moreno H.",
+  "occupation": {
+    "en": "Software engineer, web developer",
+    "es": "Ingeniero de software, desarrollador web"
+  },
+  "links": [
+    {
+      "path": "/",
+      "name": {
+        "en": "Home",
+        "es": "Inicio"
+      },
+      "icon": "fas fa-home",
+      "color": "green"
+    },
+    {
+      "path": "/about",
+      "name": {
+        "en": "About",
+        "es": "Acerca de mí"
+      },
+      "icon": "fas fa-user",
+      "color": "yellow"
+    },
+    {
+      "path": "/projects",
+      "name": {
+        "en": "Projects",
+        "es": "Proyectos"
+      },
+      "icon": "fas fa-code",
+      "color": "red"
+    },
+    {
+      "path": "/contact",
+      "name": {
+        "en": "Contact",
+        "es": "Contacto"
+      },
+      "icon": "fas fa-phone-alt",
+      "color": "purple"
+    }
+  ]
+}

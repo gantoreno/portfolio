@@ -7,7 +7,7 @@ import './Card.scss';
 const Card = ({ emoji, title, description, link, className, language }) => {
   return (
     <div
-      className={'bg-gray-900 rounded border-2 border-gray-800 ' + className}
+      className={`bg-gray-900 rounded border-2 border-gray-800 text-center ${className}`}
     >
       <div className="p-6 border-b-2 border-gray-800">
         <h3 className="text-6xl mb-6">{emoji}</h3>

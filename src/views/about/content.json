@@ -1,0 +1,132 @@
+{
+  "windowTitle": {
+    "en": "Gabriel Moreno - About",
+    "es": "Gabriel Moreno - Acerca de mí"
+  },
+  "headerPictureUrl": "https://images.unsplash.com/photo-1591291413979-ec06c29545a1?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1650&q=80",
+  "title": {
+    "en": "Hello there! 👋🏻",
+    "es": "¡Hola! 👋🏻"
+  },
+  "subtitle": {
+    "en": "I'm Gabriel, from 🇻🇪 &mdash; I'll make your dreams come true",
+    "es": "Soy Gabriel, de 🇻🇪 &mdash; haré tus sueños realidad"
+  },
+  "entries": [
+    {
+      "id": "1",
+      "title": {
+        "en": "What I do",
+        "es": "¿Quién soy? ¿qué hago?"
+      },
+      "body": {
+        "type": "paragraph",
+        "en": "I'm a software engineer &amp; full-stack web developer specialized in <u class=\"text-white\">commercial projects</u>, <u class=\"text-white\">startup creations</u>, <u class=\"text-white\">corporate identity</u>, and <u class=\"text-white\">personal websites</u>. My job is to bring ideas to life through dynamic client-developer experiences, working as a team to transform amazing ideas into exceptional realities.",
+        "es": "Soy un ingeniero de software y desarrollador web full-stack especializado en <u class=\"text-white\">proyectos comerciales</u>, <u class=\"text-white\">creación de startups</u>, <u class=\"text-white\">identidad corporativa</u>, y <u class=\"text-white\">sitios web personales</u>. Mi trabajo es traer ideas a la realidad a través de experiencias dinámicas entre el cliente y el desarrollador, trabajando en equipo para transformar ideas asombrosas en realidades excepcionales."
+      }
+    },
+    {
+      "id": "2",
+      "title": {
+        "en": "What I <u>also</u> do",
+        "es": "Lo que <u>también</u> hago"
+      },
+      "body": {
+        "type": "paragraph",
+        "en": "When I'm not developing commercial applications, I'm working on <a href=\"https://github.com/gantoreno\" target=\"_blank\" rel=\"noreferrer\" class=\"text-white hover:text-yellow-400 duration-200\"><u>personal &amp; open source projects</u></a>, as well as mentoring beginner programmers and students with an awesome team at <u class=\"text-white\">The Electric Hive</u>; but the most important thing is, I'm always discovering, learning, and improving, one day at a time.",
+        "es": "Cuando no estoy desarrollando proyectos comerciales, estoy trabajando en <a href=\"https://github.com/gantoreno\" target=\"_blank\" rel=\"noreferrer\" class=\"text-white hover:text-yellow-400 duration-200\"><u>proyectos personales &amp; open source</u></a>, al igual que siendo mentor de estudiantes y principiantes de la programación en <u class=\"text-white\">The Electric Hive</u>; pero lo más importante es, siempre estoy descubriendo, aprendiendo, y mejorando &mdash; un día a la vez."
+      }
+    },
+    {
+      "id": "3",
+      "title": {
+        "en": "The technologies I use",
+        "es": "Mis tecnologías"
+      },
+      "body": {
+        "type": "list",
+        "lists": [
+          {
+            "id": "1",
+            "description": {
+              "en": "You'll often see me using my preferred tech stack, which consists of:",
+              "es": "Comúnmente uso mi stack de tecnologías preferido, el cual consiste en:"
+            },
+            "items": [
+              {
+                "id": "1",
+                "en": "&bull; 🐝 <b class=\"text-white\">Node.js</b> (with Express for back-end development).<br />",
+                "es": "&bull; 🐝 <b class=\"text-white\">Node.js</b> (con Express para desarrollo back-end).<br />"
+              },
+              {
+                "id": "2",
+                "en": "&bull; ⚛️ <b class=\"text-white\">React</b> (front-end library of choice).<br />",
+                "es": "&bull; ⚛️ <b class=\"text-white\">React</b> (librería front-end de preferencia).<br />"
+              },
+              {
+                "id": "3",
+                "en": "&bull; 📱 <b class=\"text-white\">React Native</b> (for mobile applications).<br />",
+                "es": "&bull; 📱 <b class=\"text-white\">React Native</b> (para aplicaciones móviles).<br />"
+              },
+              {
+                "id": "4",
+                "en": "&bull; 🍃 <b class=\"text-white\">MongoDB</b> (NoSQL databases).<br />",
+                "es": "&bull; 🍃 <b class=\"text-white\">MongoDB</b> (bases de datos NoSQL).<br />"
+              }
+            ]
+          },
+          {
+            "id": "2",
+            "description": {
+              "en": "Although I can also (and usually) work with:",
+              "es": "Aunque también puedo trabajar (y usualmente lo hago) con:"
+            },
+            "items": [
+              {
+                "id": "1",
+                "en": "&bull; 🐍 <b class=\"text-white\">Python</b> (with TensorFlow, Pandas, NumPy, Django, Flask).",
+                "es": "&bull; 🐍 <b class=\"text-white\">Python</b> (con TensorFlow, Pandas, NumPy, Django, Flask)."
+              },
+              {
+                "id": "2",
+                "en": "&bull; 🐘 <b class=\"text-white\">PHP</b> (using Laravel &amp; Bango — my framework).",
+                "es": "&bull; 🐘 <b class=\"text-white\">PHP</b> (usando Laravel y Bango — mi framework)."
+              },
+              {
+                "id": "3",
+                "en": "&bull; ☕️ <b class=\"text-white\">Java</b> (through AWT for graphical applications).",
+                "es": "&bull; ☕️ <b class=\"text-white\">Java</b> (a través de AWT para aplicaciones gráficas)."
+              },
+              {
+                "id": "4",
+                "en": "&bull; ➕ <b class=\"text-white\">C++</b> (for data structures &amp; algorithms, machine learning).",
+                "es": "&bull; ➕ <b class=\"text-white\">C++</b> (para estructuras de datos, algoritmos, machine learning)."
+              },
+              {
+                "id": "5",
+                "en": "&bull; 🐬 <b class=\"text-white\">MySQL</b> (for relational databases).",
+                "es": "&bull; 🐬 <b class=\"text-white\">MySQL</b> (para bases de datos relacionales)."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "navigation": {
+    "previous": {
+      "route": "/",
+      "text": {
+        "en": "Back to home",
+        "es": "Volver a inicio"
+      }
+    },
+    "next": {
+      "route": "/projects",
+      "text": {
+        "en": "See my projects",
+        "es": "Mis proyectos"
+      }
+    }
+  }
+}
