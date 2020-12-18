@@ -1,7 +1,6 @@
 import { Helmet } from 'react-helmet';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
-
 import {
   ProfileView,
   HomeView,
@@ -9,7 +8,6 @@ import {
   ProjectsView,
   ContactView,
 } from '../views';
-
 import { useLocalStorage } from '../hooks/useLocalStorage';
 
 import languages from '../extras/languages.json';
@@ -28,7 +26,7 @@ const App = () => {
   };
 
   return (
-    <div className="flex h-screen bg-black text-white">
+    <div className="flex h-screen text-white bg-black">
       <Helmet>
         <script
           src="https://kit.fontawesome.com/90fab40786.js"
