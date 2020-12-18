@@ -28,6 +28,10 @@ const App = () => {
     setLanguage(localStorage.getItem('language'));
   };
 
+  if (!language) {
+    localStorage.setItem('language', languages.ES);
+  }
+
   return (
     <div className="flex h-screen bg-black text-white">
       <Helmet>
