@@ -5,7 +5,7 @@ import parse from 'html-react-parser';
 import Button from '../../shared/button/Button';
 import Wrapper from '../../shared/wrapper/Wrapper';
 
-import languages from '../../extras/languages';
+import languages from '../../extras/languages.json';
 import content from './content.json';
 
 import './HomeView.scss';

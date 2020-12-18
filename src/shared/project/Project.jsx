@@ -1,6 +1,6 @@
 import parse from 'html-react-parser';
 
-import languages from '../../extras/languages';
+import languages from '../../extras/languages.json';
 
 import './Project.scss';
 

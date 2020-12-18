@@ -1,6 +1,6 @@
 import Button from '../button/Button';
 
-import languages from '../../extras/languages';
+import languages from '../../extras/languages.json';
 
 import './Card.scss';
 

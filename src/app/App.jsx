@@ -12,7 +12,7 @@ import {
 
 import { useLocalStorage } from '../hooks/useLocalStorage';
 
-import languages from '../extras/languages';
+import languages from '../extras/languages.json';
 
 import './App.scss';
 
