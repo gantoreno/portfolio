@@ -11,12 +11,12 @@ import './HomeView.scss';
 const LanguageSwitcher = ({ language, switchLanguage }) => {
   return (
     <Button
-      icon={'fas fa-globe-americas'}
       text={
         language === languages.EN
           ? `Cambiar a versión en español`
           : `Switch to english version`
       }
+      leftIcon={'fas fa-globe-americas'}
       className={'block px-0'}
       onClick={() => switchLanguage()}
     />
@@ -27,8 +27,8 @@ const CallToAction = ({ route, text, color }) => {
   return (
     <Link to={route} className="mb-6">
       <Button
-        icon={'fas fa-arrow-right'}
         text={text}
+        rightIcon={'fas fa-arrow-right'}
         hoverBackground={'green-400'}
         opaque
       />

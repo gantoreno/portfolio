@@ -9,8 +9,8 @@ const NavigationButtons = ({ prev, next, color, language }) => {
       {prev && (
         <Link to={prev.route}>
           <Button
-            icon="fas fa-arrow-left"
             text={prev.text[language]}
+            leftIcon="fas fa-arrow-left"
             className={prev.shouldBeHidden ? 'hidden' : ''}
           />
         </Link>
@@ -18,8 +18,8 @@ const NavigationButtons = ({ prev, next, color, language }) => {
       {next && (
         <Link to={next.route}>
           <Button
-            icon={'fas fa-arrow-right'}
             text={next.text[language]}
+            rightIcon={'fas fa-arrow-right'}
             hoverBackground={color}
             className={next.shouldBeHidden ? 'hidden' : ''}
             opaque

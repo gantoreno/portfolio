@@ -73,9 +73,10 @@ const ContactForm = ({ body, language }) => {
         </div>
         <div className="text-center">
           <Button
-            hoverBackground={'purple-400'}
             text={'Send'}
-            icon={'fas fa-paper-plane'}
+            rightIcon={'fas fa-paper-plane'}
+            hoverBackground={'purple-400'}
+            className={'mx-auto'}
             opaque
           />
         </div>

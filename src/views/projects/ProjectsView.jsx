@@ -35,12 +35,12 @@ const CommercialProjectOverview = ({
             </h1>
             <a href={behanceLink} target="_blank" rel="noreferrer">
               <Button
-                icon={'fab fa-behance ml-3'}
                 text={
                   language === languages.EN
                     ? 'View on Bēhance'
                     : 'Ver en Bēhance'
                 }
+                rightIcon={'fab fa-behance ml-3'}
                 hoverBackground="red-400"
                 opaque
               />
@@ -76,11 +76,12 @@ const GitHubProjectCard = ({
       <div className="p-6">
         <a href={link} target="_blank" rel="noreferrer">
           <Button
-            icon={'fab fa-github'}
             text={
               language === languages.EN ? `View on GitHub` : `Ver en GitHub`
             }
+            rightIcon={'fab fa-github'}
             hoverBackground={'red-400'}
+            className={'mx-auto'}
             opaque
           />
         </a>
