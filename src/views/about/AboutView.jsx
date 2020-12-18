@@ -1,6 +1,5 @@
-import { Helmet } from 'react-helmet';
 import parse from 'html-react-parser';
-
+import { Helmet } from 'react-helmet';
 import {
   Section,
   Entry,

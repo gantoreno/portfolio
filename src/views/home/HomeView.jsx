@@ -1,12 +1,10 @@
+import parse from 'html-react-parser';
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
-import parse from 'html-react-parser';
+import { Button, Wrapper } from '../../shared/';
 
-import Button from '../../shared/button/Button';
-import Wrapper from '../../shared/wrapper/Wrapper';
-
-import languages from '../../extras/languages.json';
 import content from './content.json';
+import languages from '../../extras/languages.json';
 
 import './HomeView.scss';
 

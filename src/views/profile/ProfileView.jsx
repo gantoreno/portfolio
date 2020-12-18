@@ -1,9 +1,8 @@
 import { NavLink } from 'react-router-dom';
-
 import { SocialMediaButtons } from '../../shared';
 
-import logo from '../../assets/svg/logo.svg';
 import content from './content.json';
+import logo from '../../assets/svg/logo.svg';
 
 import './ProfileView.scss';
 

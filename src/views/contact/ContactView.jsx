@@ -1,8 +1,5 @@
-import { Helmet } from 'react-helmet';
 import parse from 'html-react-parser';
-
-import languages from '../../extras/languages';
-
+import { Helmet } from 'react-helmet';
 import {
   Section,
   Entry,
@@ -14,6 +11,7 @@ import {
 } from '../../shared';
 
 import content from './content.json';
+import languages from '../../extras/languages';
 
 import './ContactView.scss';
 

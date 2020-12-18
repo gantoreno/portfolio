@@ -1,4 +1,4 @@
-import Button from '../button/Button';
+import { Button } from '../';
 
 import languages from '../../extras/languages.json';
 
