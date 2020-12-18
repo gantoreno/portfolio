@@ -104,7 +104,7 @@ const ProjectsView = ({ language }) => {
         <NavigationButtons
           prev={content.navigation.previous}
           next={content.navigation.next}
-          color={'red'}
+          color={'red-400'}
           language={language}
         />
       </Section>

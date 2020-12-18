@@ -1,4 +1,4 @@
-import parse from 'html-react-parser';
+import { Button } from '../';
 
 import languages from '../../extras/languages.json';
 
@@ -19,13 +19,16 @@ const Project = ({ pictureUrl, title, behanceLink, language }) => {
               {title}
             </h1>
             <a href={behanceLink} target="_blank" rel="noreferrer">
-              <button className="p-3 bg-white text-xs sm:text-base text-black font-bold duration-200 hover:bg-red-400 hover:text-white rounded">
-                {parse(
+              <Button
+                icon={'fab fa-behance ml-3'}
+                text={
                   language === languages.EN
-                    ? `View on Bēhance <i class="fab fa-behance ml-3"></i>`
-                    : `Ver en Bēhance <i class="fab fa-behance ml-3"></i>`
-                )}
-              </button>
+                    ? 'View on Bēhance'
+                    : 'Ver en Bēhance'
+                }
+                hoverBackground="red-400"
+                opaque
+              />
             </a>
           </div>
         </div>

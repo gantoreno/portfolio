@@ -18,7 +18,6 @@ const LanguageSwitcher = ({ language, switchLanguage }) => {
           : `Switch to english version`
       }
       className={'block px-0'}
-      isOpaque={false}
       onClick={() => switchLanguage()}
     />
   );
@@ -30,8 +29,8 @@ const CallToAction = ({ route, text, color }) => {
       <Button
         icon={'fas fa-arrow-right'}
         text={text}
-        hoverBackground={`${color}-400`}
-        isOpaque={true}
+        hoverBackground={'green-400'}
+        opaque
       />
     </Link>
   );
@@ -48,11 +47,7 @@ const Header = ({
     <div className="flex flex-col items-center justify-center h-1/2 w-full xl:h-full xl:w-1/2 text-center xl:text-left xl:mr-12 xl:flex xl:flex-col xl:items-start xl:justify-center">
       <h1 className="mb-6 text-2xl sm:text-4xl font-bold">{title}</h1>
       <h2 className="mb-12 text-base sm:text-xl text-gray-600">{subtitle}</h2>
-      <CallToAction
-        route={callToAction.route}
-        text={callToAction[language]}
-        color="green"
-      />
+      <CallToAction route={callToAction.route} text={callToAction[language]} />
       <LanguageSwitcher language={language} switchLanguage={switchLanguage} />
     </div>
   );

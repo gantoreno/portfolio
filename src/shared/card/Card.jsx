@@ -26,7 +26,7 @@ const Card = ({ emoji, title, description, link, className, language }) => {
               language === languages.EN ? `View on GitHub` : `Ver en GitHub`
             }
             hoverBackground={'red-400'}
-            isOpaque={true}
+            opaque
           />
         </a>
       </div>

@@ -69,7 +69,7 @@ const AboutView = ({ language }) => {
         <NavigationButtons
           prev={content.navigation.previous}
           next={content.navigation.next}
-          color={'yellow'}
+          color={'yellow-400'}
           language={language}
         />
       </Section>

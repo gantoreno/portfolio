@@ -76,8 +76,7 @@ const ContactForm = ({ body, language }) => {
             hoverBackground={'purple-400'}
             text={'Send'}
             icon={'fas fa-paper-plane'}
-            className={'mx-auto'}
-            isOpaque={true}
+            opaque
           />
         </div>
       </div>
@@ -112,7 +111,7 @@ const ContactView = ({ language }) => {
         ))}
         <NavigationButtons
           prev={content.navigation.previous}
-          color={'magenta'}
+          color={'magenta-400'}
           language={language}
         />
       </Section>
