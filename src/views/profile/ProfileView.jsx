@@ -19,11 +19,17 @@ const Header = ({ name, occupation }) => {
   );
 };
 
-const LinksList = ({ links, language }) => {
+const NavigationLinks = ({ links, language }) => {
   return (
     <div className="w-full xl:mb-12 text-gray-600">
       {links.map(link => (
-        <NavLink exact to={link.path} activeClassName="text-white">
+        <NavLink
+          id={link.id}
+          key={link.id}
+          to={link.path}
+          activeClassName="text-white"
+          exact
+        >
           <div className="w-full mb-6 flex items-center text-base text-left hover:text-white duration-200">
             <div
               className={`w-8 h-8 flex justify-center items-center bg-${link.color}-400 rounded`}
@@ -45,7 +51,7 @@ const ProfileView = ({ language }) => {
     <div className="w-20 xl:w-2/5 p-6 h-full xl:p-24 flex flex-col justify-center items-center bg-gray-900 border-r-2 border-gray-800">
       <Logo />
       <Header name={content.name} occupation={content.occupation[language]} />
-      <LinksList links={content.links} language={language} />
+      <NavigationLinks links={content.links} language={language} />
       <SocialMediaButtons className={'hidden xl:flex'} />
     </div>
   );
