@@ -10,6 +10,7 @@ import {
   Wrapper,
   NavigationButtons,
   SocialMediaButtons,
+  Button,
 } from '../../shared';
 
 import content from './content.json';
@@ -71,6 +72,15 @@ const ContactForm = ({ body, language }) => {
             resize="vertical"
             required
           ></textarea>
+        </div>
+        <div className="text-center">
+          <Button
+            hoverBackground={'purple-400'}
+            text={'Send'}
+            icon={'fas fa-paper-plane'}
+            className={'mx-auto'}
+            isOpaque={true}
+          />
         </div>
       </div>
     </div>
