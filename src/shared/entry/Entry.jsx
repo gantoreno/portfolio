@@ -2,7 +2,7 @@ import './Entry.scss';
 
 export const Title = ({ children }) => {
   return (
-    <h3 className="mb-6 text-xl sm:text-2xl text-white font-bold text-left">
+    <h3 className="mb-6 text-xl font-bold text-left text-white sm:text-2xl">
       {children}
     </h3>
   );
@@ -10,7 +10,7 @@ export const Title = ({ children }) => {
 
 export const Body = ({ children }) => {
   return (
-    <p className="text-left text-xs sm:text-base leading-loose text-gray-400">
+    <p className="text-xs leading-loose text-left text-gray-400 sm:text-base">
       {children}
     </p>
   );

@@ -5,7 +5,7 @@ import './NavigationButtons.scss';
 
 const NavigationButtons = ({ prev, next, color, language }) => {
   return (
-    <div className="flex justify-center sm:justify-between items-center">
+    <div className="flex items-center justify-center sm:justify-between">
       {prev && (
         <Link to={prev.route}>
           <Button

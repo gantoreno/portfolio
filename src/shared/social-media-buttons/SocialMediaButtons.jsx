@@ -20,7 +20,7 @@ const SocialMediaButtons = ({ className }) => {
     <div
       className={`flex xl:flex-col xl:items-center xl:justify-center ${className}`}
     >
-      <div className="w-full text-center text-xl text-gray-600">
+      <div className="w-full text-xl text-center text-gray-600">
         {content.map(media => (
           <Icon
             id={media.id}

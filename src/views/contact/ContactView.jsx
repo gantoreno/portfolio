@@ -18,7 +18,7 @@ import './ContactView.scss';
 const SocialMedia = ({ body, language }) => {
   return (
     <div className="mb-12">
-      <p className="mb-6 text-left text-xs sm:text-base leading-loose text-gray-400">
+      <p className="mb-6 text-xs leading-loose text-left text-gray-400 sm:text-base">
         {parse(body[language])}
       </p>
       <SocialMediaButtons />
@@ -29,21 +29,21 @@ const SocialMedia = ({ body, language }) => {
 const ContactForm = ({ body, language }) => {
   return (
     <div className="mb-12">
-      <p className="mb-6 text-left text-xs sm:text-base leading-loose text-gray-400">
+      <p className="mb-6 text-xs leading-loose text-left text-gray-400 sm:text-base">
         {parse(body[language])}
       </p>
-      <div className="mb-6 text-gray-600 text-xs sm:text-base">
+      <div className="mb-6 text-xs text-gray-600 sm:text-base">
         <div className="grid grid-cols-1 grid-rows-2 lg:grid-cols-2 lg:grid-rows-1 lg:mb-6">
           <input
             type="text"
             placeholder={language === languages.EN ? `First name` : `Nombre`}
-            className="p-3 lg:mr-3 mb-6 lg:mb-0 bg-transparent rounded text-gray-600 border-2 border-gray-600 focus:text-white focus:border-white"
+            className="p-3 mb-6 text-gray-600 bg-transparent border-2 border-gray-600 rounded lg:mr-3 lg:mb-0 focus:text-white focus:border-white"
             required
           />
           <input
             type="text"
             placeholder={language === languages.EN ? `Last name` : `Apellido`}
-            className="p-3 lg:ml-3 mb-6 lg:mb-0 bg-transparent rounded text-gray-600 border-2 border-gray-600 focus:text-white focus:border-white"
+            className="p-3 mb-6 text-gray-600 bg-transparent border-2 border-gray-600 rounded lg:ml-3 lg:mb-0 focus:text-white focus:border-white"
             required
           />
         </div>
@@ -53,7 +53,7 @@ const ContactForm = ({ body, language }) => {
             placeholder={
               language === languages.EN ? `E-mail` : `Correo electrónico`
             }
-            className="p-3 rounded bg-transparent text-gray-600 border-2 border-gray-600 focus:text-white focus:border-white"
+            className="p-3 text-gray-600 bg-transparent border-2 border-gray-600 rounded focus:text-white focus:border-white"
             required
           />
         </div>
@@ -61,7 +61,7 @@ const ContactForm = ({ body, language }) => {
           <textarea
             name="message"
             rows="10"
-            className="p-3 bg-transparent rounded border-2 text-gray-600 border-gray-600 focus:text-white focus:border-white"
+            className="p-3 text-gray-600 bg-transparent border-2 border-gray-600 rounded focus:text-white focus:border-white"
             placeholder={
               language === languages.EN
                 ? `What would you like to build?`

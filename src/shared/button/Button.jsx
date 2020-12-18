@@ -10,7 +10,7 @@ const Button = ({
 }) => {
   return opaque ? (
     <button
-      className={`p-3 bg-white text-xs sm:text-base text-black font-bold duration-200 hover:text-white rounded hover:bg-${hoverBackground} ${
+      className={`p-3 text-xs font-bold text-black duration-200 bg-white rounded sm:text-base hover:text-white hover:bg-${hoverBackground} ${
         className && className
       }`}
       {...rest}

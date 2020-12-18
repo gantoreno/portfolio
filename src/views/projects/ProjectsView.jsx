@@ -21,16 +21,16 @@ const CommercialProjectOverview = ({
   language,
 }) => {
   return (
-    <div className="mb-6 lg:flex content-center flex-wrap bg-grey rounded shadow-lg">
+    <div className="flex-wrap content-center mb-6 rounded shadow-lg lg:flex bg-grey">
       <div className="lg:flex lg:w-1/3">
-        <div className="lg:flex-1 rounded overflow-hidden">
+        <div className="overflow-hidden rounded lg:flex-1">
           <img src={pictureUrl} alt={title} />
         </div>
       </div>
       <div className="lg:flex lg:w-2/3">
         <div className="lg:flex-1">
-          <div className="mt-6 lg:mt-0 lg:ml-6 text-left flex flex-col justify-center items-start h-full">
-            <h1 className="mb-6 font-bold text-xl sm:text-2xl text-left text-white">
+          <div className="flex flex-col items-start justify-center h-full mt-6 text-left lg:mt-0 lg:ml-6">
+            <h1 className="mb-6 text-xl font-bold text-left text-white sm:text-2xl">
               {title}
             </h1>
             <a href={behanceLink} target="_blank" rel="noreferrer">
@@ -65,11 +65,11 @@ const GitHubProjectCard = ({
       className={`bg-gray-900 rounded border-2 border-gray-800 text-center ${className}`}
     >
       <div className="p-6 border-b-2 border-gray-800">
-        <h3 className="text-6xl mb-6">{emoji}</h3>
-        <h3 className="text-xl sm:text-2xl font-bold text-white">{title}</h3>
+        <h3 className="mb-6 text-6xl">{emoji}</h3>
+        <h3 className="text-xl font-bold text-white sm:text-2xl">{title}</h3>
       </div>
       <div className="p-6 border-b-2 border-gray-800">
-        <p className=" text-left text-xs sm:text-base leading-loose text-gray-400">
+        <p className="text-xs leading-loose text-left text-gray-400 sm:text-base">
           {description}
         </p>
       </div>
@@ -111,8 +111,8 @@ const PersonalProjectsGrid = ({ body, language }) => {
   return (
     <div className="mb-6">
       <p className="mb-6">{parse(body[language])}</p>
-      <div className="mb-12 flex flex-col lg:flex-row">
-        <div className="lg:w-1/2 lg:mr-3 mr-0 mb-6 w-full">
+      <div className="flex flex-col mb-12 lg:flex-row">
+        <div className="w-full mb-6 mr-0 lg:w-1/2 lg:mr-3">
           {body.projects.map(
             (project, index) =>
               index % 2 === 0 && (
@@ -129,7 +129,7 @@ const PersonalProjectsGrid = ({ body, language }) => {
               )
           )}
         </div>
-        <div className="lg:w-1/2 lg:ml-3 ml-0 w-full">
+        <div className="w-full ml-0 lg:w-1/2 lg:ml-3">
           {body.projects.map(
             (project, index) =>
               index % 2 !== 0 && (

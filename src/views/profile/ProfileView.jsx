@@ -12,7 +12,7 @@ const Logo = () => {
 
 const Header = ({ name, occupation }) => {
   return (
-    <div className="hidden xl:block text-center">
+    <div className="hidden text-center xl:block">
       <h1 className="mb-6 text-2xl font-bold">{name}</h1>
       <h3 className="mb-12 text-base text-gray-600">{occupation}</h3>
     </div>
@@ -21,7 +21,7 @@ const Header = ({ name, occupation }) => {
 
 const NavigationLinks = ({ links, language }) => {
   return (
-    <div className="w-full xl:mb-12 text-gray-600">
+    <div className="w-full text-gray-600 xl:mb-12">
       {links.map(link => (
         <NavLink
           id={link.id}
@@ -30,13 +30,13 @@ const NavigationLinks = ({ links, language }) => {
           activeClassName="text-white"
           exact
         >
-          <div className="w-full mb-6 flex items-center text-base text-left hover:text-white duration-200">
+          <div className="flex items-center w-full mb-6 text-base text-left duration-200 hover:text-white">
             <div
               className={`w-8 h-8 flex justify-center items-center bg-${link.color}-400 rounded`}
             >
               <i className={`${link.icon} text-white`}></i>
             </div>
-            <span className="hidden xl:block ml-6 font-medium">
+            <span className="hidden ml-6 font-medium xl:block">
               {link.name[language]}
             </span>
           </div>
@@ -48,7 +48,7 @@ const NavigationLinks = ({ links, language }) => {
 
 const ProfileView = ({ language }) => {
   return (
-    <div className="w-20 xl:w-2/5 p-6 h-full xl:p-24 flex flex-col justify-center items-center bg-gray-900 border-r-2 border-gray-800">
+    <div className="flex flex-col items-center justify-center w-20 h-full p-6 bg-gray-900 border-r-2 border-gray-800 xl:w-2/5 xl:p-24">
       <Logo />
       <Header name={content.name} occupation={content.occupation[language]} />
       <NavigationLinks links={content.links} language={language} />
