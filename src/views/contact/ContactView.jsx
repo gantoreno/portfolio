@@ -1,13 +1,13 @@
 import parse from 'html-react-parser';
 import { Helmet } from 'react-helmet';
 import {
-  Section,
   Entry,
-  FadedHeader,
+  Button,
+  Section,
   Wrapper,
+  FadedHeader,
   NavigationButtons,
   SocialMediaButtons,
-  Button,
 } from '../../shared';
 
 import content from './content.json';

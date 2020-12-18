@@ -1,10 +1,10 @@
 import parse from 'html-react-parser';
 import { Helmet } from 'react-helmet';
 import {
-  Section,
   Entry,
-  FadedHeader,
+  Section,
   Wrapper,
+  FadedHeader,
   NavigationButtons,
 } from '../../shared';
 
