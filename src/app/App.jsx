@@ -11,26 +11,22 @@ import {
   ContactView,
 } from '../views';
 
+import { useLocalStorage } from '../hooks/useLocalStorage';
+
 import languages from '../extras/languages';
 
 import './App.scss';
 
 const App = () => {
-  const [language, setLanguage] = useState(localStorage.getItem('language'));
+  const [language, setLanguage] = useLocalStorage('language', 'es');
 
   const switchLanguage = () => {
     if (language === languages.EN) {
-      localStorage.setItem('language', languages.ES);
+      setLanguage(languages.ES);
     } else {
-      localStorage.setItem('language', languages.EN);
+      setLanguage(languages.EN);
     }
-
-    setLanguage(localStorage.getItem('language'));
   };
-
-  if (!language) {
-    localStorage.setItem('language', languages.ES);
-  }
 
   return (
     <div className="flex h-screen bg-black text-white">
