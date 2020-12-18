@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom';
-import { SocialMediaButtons } from '../../shared';
+import { Wrapper, SocialMediaButtons } from '../../shared';
 
 import content from './content.json';
 import logo from '../../assets/svg/logo.svg';
@@ -48,12 +48,12 @@ const NavigationLinks = ({ links, language }) => {
 
 const ProfileView = ({ language }) => {
   return (
-    <div className="flex flex-col items-center justify-center w-20 h-full p-6 bg-gray-900 border-r-2 border-gray-800 xl:w-2/5 xl:p-24">
+    <Wrapper className="flex flex-col items-center justify-center h-full p-6 bg-gray-900 border-r-2 border-gray-800 xl:w-2/5 xl:p-24">
       <Logo />
       <Header name={content.name} occupation={content.occupation[language]} />
       <NavigationLinks links={content.links} language={language} />
       <SocialMediaButtons className={'hidden xl:flex'} />
-    </div>
+    </Wrapper>
   );
 };
 
