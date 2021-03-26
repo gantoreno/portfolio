@@ -66,6 +66,16 @@
         "es": "El <u class=\"text-white\">open source</u> y los <u class=\"text-white\">proyectos personales</u> también son importantes. He dedicado gran parte de los años pasados trabajando en <u class=\"text-white\">desarrollo web</u>, <u class=\"text-white\">inteligencia artificial</u> y <u class=\"text-white\">pequeñas aplicaciones</u>. Algunos de estos proyectos son:",
         "projects": [
           {
+            "id": "0",
+            "emoji": "❤️",
+            "title": "Curtis",
+            "description": {
+              "en": "The cardiovascular unified real-time intelligent system – ECG analysis through an AI-based mobile app.",
+              "es": "El sistema cardiovascular unificado e inteligente a tiempo real – Análisis de electrocardiogramas a través de una app basada en IA."
+            },
+            "githubLink": "https://github.com/gantoreno/curtis-app"
+          },
+          {
             "id": "1",
             "emoji": "🐘",
             "title": "Bango",
