@@ -55,18 +55,18 @@
             "items": [
               {
                 "id": "1",
-                "en": "&bull; 🐝 <b class=\"text-white\">Node.js</b> (with Express for back-end development).<br />",
-                "es": "&bull; 🐝 <b class=\"text-white\">Node.js</b> (con Express para desarrollo back-end).<br />"
-              },
-              {
-                "id": "2",
                 "en": "&bull; ⚛️ <b class=\"text-white\">React</b> (front-end library of choice).<br />",
                 "es": "&bull; ⚛️ <b class=\"text-white\">React</b> (librería front-end de preferencia).<br />"
               },
               {
-                "id": "3",
+                "id": "2",
                 "en": "&bull; 📱 <b class=\"text-white\">React Native</b> (for mobile applications).<br />",
                 "es": "&bull; 📱 <b class=\"text-white\">React Native</b> (para aplicaciones móviles).<br />"
+              },
+              {
+                "id": "3",
+                "en": "&bull; 🐝 <b class=\"text-white\">Node.js</b> (with Express for back-end development).<br />",
+                "es": "&bull; 🐝 <b class=\"text-white\">Node.js</b> (con Express para desarrollo back-end).<br />"
               },
               {
                 "id": "4",
