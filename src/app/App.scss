@@ -16,13 +16,19 @@ input {
   transition: all 200ms ease-in-out;
 }
 
-input:not(:empty) {
-  border-color: white !important;
-  color: white !important;
+input::placeholder,
+textarea::placeholder {
+  color: #404040;
+}
+
+input:not(:empty),
+input:hover {
+  border-color: #d0d0d0 !important;
+  color: #d0d0d0 !important;
 }
 
 textarea:focus {
-  outline-color: white !important;
+  outline-color: #d0d0d0 !important;
 }
 
 .page-appear,

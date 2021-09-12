@@ -30,7 +30,7 @@ const NavigationLinks = ({ links, language }) => {
           activeClassName="text-white"
           exact
         >
-          <div className="flex items-center w-full mb-6 text-base text-left duration-200 hover:text-white">
+          <div className="flex items-center w-full mb-6 text-gray-600 text-left duration-200 hover:text-white">
             <div
               className={`w-8 h-8 flex justify-center items-center bg-${link.color}-400 rounded`}
             >
@@ -48,7 +48,7 @@ const NavigationLinks = ({ links, language }) => {
 
 const ProfileView = ({ language }) => {
   return (
-    <Wrapper className="flex flex-col items-center justify-center h-full p-6 bg-gray-800 border-r-2 border-gray-700 xl:w-2/5 xl:p-24">
+    <Wrapper className="flex flex-col items-center justify-center h-full p-6 bg-gray-800 border-r border-gray-700 xl:w-2/5 xl:p-24">
       <Logo />
       <Header name={content.name} occupation={content.occupation[language]} />
       <NavigationLinks links={content.links} language={language} />

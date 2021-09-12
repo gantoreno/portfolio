@@ -10,7 +10,7 @@ export const Title = ({ children }) => {
 
 export const Body = ({ children }) => {
   return (
-    <p className="text-xs leading-loose text-left text-gray-400 sm:text-base">
+    <p className="text-xs leading-loose text-left text-gray-600 sm:text-base">
       {children}
     </p>
   );
