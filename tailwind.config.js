@@ -9,7 +9,12 @@ module.exports = {
         sans: ['Quicksand', 'sans-serif'],
       },
       colors: {
-        gray: colors.trueGray,
+        gray: {
+          ...colors.gray,
+          700: '#171717',
+          800: '#101010',
+          900: '#0d0d0d',
+        },
       },
     },
   },
