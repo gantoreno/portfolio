@@ -48,7 +48,7 @@ const NavigationLinks = ({ links, language }) => {
 
 const ProfileView = ({ language }) => {
   return (
-    <Wrapper className="flex flex-col items-center justify-center h-full p-6 bg-gray-900 border-r-2 border-gray-800 xl:w-2/5 xl:p-24">
+    <Wrapper className="flex flex-col items-center justify-center h-full p-6 bg-gray-800 border-r-2 border-gray-700 xl:w-2/5 xl:p-24">
       <Logo />
       <Header name={content.name} occupation={content.occupation[language]} />
       <NavigationLinks links={content.links} language={language} />

@@ -26,7 +26,7 @@ const App = () => {
   };
 
   return (
-    <div className="flex h-screen text-white bg-black">
+    <div className="flex h-screen text-white bg-gray-900">
       <Helmet>
         <script
           src="https://kit.fontawesome.com/90fab40786.js"

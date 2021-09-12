@@ -57,7 +57,7 @@ const Avatar = () => {
   return (
     <div className="flex items-center justify-center mb-6 text-center xl:h-full xl:w-1/2 xl:text-right xl:mb-0 xl:ml-12 xl:flex xl:flex-col md:items-start md:justify-center">
       <img
-        className="w-64 mx-auto border-2 border-gray-800 rounded-full xl:w-full xl:h-auto"
+        className="w-64 mx-auto border-2 border-gray-700 rounded-full xl:w-full xl:h-auto"
         src="https://avatars0.githubusercontent.com/u/43397475?v=4"
         alt="Avatar"
       />
