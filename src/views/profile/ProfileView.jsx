@@ -30,13 +30,13 @@ const NavigationLinks = ({ links, language }) => {
           activeClassName="text-white"
           exact
         >
-          <div className="flex items-center w-full mb-6 text-gray-600 text-left duration-200 hover:text-white">
+          <div className="flex items-center w-full mb-6 text-gray-600 text-left duration-200 hover:text-white navigation-link">
             <div
               className={`w-8 h-8 flex justify-center items-center bg-${link.color}-400 rounded`}
             >
               <i className={`${link.icon} text-white`}></i>
             </div>
-            <span className="hidden ml-6 font-medium xl:block">
+            <span className="hidden ml-6 font-medium xl:block link-name">
               {link.name[language]}
             </span>
           </div>
