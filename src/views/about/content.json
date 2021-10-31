@@ -14,7 +14,7 @@
   },
   "entries": [
     {
-      "id": "1",
+      "id": "{}",
       "title": {
         "en": "What I do",
         "es": "¿Quién soy? ¿qué hago?"
@@ -26,7 +26,7 @@
       }
     },
     {
-      "id": "2",
+      "id": "{}",
       "title": {
         "en": "What I <u>also</u> do",
         "es": "Lo que <u>también</u> hago"
@@ -38,7 +38,7 @@
       }
     },
     {
-      "id": "3",
+      "id": "{}",
       "title": {
         "en": "The technologies I use",
         "es": "Mis tecnologías"
@@ -47,63 +47,63 @@
         "type": "list",
         "lists": [
           {
-            "id": "1",
+            "id": "{}",
             "description": {
               "en": "You'll often see me using my preferred tech stack, which consists of:",
               "es": "Comúnmente uso mi stack de tecnologías preferido, el cual consiste en:"
             },
             "items": [
               {
-                "id": "1",
+                "id": "{}",
                 "en": "&bull; ⚛️ <b class=\"text-white\">React</b> (front-end library of choice).<br />",
                 "es": "&bull; ⚛️ <b class=\"text-white\">React</b> (librería front-end de preferencia).<br />"
               },
               {
-                "id": "2",
+                "id": "{}",
                 "en": "&bull; 📱 <b class=\"text-white\">React Native</b> (for mobile applications).<br />",
                 "es": "&bull; 📱 <b class=\"text-white\">React Native</b> (para aplicaciones móviles).<br />"
               },
               {
-                "id": "3",
+                "id": "{}",
                 "en": "&bull; 🐝 <b class=\"text-white\">Node.js</b> (with Express for back-end development).<br />",
                 "es": "&bull; 🐝 <b class=\"text-white\">Node.js</b> (con Express para desarrollo back-end).<br />"
               },
               {
-                "id": "4",
+                "id": "{}",
                 "en": "&bull; 🍃 <b class=\"text-white\">MongoDB</b> (NoSQL databases).<br />",
                 "es": "&bull; 🍃 <b class=\"text-white\">MongoDB</b> (bases de datos NoSQL).<br />"
               }
             ]
           },
           {
-            "id": "2",
+            "id": "{}",
             "description": {
               "en": "Although I can also (and usually) work with:",
               "es": "Aunque también puedo trabajar (y usualmente lo hago) con:"
             },
             "items": [
               {
-                "id": "1",
+                "id": "{}",
                 "en": "&bull; 🐍 <b class=\"text-white\">Python</b> (with TensorFlow, Pandas, NumPy, Django, Flask).",
                 "es": "&bull; 🐍 <b class=\"text-white\">Python</b> (con TensorFlow, Pandas, NumPy, Django, Flask)."
               },
               {
-                "id": "2",
+                "id": "{}",
                 "en": "&bull; 🐘 <b class=\"text-white\">PHP</b> (using Laravel &amp; Bango — my framework).",
                 "es": "&bull; 🐘 <b class=\"text-white\">PHP</b> (usando Laravel y Bango — mi framework)."
               },
               {
-                "id": "3",
+                "id": "{}",
                 "en": "&bull; ☕️ <b class=\"text-white\">Java</b> (through AWT for graphical applications).",
                 "es": "&bull; ☕️ <b class=\"text-white\">Java</b> (a través de AWT para aplicaciones gráficas)."
               },
               {
-                "id": "4",
+                "id": "{}",
                 "en": "&bull; ➕ <b class=\"text-white\">C++</b> (for data structures &amp; algorithms, machine learning).",
                 "es": "&bull; ➕ <b class=\"text-white\">C++</b> (para estructuras de datos, algoritmos, machine learning)."
               },
               {
-                "id": "5",
+                "id": "{}",
                 "en": "&bull; 🐬 <b class=\"text-white\">MySQL</b> (for relational databases).",
                 "es": "&bull; 🐬 <b class=\"text-white\">MySQL</b> (para bases de datos relacionales)."
               }
