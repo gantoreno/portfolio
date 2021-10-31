@@ -1,5 +1,6 @@
 import parse from 'html-react-parser';
 import { Helmet } from 'react-helmet';
+
 import {
   Entry,
   Button,
@@ -9,6 +10,7 @@ import {
   NavigationButtons,
   SocialMediaButtons,
 } from '../../shared';
+import { useIndexedContent } from '../../hooks/useIndexedContent';
 
 import content from './content.json';
 import languages from '../../extras/languages';
@@ -86,17 +88,19 @@ const ContactForm = ({ body, language }) => {
 };
 
 const ContactView = ({ language }) => {
+  const indexedContent = useIndexedContent(content);
+
   return (
     <Wrapper>
       <Helmet>
-        <title>{content.windowTitle[language]}</title>
+        <title>{indexedContent.windowTitle[language]}</title>
       </Helmet>
-      <FadedHeader pictureUrl={content.headerPictureUrl} />
+      <FadedHeader pictureUrl={indexedContent.headerPictureUrl} />
       <Section
-        title={parse(content.title[language])}
-        subtitle={parse(content.subtitle[language])}
+        title={parse(indexedContent.title[language])}
+        subtitle={parse(indexedContent.subtitle[language])}
       >
-        {content.entries.map(entry => (
+        {indexedContent.entries.map(entry => (
           <Entry
             id={parse(entry.id)}
             key={parse(entry.id)}
@@ -111,7 +115,7 @@ const ContactView = ({ language }) => {
           </Entry>
         ))}
         <NavigationButtons
-          prev={content.navigation.previous}
+          prev={indexedContent.navigation.previous}
           color={'magenta-400'}
           language={language}
         />

@@ -14,7 +14,7 @@
   },
   "entries": [
     {
-      "id": "1",
+      "id": "{}",
       "title": {
         "en": "Social media",
         "es": "¿Dónde encontrarme?"
@@ -26,7 +26,7 @@
       }
     },
     {
-      "id": "2",
+      "id": "{}",
       "title": {
         "en": "Leave me a message",
         "es": "Déjame un mensaje"
