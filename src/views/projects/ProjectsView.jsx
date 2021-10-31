@@ -64,7 +64,7 @@ const GitHubProjectCard = ({
 }) => {
   return (
     <div
-      className={`bg-gray-800 rounded border border-gray-700 text-center ${className}`}
+      className={`project-card bg-gray-800 rounded border border-gray-700 text-center ${className}`}
     >
       <div className="p-6 border-b-2 border-gray-700">
         <h3 className="mb-6 text-6xl">{emoji}</h3>
@@ -115,7 +115,7 @@ const PersonalProjectsGrid = ({ body, language }) => {
     <div className="mb-6">
       <p className="mb-6">{parse(body[language])}</p>
       <div className="flex flex-col mb-12 lg:flex-row">
-        <div className="w-full mb-6 mr-0 lg:w-1/2 lg:mr-3">
+        <div className="w-full mb-6 mr-0 lg:w-1/2 lg:mr-3 project-grid">
           {body.projects.map(
             (project, index) =>
               index % 2 === 0 && (
@@ -132,7 +132,7 @@ const PersonalProjectsGrid = ({ body, language }) => {
               )
           )}
         </div>
-        <div className="w-full ml-0 lg:w-1/2 lg:ml-3">
+        <div className="w-full ml-0 lg:w-1/2 lg:ml-3 project-grid">
           {body.projects.map(
             (project, index) =>
               index % 2 !== 0 && (
@@ -150,6 +150,23 @@ const PersonalProjectsGrid = ({ body, language }) => {
           )}
         </div>
       </div>
+    </div>
+  );
+};
+
+const ThemesAndTools = ({ body, language }) => {
+  return (
+    <div>
+      <p className="mb-6">{parse(body[language])}</p>
+      <figure className="mb-6">
+        <img src={body.pictureUrl} alt="Themes and tools" />
+        <center>
+          <figcaption>
+            <small>{parse(body.pictureCaption[language])}</small>
+          </figcaption>
+        </center>
+      </figure>
+      <p className="mb-6">{parse(body.bottomText[language])}</p>
     </div>
   );
 };
@@ -173,6 +190,9 @@ const ProjectsView = ({ language }) => {
             key={parse(entry.id)}
             title={parse(entry.title[language])}
           >
+            {entry.body.type === 'projects:tools' && (
+              <ThemesAndTools body={entry.body} language={language} />
+            )}
             {entry.body.type === 'projects:commercial' && (
               <CommercialProjectsList body={entry.body} language={language} />
             )}
