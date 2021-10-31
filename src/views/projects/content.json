@@ -97,6 +97,16 @@
           },
           {
             "id": "{}",
+            "emoji": "🍎",
+            "title": "Macfetch",
+            "description": {
+              "en": "A macOS Neofetch alternative written in C++",
+              "es": "Una alternative de Neofetch para macOS escrita en C++"
+            },
+            "githubLink": "https://github.com/gantoreno/macfetch"
+          },
+          {
+            "id": "{}",
             "emoji": "📝",
             "title": "Aether",
             "description": {
