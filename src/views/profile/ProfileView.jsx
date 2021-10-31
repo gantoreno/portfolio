@@ -1,5 +1,7 @@
 import { NavLink } from 'react-router-dom';
+
 import { Wrapper, SocialMediaButtons } from '../../shared';
+import { useIndexedContent } from '../../hooks/useIndexedContent';
 
 import content from './content.json';
 import logo from '../../assets/svg/logo.svg';
@@ -47,11 +49,16 @@ const NavigationLinks = ({ links, language }) => {
 };
 
 const ProfileView = ({ language }) => {
+  const indexedContent = useIndexedContent(content);
+
   return (
     <Wrapper className="flex flex-col items-center justify-center h-full p-6 bg-gray-800 border-r border-gray-700 xl:w-2/5 xl:p-24 overflow-hidden overflow-y-hidden profile-view">
       <Logo />
-      <Header name={content.name} occupation={content.occupation[language]} />
-      <NavigationLinks links={content.links} language={language} />
+      <Header
+        name={indexedContent.name}
+        occupation={indexedContent.occupation[language]}
+      />
+      <NavigationLinks links={indexedContent.links} language={language} />
       <SocialMediaButtons className="hidden xl:flex" />
     </Wrapper>
   );
