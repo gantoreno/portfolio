@@ -18,11 +18,7 @@ const App = () => {
   const [language, setLanguage] = useLocalStorage('language', 'es');
 
   const switchLanguage = () => {
-    if (language === languages.EN) {
-      setLanguage(languages.ES);
-    } else {
-      setLanguage(languages.EN);
-    }
+    setLanguage(language === languages.EN ? languages.ES : languages.EN);
   };
 
   return (
