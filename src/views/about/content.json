@@ -34,7 +34,7 @@
       "body": {
         "type": "paragraph",
         "en": "When I'm not developing commercial applications, I'm working on <a href=\"https://github.com/gantoreno\" target=\"_blank\" rel=\"noreferrer\" class=\"text-white hover:text-yellow-400 duration-200\"><u>personal &amp; open source projects</u></a>, as well as mentoring beginner programmers and students with an awesome team at <u class=\"text-white\">The Electric Hive</u>; but the most important thing is, I'm always discovering, learning, and improving, one day at a time.",
-        "es": "Cuando no estoy desarrollando proyectos comerciales, estoy trabajando en <a href=\"https://github.com/gantoreno\" target=\"_blank\" rel=\"noreferrer\" class=\"text-white hover:text-yellow-400 duration-200\"><u>proyectos personales &amp; open source</u></a>, al igual que siendo mentor de estudiantes y principiantes de la programación en <u class=\"text-white\">The Electric Hive</u>; pero lo más importante es, siempre estoy descubriendo, aprendiendo, y mejorando &mdash; un día a la vez."
+        "es": "Cuando no estoy desarrollando proyectos comerciales, estoy trabajando en <a href=\"https://github.com/gantoreno\" target=\"_blank\" rel=\"noreferrer\" class=\"text-white hover:text-yellow-400 duration-200\"><u>proyectos personales &amp; open source</u></a>, al igual que siendo mentor de estudiantes y principiantes de la programación en <u class=\"text-white\">The Electric Hive</u>; pero lo más importante es, siempre estoy descubriendo, aprendiendo, y mejorando, un día a la vez."
       }
     },
     {
@@ -65,13 +65,8 @@
               },
               {
                 "id": "{}",
-                "en": "&bull; 🐝 <b class=\"text-white\">Node.js</b> (with Express for back-end development).<br />",
-                "es": "&bull; 🐝 <b class=\"text-white\">Node.js</b> (con Express para desarrollo back-end).<br />"
-              },
-              {
-                "id": "{}",
-                "en": "&bull; 🍃 <b class=\"text-white\">MongoDB</b> (NoSQL databases).<br />",
-                "es": "&bull; 🍃 <b class=\"text-white\">MongoDB</b> (bases de datos NoSQL).<br />"
+                "en": "&bull; 🎱 <b class=\"text-white\">8base</b> as a backend-as-a-service provider (with GraphQL).<br />",
+                "es": "&bull; 🎱 <b class=\"text-white\">8base</b> como proveedor de backend-as-a-service (con GraphQL).<br />"
               }
             ]
           },
@@ -82,6 +77,16 @@
               "es": "Aunque también puedo trabajar (y usualmente lo hago) con:"
             },
             "items": [
+              {
+                "id": "{}",
+                "en": "&bull; 🐝 <b class=\"text-white\">Node.js</b> (with Express for back-end development).<br />",
+                "es": "&bull; 🐝 <b class=\"text-white\">Node.js</b> (con Express para desarrollo back-end).<br />"
+              },
+              {
+                "id": "{}",
+                "en": "&bull; 🔥 <b class=\"text-white\">Firebase</b> (for real-time data).<br />",
+                "es": "&bull; 🔥 <b class=\"text-white\">Firebase</b> (para datos en tiempo real).<br />"
+              },
               {
                 "id": "{}",
                 "en": "&bull; 🐍 <b class=\"text-white\">Python</b> (with TensorFlow, Pandas, NumPy, Django, Flask).",
@@ -106,6 +111,11 @@
                 "id": "{}",
                 "en": "&bull; 🐬 <b class=\"text-white\">MySQL</b> (for relational databases).",
                 "es": "&bull; 🐬 <b class=\"text-white\">MySQL</b> (para bases de datos relacionales)."
+              },
+              {
+                "id": "{}",
+                "en": "&bull; 🍃 <b class=\"text-white\">MongoDB</b> (NoSQL databases).<br />",
+                "es": "&bull; 🍃 <b class=\"text-white\">MongoDB</b> (bases de datos NoSQL).<br />"
               }
             ]
           }
