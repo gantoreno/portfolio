@@ -55,18 +55,18 @@
             "items": [
               {
                 "id": "{}",
-                "en": "&bull; ⚛️ <b class=\"text-white\">React</b> (front-end library of choice).<br />",
-                "es": "&bull; ⚛️ <b class=\"text-white\">React</b> (librería front-end de preferencia).<br />"
+                "en": "⚛️ <b class=\"text-white\">React</b> (front-end library of choice).<br />",
+                "es": "⚛️ <b class=\"text-white\">React</b> (librería front-end de preferencia).<br />"
               },
               {
                 "id": "{}",
-                "en": "&bull; 📱 <b class=\"text-white\">React Native</b> (for mobile applications).<br />",
-                "es": "&bull; 📱 <b class=\"text-white\">React Native</b> (para aplicaciones móviles).<br />"
+                "en": "📱 <b class=\"text-white\">React Native</b> (for mobile applications).<br />",
+                "es": "📱 <b class=\"text-white\">React Native</b> (para aplicaciones móviles).<br />"
               },
               {
                 "id": "{}",
-                "en": "&bull; 🎱 <b class=\"text-white\">8base</b> as a backend-as-a-service provider (with GraphQL).<br />",
-                "es": "&bull; 🎱 <b class=\"text-white\">8base</b> como proveedor de backend-as-a-service (con GraphQL).<br />"
+                "en": "🎱 <b class=\"text-white\">8base</b> as a backend-as-a-service provider (with GraphQL).<br />",
+                "es": "🎱 <b class=\"text-white\">8base</b> como proveedor de backend-as-a-service (con GraphQL).<br />"
               }
             ]
           },
@@ -79,43 +79,43 @@
             "items": [
               {
                 "id": "{}",
-                "en": "&bull; 🐝 <b class=\"text-white\">Node.js</b> (with Express for back-end development).<br />",
-                "es": "&bull; 🐝 <b class=\"text-white\">Node.js</b> (con Express para desarrollo back-end).<br />"
+                "en": "🐝 <b class=\"text-white\">Node.js</b> (with Express for back-end development).<br />",
+                "es": "🐝 <b class=\"text-white\">Node.js</b> (con Express para desarrollo back-end).<br />"
               },
               {
                 "id": "{}",
-                "en": "&bull; 🔥 <b class=\"text-white\">Firebase</b> (for real-time data).<br />",
-                "es": "&bull; 🔥 <b class=\"text-white\">Firebase</b> (para datos en tiempo real).<br />"
+                "en": "🔥 <b class=\"text-white\">Firebase</b> (for real-time data).<br />",
+                "es": "🔥 <b class=\"text-white\">Firebase</b> (para datos en tiempo real).<br />"
               },
               {
                 "id": "{}",
-                "en": "&bull; 🐍 <b class=\"text-white\">Python</b> (with TensorFlow, Pandas, NumPy, Django, Flask).",
-                "es": "&bull; 🐍 <b class=\"text-white\">Python</b> (con TensorFlow, Pandas, NumPy, Django, Flask)."
+                "en": "🐍 <b class=\"text-white\">Python</b> (with TensorFlow, Pandas, NumPy, Django, Flask).",
+                "es": "🐍 <b class=\"text-white\">Python</b> (con TensorFlow, Pandas, NumPy, Django, Flask)."
               },
               {
                 "id": "{}",
-                "en": "&bull; 🐘 <b class=\"text-white\">PHP</b> (using Laravel &amp; Bango — my framework).",
-                "es": "&bull; 🐘 <b class=\"text-white\">PHP</b> (usando Laravel y Bango — mi framework)."
+                "en": "🐘 <b class=\"text-white\">PHP</b> (using Laravel &amp; Bango — my framework).",
+                "es": "🐘 <b class=\"text-white\">PHP</b> (usando Laravel y Bango — mi framework)."
               },
               {
                 "id": "{}",
-                "en": "&bull; ☕️ <b class=\"text-white\">Java</b> (through AWT for graphical applications).",
-                "es": "&bull; ☕️ <b class=\"text-white\">Java</b> (a través de AWT para aplicaciones gráficas)."
+                "en": "☕️ <b class=\"text-white\">Java</b> (through AWT for graphical applications).",
+                "es": "☕️ <b class=\"text-white\">Java</b> (a través de AWT para aplicaciones gráficas)."
               },
               {
                 "id": "{}",
-                "en": "&bull; ➕ <b class=\"text-white\">C++</b> (for data structures &amp; algorithms, machine learning).",
-                "es": "&bull; ➕ <b class=\"text-white\">C++</b> (para estructuras de datos, algoritmos, machine learning)."
+                "en": "➕ <b class=\"text-white\">C++</b> (for data structures &amp; algorithms, machine learning).",
+                "es": "➕ <b class=\"text-white\">C++</b> (para estructuras de datos, algoritmos, machine learning)."
               },
               {
                 "id": "{}",
-                "en": "&bull; 🐬 <b class=\"text-white\">MySQL</b> (for relational databases).",
-                "es": "&bull; 🐬 <b class=\"text-white\">MySQL</b> (para bases de datos relacionales)."
+                "en": "🐬 <b class=\"text-white\">MySQL</b> (for relational databases).",
+                "es": "🐬 <b class=\"text-white\">MySQL</b> (para bases de datos relacionales)."
               },
               {
                 "id": "{}",
-                "en": "&bull; 🍃 <b class=\"text-white\">MongoDB</b> (NoSQL databases).<br />",
-                "es": "&bull; 🍃 <b class=\"text-white\">MongoDB</b> (bases de datos NoSQL).<br />"
+                "en": "🍃 <b class=\"text-white\">MongoDB</b> (NoSQL databases).<br />",
+                "es": "🍃 <b class=\"text-white\">MongoDB</b> (bases de datos NoSQL).<br />"
               }
             ]
           }

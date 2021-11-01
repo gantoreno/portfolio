@@ -29,6 +29,15 @@ code {
   outline: none !important;
 }
 
+li {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+*::selection {
+  background-color: #202020aa;
+}
+
 input {
   transition: all 200ms ease-in-out;
 }
