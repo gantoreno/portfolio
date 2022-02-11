@@ -1,3 +1,5 @@
+import ScrollFade from '@benestudioco/react-scrollfade';
+
 import './Wrapper.scss';
 
 const Wrapper = ({ children, className }) => {
@@ -6,6 +8,7 @@ const Wrapper = ({ children, className }) => {
       className={`wrapper h-screen flex flex-col overflow-y-scroll relative ${className}`}
     >
       {children}
+      <ScrollFade />
     </div>
   );
 };
