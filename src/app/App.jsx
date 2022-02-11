@@ -22,52 +22,58 @@ const App = () => {
   };
 
   return (
-    <div className="flex h-screen text-white bg-gray-900">
-      <Helmet>
-        <script
-          src="https://kit.fontawesome.com/90fab40786.js"
-          crossorigin="anonymous"
-        ></script>
-      </Helmet>
-      <Router>
-        <ProfileView language={language} />
-        <Route
-          render={({ location }) => (
-            <TransitionGroup className="w-full xl:w-3/5">
-              <CSSTransition key={location.key} timeout={300} classNames="page">
-                <Switch>
-                  <Route
-                    exact
-                    path="/"
-                    component={() => (
-                      <HomeView
-                        language={language}
-                        setLanguage={setLanguage}
-                        switchLanguage={switchLanguage}
-                      />
-                    )}
-                  />
-                  <Route
-                    exact
-                    path="/about"
-                    component={() => <AboutView language={language} />}
-                  />
-                  <Route
-                    exact
-                    path="/projects"
-                    component={() => <ProjectsView language={language} />}
-                  />
-                  <Route
-                    exact
-                    path="/contact"
-                    component={() => <ContactView language={language} />}
-                  />
-                </Switch>
-              </CSSTransition>
-            </TransitionGroup>
-          )}
-        />
-      </Router>
+    <div className="flex justify-center background">
+      <div className="flex h-screen text-white bg-gray-900 max-w-screen-2xl">
+        <Helmet>
+          <script
+            src="https://kit.fontawesome.com/90fab40786.js"
+            crossorigin="anonymous"
+          ></script>
+        </Helmet>
+        <Router>
+          <ProfileView language={language} />
+          <Route
+            render={({ location }) => (
+              <TransitionGroup className="w-full xl:w-3/5">
+                <CSSTransition
+                  key={location.key}
+                  timeout={300}
+                  classNames="page"
+                >
+                  <Switch>
+                    <Route
+                      exact
+                      path="/"
+                      component={() => (
+                        <HomeView
+                          language={language}
+                          setLanguage={setLanguage}
+                          switchLanguage={switchLanguage}
+                        />
+                      )}
+                    />
+                    <Route
+                      exact
+                      path="/about"
+                      component={() => <AboutView language={language} />}
+                    />
+                    <Route
+                      exact
+                      path="/projects"
+                      component={() => <ProjectsView language={language} />}
+                    />
+                    <Route
+                      exact
+                      path="/contact"
+                      component={() => <ContactView language={language} />}
+                    />
+                  </Switch>
+                </CSSTransition>
+              </TransitionGroup>
+            )}
+          />
+        </Router>
+      </div>
     </div>
   );
 };
