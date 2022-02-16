@@ -10,7 +10,7 @@ import {
   NavigationButtons,
   SocialMediaButtons,
 } from '../../shared';
-import { useIndexedContent } from '../../hooks/useIndexedContent';
+import { useLanguage, useIndexedContent } from '../../hooks';
 
 import content from './content.json';
 import languages from '../../extras/languages';
@@ -87,8 +87,9 @@ const ContactForm = ({ body, language }) => {
   );
 };
 
-const ContactView = ({ language }) => {
+const ContactView = () => {
   const indexedContent = useIndexedContent(content);
+  const [language] = useLanguage();
 
   return (
     <Wrapper>

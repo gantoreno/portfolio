@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 
 import { Button, Wrapper } from '../../shared/';
-import { useIndexedContent } from '../../hooks/useIndexedContent';
+import { useLanguage, useIndexedContent } from '../../hooks/';
 
 import content from './content.json';
 import languages from '../../extras/languages.json';
@@ -67,8 +67,9 @@ const Avatar = () => {
   );
 };
 
-const HomeView = ({ language, switchLanguage }) => {
+const HomeView = () => {
   const indexedContent = useIndexedContent(content);
+  const [language, switchLanguage] = useLanguage();
 
   return (
     <Wrapper className="items-start justify-center p-6 sm:p-24">

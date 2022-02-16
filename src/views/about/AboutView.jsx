@@ -8,7 +8,7 @@ import {
   FadedHeader,
   NavigationButtons,
 } from '../../shared';
-import { useIndexedContent } from '../../hooks/useIndexedContent';
+import { useLanguage, useIndexedContent } from '../../hooks';
 
 import content from './content.json';
 
@@ -39,8 +39,9 @@ const ListedBody = ({ list, language }) => {
   );
 };
 
-const AboutView = ({ language }) => {
+const AboutView = () => {
   const indexedContent = useIndexedContent(content);
+  const [language] = useLanguage();
 
   return (
     <Wrapper>

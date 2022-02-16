@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom';
 
 import { Wrapper, SocialMediaButtons } from '../../shared';
-import { useIndexedContent } from '../../hooks/useIndexedContent';
+import { useLanguage, useIndexedContent } from '../../hooks';
 
 import content from './content.json';
 import logo from '../../assets/svg/logo.svg';
@@ -48,8 +48,9 @@ const NavigationLinks = ({ links, language }) => {
   );
 };
 
-const ProfileView = ({ language }) => {
+const ProfileView = () => {
   const indexedContent = useIndexedContent(content);
+  const [language] = useLanguage();
 
   return (
     <Wrapper className="flex flex-col items-center justify-center h-full p-6 bg-gray-800 border-r border-gray-700 xl:w-2/5 xl:p-24 overflow-hidden overflow-y-hidden profile-view">
