@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 
 import { Wrapper, SocialMediaButtons } from '../../shared';
@@ -51,6 +52,10 @@ const NavigationLinks = ({ links, language }) => {
 const ProfileView = () => {
   const indexedContent = useIndexedContent(content);
   const [language] = useLanguage();
+
+  useEffect(() => {
+    console.log(language);
+  }, [language]);
 
   return (
     <Wrapper className="flex flex-col items-center justify-center h-full p-6 bg-gray-800 border-r border-gray-700 xl:w-2/5 xl:p-24 overflow-hidden overflow-y-hidden profile-view">

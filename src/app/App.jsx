@@ -14,6 +14,7 @@ import {
   ProjectsView,
   ContactView,
 } from '../views';
+import { withLanguage } from '../wrappers';
 
 import './App.scss';
 
@@ -53,4 +54,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default withLanguage(App);

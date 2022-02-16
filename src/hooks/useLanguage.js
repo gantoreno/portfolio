@@ -1,13 +1,9 @@
-import { useLocalStorage } from './useLocalStorage';
+import { useContext } from 'react';
 
-import languages from '../extras/languages.json';
+import { LanguageContext } from '../contexts/language/LanguageContext';
 
 export const useLanguage = () => {
-  const [language, setLanguage] = useLocalStorage('language', languages.EN);
-
-  const switchLanguage = () => {
-    setLanguage(language === languages.EN ? languages.ES : languages.EN);
-  };
+  const { language, switchLanguage } = useContext(LanguageContext);
 
   return [language, switchLanguage];
 };
