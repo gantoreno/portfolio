@@ -8,18 +8,12 @@ import {
   ProjectsView,
   ContactView,
 } from '../views';
-import { useLocalStorage } from '../hooks/useLocalStorage';
-
-import languages from '../extras/languages.json';
+import { useLanguage } from '../hooks/useLanguage';
 
 import './App.scss';
 
 const App = () => {
-  const [language, setLanguage] = useLocalStorage('language', 'es');
-
-  const switchLanguage = () => {
-    setLanguage(language === languages.EN ? languages.ES : languages.EN);
-  };
+  const [language, switchLanguage] = useLanguage();
 
   return (
     <div className="flex justify-center background">
@@ -47,7 +41,6 @@ const App = () => {
                       component={() => (
                         <HomeView
                           language={language}
-                          setLanguage={setLanguage}
                           switchLanguage={switchLanguage}
                         />
                       )}
