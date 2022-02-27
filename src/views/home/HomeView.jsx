@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 
 import { Button, Wrapper } from '../../shared/';
-import { useLanguage, useIndexedContent } from '../../hooks/';
+import { useLanguage } from '../../hooks/';
 
 import content from './content.json';
 import languages from '../../extras/languages.json';
@@ -68,21 +68,20 @@ const Avatar = () => {
 };
 
 const HomeView = () => {
-  const indexedContent = useIndexedContent(content);
   const [language, switchLanguage] = useLanguage();
 
   return (
     <Wrapper className="items-start justify-center p-6 sm:p-24">
       <Helmet>
-        <title>{parse(indexedContent.windowTitle[language])}</title>
+        <title>{parse(content.windowTitle[language])}</title>
       </Helmet>
       <div className="flex flex-col-reverse w-full h-full xl:flex-row">
         <Header
-          title={parse(indexedContent.title[language])}
-          subtitle={parse(indexedContent.subtitle[language])}
+          title={parse(content.title[language])}
+          subtitle={parse(content.subtitle[language])}
           language={language}
           switchLanguage={switchLanguage}
-          callToAction={indexedContent.callToAction}
+          callToAction={content.callToAction}
         />
         <Avatar />
       </div>

@@ -14,7 +14,6 @@
   },
   "entries": [
     {
-      "id": "{}",
       "title": {
         "en": "Commercial projects",
         "es": "Proyectos comerciales"
@@ -25,7 +24,6 @@
         "es": "Desde hace dos o más años he estado trabajando de manera cercana con compañías de renombre en mi ciudad, realizando <u class=\"text-white\">consultoría web</u> y <u class=\"text-white\">asesoría de proyectos</u>. Estos son algunos de los más remarcables en los cuales he tenido la fortuna de desarrollar y <u class=\"text-white\">ver en acción</u>:",
         "projects": [
           {
-            "id": "{}",
             "title": {
               "en": "Totalcom Venezuela – ISP",
               "es": "Totalcom Venezuela – ISP"
@@ -34,7 +32,6 @@
             "behanceLink": "https://www.behance.net/gallery/109534879/Totalcom-Venezuela-ISP"
           },
           {
-            "id": "{}",
             "title": {
               "en": "Resivenca – Internet + Energia",
               "es": "Resivenca – Internet + Energia"
@@ -43,7 +40,6 @@
             "behanceLink": "https://www.behance.net/gallery/109535527/Resivenca-Internet-Energia"
           },
           {
-            "id": "{}",
             "title": {
               "en": "CWV – Project Management System",
               "es": "CWV – Project Management System"
@@ -55,7 +51,6 @@
       }
     },
     {
-      "id": "{}",
       "title": {
         "en": "Personal &amp; open source",
         "es": "Personales y open source"
@@ -66,7 +61,6 @@
         "es": "El <u class=\"text-white\">open source</u> y los <u class=\"text-white\">proyectos personales</u> también son importantes. He dedicado gran parte de los años pasados trabajando en <u class=\"text-white\">desarrollo web</u>, <u class=\"text-white\">inteligencia artificial</u> y <u class=\"text-white\">pequeñas aplicaciones</u>. Algunos de estos proyectos son:",
         "projects": [
           {
-            "id": "{}",
             "emoji": "❤️",
             "title": "Curtis",
             "description": {
@@ -76,7 +70,6 @@
             "githubLink": "https://github.com/gantoreno/curtis-app"
           },
           {
-            "id": "{}",
             "emoji": "🐘",
             "title": "Bango",
             "description": {
@@ -86,7 +79,6 @@
             "githubLink": "https://github.com/gantoreno/bango"
           },
           {
-            "id": "{}",
             "emoji": "🧠",
             "title": "Iris",
             "description": {
@@ -96,7 +88,6 @@
             "githubLink": "https://github.com/gantoreno/iris"
           },
           {
-            "id": "{}",
             "emoji": "🍎",
             "title": "Macfetch",
             "description": {
@@ -106,7 +97,6 @@
             "githubLink": "https://github.com/gantoreno/macfetch"
           },
           {
-            "id": "{}",
             "emoji": "📝",
             "title": "Aether",
             "description": {
@@ -116,7 +106,6 @@
             "githubLink": "https://github.com/gantoreno/aether"
           },
           {
-            "id": "{}",
             "emoji": "🩺",
             "title": "PyTop",
             "description": {
@@ -126,7 +115,6 @@
             "githubLink": "https://github.com/gantoreno/pytop"
           },
           {
-            "id": "{}",
             "emoji": "🎧",
             "title": "Shagram Bot",
             "description": {
@@ -136,7 +124,6 @@
             "githubLink": "https://github.com/gantoreno/shagram-bot"
           },
           {
-            "id": "{}",
             "emoji": "🤫",
             "title": "Among Bot",
             "description": {
@@ -149,7 +136,6 @@
       }
     },
     {
-      "id": "{}",
       "title": {
         "en": "Themes & tools",
         "es": "Temas y herramientas"

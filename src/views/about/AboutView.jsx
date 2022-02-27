@@ -8,7 +8,7 @@ import {
   FadedHeader,
   NavigationButtons,
 } from '../../shared';
-import { useLanguage, useIndexedContent } from '../../hooks';
+import { useLanguage } from '../../hooks';
 
 import content from './content.json';
 
@@ -21,8 +21,8 @@ const SmallDescription = ({ children }) => {
 const SmallList = ({ list, language }) => {
   return (
     <ul>
-      {list.items.map(item => (
-        <li id={item.id} key={item.id}>
+      {list.items.map((item, id) => (
+        <li id={id} key={id}>
           {parse(item[language])}
         </li>
       ))}
@@ -40,40 +40,30 @@ const ListedBody = ({ list, language }) => {
 };
 
 const AboutView = () => {
-  const indexedContent = useIndexedContent(content);
   const [language] = useLanguage();
 
   return (
     <Wrapper>
       <Helmet>
-        <title>{indexedContent.windowTitle[language]}</title>
+        <title>{content.windowTitle[language]}</title>
       </Helmet>
-      <FadedHeader pictureUrl={indexedContent.headerPictureUrl} />
+      <FadedHeader pictureUrl={content.headerPictureUrl} />
       <Section
-        title={parse(indexedContent.title[language])}
-        subtitle={parse(indexedContent.subtitle[language])}
+        title={parse(content.title[language])}
+        subtitle={parse(content.subtitle[language])}
       >
-        {indexedContent.entries.map(entry => (
-          <Entry
-            id={parse(entry.id)}
-            key={parse(entry.id)}
-            title={parse(entry.title[language])}
-          >
+        {content.entries.map((entry, id) => (
+          <Entry id={id} key={id} title={parse(entry.title[language])}>
             {entry.body.type === 'paragraph' && parse(entry.body[language])}
             {entry.body.type === 'list' &&
-              entry.body.lists?.map(list => (
-                <ListedBody
-                  id={list.id}
-                  key={list.id}
-                  list={list}
-                  language={language}
-                />
+              entry.body.lists?.map((list, id) => (
+                <ListedBody id={id} key={id} list={list} language={language} />
               ))}
           </Entry>
         ))}
         <NavigationButtons
-          prev={indexedContent.navigation.previous}
-          next={indexedContent.navigation.next}
+          prev={content.navigation.previous}
+          next={content.navigation.next}
           color={'yellow-400'}
           language={language}
         />

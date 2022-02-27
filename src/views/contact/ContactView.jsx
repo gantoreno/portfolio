@@ -10,7 +10,7 @@ import {
   NavigationButtons,
   SocialMediaButtons,
 } from '../../shared';
-import { useLanguage, useIndexedContent } from '../../hooks';
+import { useLanguage } from '../../hooks';
 
 import content from './content.json';
 import languages from '../../extras/languages';
@@ -88,25 +88,20 @@ const ContactForm = ({ body, language }) => {
 };
 
 const ContactView = () => {
-  const indexedContent = useIndexedContent(content);
   const [language] = useLanguage();
 
   return (
     <Wrapper>
       <Helmet>
-        <title>{indexedContent.windowTitle[language]}</title>
+        <title>{content.windowTitle[language]}</title>
       </Helmet>
-      <FadedHeader pictureUrl={indexedContent.headerPictureUrl} />
+      <FadedHeader pictureUrl={content.headerPictureUrl} />
       <Section
-        title={parse(indexedContent.title[language])}
-        subtitle={parse(indexedContent.subtitle[language])}
+        title={parse(content.title[language])}
+        subtitle={parse(content.subtitle[language])}
       >
-        {indexedContent.entries.map(entry => (
-          <Entry
-            id={parse(entry.id)}
-            key={parse(entry.id)}
-            title={parse(entry.title[language])}
-          >
+        {content.entries.map((entry, id) => (
+          <Entry id={id} key={id} title={parse(entry.title[language])}>
             {entry.body.type === 'contact:media' && (
               <SocialMedia body={entry.body} language={language} />
             )}
@@ -116,7 +111,7 @@ const ContactView = () => {
           </Entry>
         ))}
         <NavigationButtons
-          prev={indexedContent.navigation.previous}
+          prev={content.navigation.previous}
           color={'magenta-400'}
           language={language}
         />

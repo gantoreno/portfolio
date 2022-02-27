@@ -6,7 +6,6 @@
   },
   "links": [
     {
-      "id": "{}",
       "path": "/",
       "name": {
         "en": "Home",
@@ -16,7 +15,6 @@
       "color": "green"
     },
     {
-      "id": "{}",
       "path": "/about",
       "name": {
         "en": "About",
@@ -26,7 +24,6 @@
       "color": "yellow"
     },
     {
-      "id": "{}",
       "path": "/projects",
       "name": {
         "en": "Projects",
@@ -36,7 +33,6 @@
       "color": "red"
     },
     {
-      "id": "{}",
       "path": "/contact",
       "name": {
         "en": "Contact",

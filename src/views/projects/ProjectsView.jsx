@@ -9,7 +9,7 @@ import {
   FadedHeader,
   NavigationButtons,
 } from '../../shared';
-import { useLanguage, useIndexedContent } from '../../hooks';
+import { useLanguage } from '../../hooks';
 
 import content from './content.json';
 import languages from '../../extras/languages.json';
@@ -96,10 +96,10 @@ const CommercialProjectsList = ({ body, language }) => {
   return (
     <div className="mb-12">
       <p className="mb-6">{parse(body[language])}</p>
-      {body.projects.map(project => (
+      {body.projects.map((project, id) => (
         <CommercialProjectOverview
-          id={project.id}
-          key={project.id}
+          id={id}
+          key={id}
           title={project.title[language]}
           pictureUrl={project.pictureUrl}
           behanceLink={project.behanceLink}
@@ -117,11 +117,11 @@ const PersonalProjectsGrid = ({ body, language }) => {
       <div className="flex flex-col mb-12 lg:flex-row">
         <div className="w-full mb-6 mr-0 lg:w-1/2 lg:mr-3 project-grid">
           {body.projects.map(
-            (project, index) =>
-              index % 2 === 0 && (
+            (project, id) =>
+              id % 2 === 0 && (
                 <GitHubProjectCard
-                  id={project.id}
-                  key={project.id}
+                  id={id}
+                  key={id}
                   emoji={project.emoji}
                   title={project.title}
                   description={project.description[language]}
@@ -134,11 +134,11 @@ const PersonalProjectsGrid = ({ body, language }) => {
         </div>
         <div className="w-full ml-0 lg:w-1/2 lg:ml-3 project-grid">
           {body.projects.map(
-            (project, index) =>
-              index % 2 !== 0 && (
+            (project, id) =>
+              id % 2 !== 0 && (
                 <GitHubProjectCard
-                  id={project.id}
-                  key={project.id}
+                  id={id}
+                  key={id}
                   emoji={project.emoji}
                   title={project.title}
                   description={project.description[language]}
@@ -172,25 +172,20 @@ const ThemesAndTools = ({ body, language }) => {
 };
 
 const ProjectsView = () => {
-  const indexedContent = useIndexedContent(content);
   const [language] = useLanguage();
 
   return (
     <Wrapper>
       <Helmet>
-        <title>{indexedContent.windowTitle[language]}</title>
+        <title>{content.windowTitle[language]}</title>
       </Helmet>
-      <FadedHeader pictureUrl={indexedContent.headerPictureUrl} />
+      <FadedHeader pictureUrl={content.headerPictureUrl} />
       <Section
-        title={parse(indexedContent.title[language])}
-        subtitle={parse(indexedContent.subtitle[language])}
+        title={parse(content.title[language])}
+        subtitle={parse(content.subtitle[language])}
       >
-        {indexedContent.entries.map(entry => (
-          <Entry
-            id={parse(entry.id)}
-            key={parse(entry.id)}
-            title={parse(entry.title[language])}
-          >
+        {content.entries.map((entry, id) => (
+          <Entry id={id} key={id} title={parse(entry.title[language])}>
             {entry.body.type === 'projects:tools' && (
               <ThemesAndTools body={entry.body} language={language} />
             )}
@@ -203,8 +198,8 @@ const ProjectsView = () => {
           </Entry>
         ))}
         <NavigationButtons
-          prev={indexedContent.navigation.previous}
-          next={indexedContent.navigation.next}
+          prev={content.navigation.previous}
+          next={content.navigation.next}
           color={'red-400'}
           language={language}
         />

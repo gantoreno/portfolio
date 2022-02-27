@@ -14,7 +14,6 @@
   },
   "entries": [
     {
-      "id": "{}",
       "title": {
         "en": "What I do",
         "es": "¿Quién soy? ¿qué hago?"
@@ -26,7 +25,6 @@
       }
     },
     {
-      "id": "{}",
       "title": {
         "en": "What I <u>also</u> do",
         "es": "Lo que <u>también</u> hago"
@@ -38,7 +36,6 @@
       }
     },
     {
-      "id": "{}",
       "title": {
         "en": "The technologies I use",
         "es": "Mis tecnologías"
@@ -47,73 +44,60 @@
         "type": "list",
         "lists": [
           {
-            "id": "{}",
             "description": {
               "en": "You'll often see me using my preferred tech stack, which consists of:",
               "es": "Comúnmente uso mi stack de tecnologías preferido, el cual consiste en:"
             },
             "items": [
               {
-                "id": "{}",
                 "en": "⚛️ <b class=\"text-white\">React</b> (front-end library of choice).<br />",
                 "es": "⚛️ <b class=\"text-white\">React</b> (librería front-end de preferencia).<br />"
               },
               {
-                "id": "{}",
                 "en": "📱 <b class=\"text-white\">React Native</b> (for mobile applications).<br />",
                 "es": "📱 <b class=\"text-white\">React Native</b> (para aplicaciones móviles).<br />"
               },
               {
-                "id": "{}",
                 "en": "🎱 <b class=\"text-white\">8base</b> as a backend-as-a-service provider (with GraphQL).<br />",
                 "es": "🎱 <b class=\"text-white\">8base</b> como proveedor de backend-as-a-service (con GraphQL).<br />"
               }
             ]
           },
           {
-            "id": "{}",
             "description": {
               "en": "Although I can also (and usually) work with:",
               "es": "Aunque también puedo trabajar (y usualmente lo hago) con:"
             },
             "items": [
               {
-                "id": "{}",
                 "en": "🐝 <b class=\"text-white\">Node.js</b> (with Express for back-end development).<br />",
                 "es": "🐝 <b class=\"text-white\">Node.js</b> (con Express para desarrollo back-end).<br />"
               },
               {
-                "id": "{}",
                 "en": "🔥 <b class=\"text-white\">Firebase</b> (for real-time data).<br />",
                 "es": "🔥 <b class=\"text-white\">Firebase</b> (para datos en tiempo real).<br />"
               },
               {
-                "id": "{}",
                 "en": "🐍 <b class=\"text-white\">Python</b> (with TensorFlow, Pandas, NumPy, Django, Flask).",
                 "es": "🐍 <b class=\"text-white\">Python</b> (con TensorFlow, Pandas, NumPy, Django, Flask)."
               },
               {
-                "id": "{}",
                 "en": "🐘 <b class=\"text-white\">PHP</b> (using Laravel &amp; Bango — my framework).",
                 "es": "🐘 <b class=\"text-white\">PHP</b> (usando Laravel y Bango — mi framework)."
               },
               {
-                "id": "{}",
                 "en": "☕️ <b class=\"text-white\">Java</b> (through AWT for graphical applications).",
                 "es": "☕️ <b class=\"text-white\">Java</b> (a través de AWT para aplicaciones gráficas)."
               },
               {
-                "id": "{}",
                 "en": "➕ <b class=\"text-white\">C++</b> (for data structures &amp; algorithms, machine learning).",
                 "es": "➕ <b class=\"text-white\">C++</b> (para estructuras de datos, algoritmos, machine learning)."
               },
               {
-                "id": "{}",
                 "en": "🐬 <b class=\"text-white\">MySQL</b> (for relational databases).",
                 "es": "🐬 <b class=\"text-white\">MySQL</b> (para bases de datos relacionales)."
               },
               {
-                "id": "{}",
                 "en": "🍃 <b class=\"text-white\">MongoDB</b> (NoSQL databases).<br />",
                 "es": "🍃 <b class=\"text-white\">MongoDB</b> (bases de datos NoSQL).<br />"
               }

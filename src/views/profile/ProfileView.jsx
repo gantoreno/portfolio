@@ -1,8 +1,7 @@
-import { useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 
 import { Wrapper, SocialMediaButtons } from '../../shared';
-import { useLanguage, useIndexedContent } from '../../hooks';
+import { useLanguage } from '../../hooks';
 
 import content from './content.json';
 import logo from '../../assets/svg/logo.svg';
@@ -25,10 +24,10 @@ const Header = ({ name, occupation }) => {
 const NavigationLinks = ({ links, language }) => {
   return (
     <div className="w-full text-gray-600 xl:mb-12">
-      {links.map(link => (
+      {links.map((link, id) => (
         <NavLink
-          id={link.id}
-          key={link.id}
+          id={id}
+          key={id}
           to={link.path}
           activeClassName="text-white"
           exact
@@ -50,21 +49,13 @@ const NavigationLinks = ({ links, language }) => {
 };
 
 const ProfileView = () => {
-  const indexedContent = useIndexedContent(content);
   const [language] = useLanguage();
-
-  useEffect(() => {
-    console.log(language);
-  }, [language]);
 
   return (
     <Wrapper className="flex flex-col items-center justify-center h-full p-6 bg-gray-800 border-r border-gray-700 xl:w-2/5 xl:p-24 overflow-hidden overflow-y-hidden profile-view">
       <Logo />
-      <Header
-        name={indexedContent.name}
-        occupation={indexedContent.occupation[language]}
-      />
-      <NavigationLinks links={indexedContent.links} language={language} />
+      <Header name={content.name} occupation={content.occupation[language]} />
+      <NavigationLinks links={content.links} language={language} />
       <SocialMediaButtons className="hidden xl:flex" />
     </Wrapper>
   );
