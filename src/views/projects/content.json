@@ -20,8 +20,8 @@
       },
       "body": {
         "type": "projects:commercial",
-        "en": "For the past 2+ years, I've been working really close to known companies from my city, doing <u class=\"text-white\">web consulting</u> &amp; <u class=\"text-white\">project assessments</u>. These are some of the most remarkable projects I've had the fortune to develop and <u class=\"text-white\">see in action</u>:",
-        "es": "Desde hace dos o más años he estado trabajando de manera cercana con compañías de renombre en mi ciudad, realizando <u class=\"text-white\">consultoría web</u> y <u class=\"text-white\">asesoría de proyectos</u>. Estos son algunos de los más remarcables en los cuales he tenido la fortuna de desarrollar y <u class=\"text-white\">ver en acción</u>:",
+        "en": "For the past 3+ years, I've been working really close to known companies from around the world, doing <u class=\"text-white\">web consulting</u> &amp; <u class=\"text-white\">project assessments</u>. These are some of the most remarkable projects I've had the fortune to develop and <u class=\"text-white\">see in action</u>:",
+        "es": "Desde hace más de 3 años he estado trabajando de manera cercana con compañías de varios lugares del mundo, realizando <u class=\"text-white\">consultoría web</u> y <u class=\"text-white\">asesoría de proyectos</u>. Estos son algunos de los más remarcables en los cuales he tenido la fortuna de desarrollar y <u class=\"text-white\">ver en acción</u>:",
         "projects": [
           {
             "title": {
