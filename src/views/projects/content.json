@@ -116,21 +116,12 @@
           },
           {
             "emoji": "🎧",
-            "title": "Shagram Bot",
+            "title": "Muso",
             "description": {
               "en": "A Telegram bot that listens to voice messages, and recognizes music.",
               "es": "Un bot de Telegram que escucha mensajes de voz, y reconoce música."
             },
-            "githubLink": "https://github.com/gantoreno/shagram-bot"
-          },
-          {
-            "emoji": "🤫",
-            "title": "Among Bot",
-            "description": {
-              "en": "A Discord bot to mute everyone during Among Us parties.",
-              "es": "Un bot de Discord para mutear durante partidas de Among Us."
-            },
-            "githubLink": "https://github.com/gantoreno/among-bot"
+            "githubLink": "https://github.com/gantoreno/muso"
           }
         ]
       }
