@@ -16,12 +16,7 @@ import languages from '../../extras/languages.json';
 
 import './ProjectsView.scss';
 
-const CommercialProjectOverview = ({
-  pictureUrl,
-  title,
-  behanceLink,
-  language,
-}) => {
+const CommercialProjectOverview = ({ pictureUrl, title, source, language }) => {
   return (
     <div className="flex-wrap content-center mb-6 rounded shadow-lg lg:flex bg-grey">
       <div className="lg:flex lg:w-1/3">
@@ -35,17 +30,27 @@ const CommercialProjectOverview = ({
             <h1 className="mb-6 text-xl font-bold text-left text-white sm:text-2xl">
               {title}
             </h1>
-            <a href={behanceLink} target="_blank" rel="noreferrer">
-              <Button
-                text={
-                  language === languages.EN
-                    ? 'View on Bēhance'
-                    : 'Ver en Bēhance'
-                }
-                rightIcon={'fab fa-behance ml-3'}
-                hoverBackground="red-400"
-                opaque
-              />
+            <a href={source.link} target="_blank" rel="noreferrer">
+              {source.name === 'live' && (
+                <Button
+                  text={language === languages.EN ? 'View live' : 'Ver en vivo'}
+                  rightIcon={'fab fa-brands fa-chrome ml-3'}
+                  hoverBackground="red-400"
+                  opaque
+                />
+              )}
+              {source.name === 'behance' && (
+                <Button
+                  text={
+                    language === languages.EN
+                      ? 'View on Bēhance'
+                      : 'Ver en Bēhance'
+                  }
+                  rightIcon={'fab fa-behance ml-3'}
+                  hoverBackground="red-400"
+                  opaque
+                />
+              )}
             </a>
           </div>
         </div>
@@ -102,7 +107,7 @@ const CommercialProjectsList = ({ body, language }) => {
           key={id}
           title={project.title[language]}
           pictureUrl={project.pictureUrl}
-          behanceLink={project.behanceLink}
+          source={project.source}
           language={language}
         />
       ))}

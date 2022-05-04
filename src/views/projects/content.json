@@ -25,11 +25,36 @@
         "projects": [
           {
             "title": {
+              "en": "Insightt – Automobile Repossession System",
+              "es": "Insightt – Sistema de Recuperación Automóvil"
+            },
+            "pictureUrl": "/assets/img/projects/insightt.png",
+            "source": {
+              "name": "live",
+              "link": "https://insightt.io"
+            }
+          },
+          {
+            "title": {
+              "en": "Resident – Student Housing Made Easy",
+              "es": "Resident – Facilitando Residencias Estudiantiles"
+            },
+            "pictureUrl": "/assets/img/projects/resident.png",
+            "source": {
+              "name": "live",
+              "link": "https://app.resident.io"
+            }
+          },
+          {
+            "title": {
               "en": "Totalcom Venezuela – ISP",
               "es": "Totalcom Venezuela – ISP"
             },
             "pictureUrl": "https://mir-s3-cdn-cf.behance.net/projects/max_808/0d25a0109534879.Y3JvcCwxNTk4MiwxMjUwMSwyNDEzLDA.png",
-            "behanceLink": "https://www.behance.net/gallery/109534879/Totalcom-Venezuela-ISP"
+            "source": {
+              "name": "behance",
+              "link": "https://www.behance.net/gallery/109534879/Totalcom-Venezuela-ISP"
+            }
           },
           {
             "title": {
@@ -37,7 +62,10 @@
               "es": "Resivenca – Internet + Energia"
             },
             "pictureUrl": "https://mir-s3-cdn-cf.behance.net/projects/max_808/9a9f98109535527.Y3JvcCwxNTk4MSwxMjUwMCwyNjUwLDA.png",
-            "behanceLink": "https://www.behance.net/gallery/109535527/Resivenca-Internet-Energia"
+            "source": {
+              "name": "behance",
+              "link": "https://www.behance.net/gallery/109535527/Resivenca-Internet-Energia"
+            }
           },
           {
             "title": {
@@ -45,7 +73,10 @@
               "es": "CWV – Project Management System"
             },
             "pictureUrl": "https://mir-s3-cdn-cf.behance.net/projects/max_808/bc47d3109540181.Y3JvcCwxNTk4MSwxMjUwMCwyNDEyLDA.png",
-            "behanceLink": "https://www.behance.net/gallery/109540181/CWV-Project-Management-System"
+            "source": {
+              "name": "behance",
+              "link": "https://www.behance.net/gallery/109540181/CWV-Project-Management-System"
+            }
           }
         ]
       }
