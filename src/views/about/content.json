@@ -58,8 +58,20 @@
                 "es": "📱 <b class=\"text-white\">React Native</b> (para aplicaciones móviles).<br />"
               },
               {
-                "en": "🎱 <b class=\"text-white\">8base</b> as a backend-as-a-service provider (with GraphQL).<br />",
-                "es": "🎱 <b class=\"text-white\">8base</b> como proveedor de backend-as-a-service (con GraphQL).<br />"
+                "en": "🐝 <b class=\"text-white\">Node.js</b> (with Express for back-end development).<br />",
+                "es": "🐝 <b class=\"text-white\">Node.js</b> (con Express para desarrollo back-end).<br />"
+              },
+              {
+                "en": "📦 <b class=\"text-white\">AWS</b> (for overall system infrastructure).<br />",
+                "es": "📦 <b class=\"text-white\">AWS</b> (para infraestructura en general).<br />"
+              },
+              {
+                "en": "🐬 <b class=\"text-white\">MySQL</b> (for relational databases).",
+                "es": "🐬 <b class=\"text-white\">MySQL</b> (para bases de datos relacionales)."
+              },
+              {
+                "en": "🍃 <b class=\"text-white\">MongoDB</b> (for NoSQL databases).<br />",
+                "es": "🍃 <b class=\"text-white\">MongoDB</b> (para bases de datos NoSQL).<br />"
               }
             ]
           },
@@ -70,16 +82,12 @@
             },
             "items": [
               {
-                "en": "🐝 <b class=\"text-white\">Node.js</b> (with Express for back-end development).<br />",
-                "es": "🐝 <b class=\"text-white\">Node.js</b> (con Express para desarrollo back-end).<br />"
-              },
-              {
-                "en": "🔥 <b class=\"text-white\">Firebase</b> (for real-time data).<br />",
-                "es": "🔥 <b class=\"text-white\">Firebase</b> (para datos en tiempo real).<br />"
-              },
-              {
                 "en": "🐍 <b class=\"text-white\">Python</b> (with TensorFlow, Pandas, NumPy, Django, Flask).",
                 "es": "🐍 <b class=\"text-white\">Python</b> (con TensorFlow, Pandas, NumPy, Django, Flask)."
+              },
+              {
+                "en": "💎 <b class=\"text-white\">Ruby</b> (on Rails, for full-stack applications & backend services).",
+                "es": "💎 <b class=\"text-white\">Ruby</b> (on Rails, para aplicaciones full-stack y servicios de backend)."
               },
               {
                 "en": "🐘 <b class=\"text-white\">PHP</b> (using Laravel &amp; Bango — my framework).",
@@ -92,14 +100,22 @@
               {
                 "en": "➕ <b class=\"text-white\">C++</b> (for data structures &amp; algorithms, machine learning).",
                 "es": "➕ <b class=\"text-white\">C++</b> (para estructuras de datos, algoritmos, machine learning)."
+              }
+            ]
+          },
+          {
+            "description": {
+              "en": "Last (but not least), I work pretty well too on the following environments and/or solutions:",
+              "es": "Por último (pero no menos importante), también manejo los siguientes entornos y/o soluciones:"
+            },
+            "items": [
+              {
+                "en": "🎱 <b class=\"text-white\">8base</b> as a backend-as-a-service provider (with GraphQL).<br />",
+                "es": "🎱 <b class=\"text-white\">8base</b> como proveedor de backend-as-a-service (con GraphQL).<br />"
               },
               {
-                "en": "🐬 <b class=\"text-white\">MySQL</b> (for relational databases).",
-                "es": "🐬 <b class=\"text-white\">MySQL</b> (para bases de datos relacionales)."
-              },
-              {
-                "en": "🍃 <b class=\"text-white\">MongoDB</b> (NoSQL databases).<br />",
-                "es": "🍃 <b class=\"text-white\">MongoDB</b> (bases de datos NoSQL).<br />"
+                "en": "🔥 <b class=\"text-white\">Firebase</b> (and Google Cloud Platform for real-time applications).<br />",
+                "es": "🔥 <b class=\"text-white\">Firebase</b> (y Google Cloud Platform para aplicaciones en tiempo real).<br />"
               }
             ]
           }
