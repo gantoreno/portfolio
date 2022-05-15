@@ -29,7 +29,7 @@ const NavigationLinks = ({ links, language }) => {
           id={id}
           key={id}
           to={link.path}
-          className="text-gray-600 font-medium"
+          className="font-medium"
           activeClassName="text-white font-bold"
           exact
         >
