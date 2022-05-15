@@ -29,16 +29,17 @@ const NavigationLinks = ({ links, language }) => {
           id={id}
           key={id}
           to={link.path}
-          activeClassName="text-white"
+          className="text-gray-600 font-medium"
+          activeClassName="text-white font-bold"
           exact
         >
-          <div className="flex items-center w-full mb-6 text-gray-600 text-left duration-200 hover:text-white navigation-link">
+          <div className="flex items-center w-full mb-6 text-left duration-200 hover:text-white navigation-link">
             <div
               className={`w-8 h-8 flex justify-center items-center bg-${link.color}-400 rounded`}
             >
               <i className={`${link.icon} text-white`}></i>
             </div>
-            <span className="hidden ml-6 font-medium xl:block link-name">
+            <span className="hidden ml-6 xl:block link-name">
               {link.name[language]}
             </span>
           </div>
