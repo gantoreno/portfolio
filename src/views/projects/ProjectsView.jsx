@@ -71,11 +71,11 @@ const GitHubProjectCard = ({
     <div
       className={`project-card bg-gray-800 rounded border border-gray-700 text-center ${className}`}
     >
-      <div className="p-6 border-b-2 border-gray-700">
+      <div className="p-6 border-b border-gray-700">
         <h3 className="mb-6 text-6xl">{emoji}</h3>
         <h3 className="text-xl font-bold text-white sm:text-2xl">{title}</h3>
       </div>
-      <div className="p-6 border-b-2 border-gray-700">
+      <div className="p-6 border-b border-gray-700">
         <p className="text-xs leading-loose text-left text-gray-600 sm:text-base">
           {description}
         </p>
