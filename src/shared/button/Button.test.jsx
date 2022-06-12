@@ -2,7 +2,7 @@ import { shallow } from 'enzyme';
 
 import Button from './Button';
 
-test('renders without crashing', () => {
+it('renders without crashing', () => {
   const wrapper = shallow(
     <Button
       text="Button 1"

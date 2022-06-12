@@ -2,6 +2,6 @@ import { shallow } from 'enzyme';
 
 import NavigationButtons from './NavigationButtons';
 
-test('renders without crashing', () => {
+it('renders without crashing', () => {
   const wrapper = shallow(<NavigationButtons />);
 });

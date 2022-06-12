@@ -2,6 +2,12 @@ import { shallow } from 'enzyme';
 
 import AboutView from './AboutView';
 
-test('renders without crashing', () => {
-  const wrapper = shallow(<AboutView language="es" />);
+import Providers from '../../providers';
+
+it('renders without crashing', () => {
+  const wrapper = shallow(
+    <Providers>
+      <AboutView />
+    </Providers>
+  );
 });

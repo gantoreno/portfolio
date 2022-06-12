@@ -2,6 +2,12 @@ import { shallow } from 'enzyme';
 
 import ProjectsView from './ProjectsView';
 
-test('renders without crashing', () => {
-  const wrapper = shallow(<ProjectsView language="es" />);
+import Providers from '../../providers';
+
+it('renders without crashing', () => {
+  const wrapper = shallow(
+    <Providers>
+      <ProjectsView />
+    </Providers>
+  );
 });

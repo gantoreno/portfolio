@@ -4,7 +4,7 @@ import { useLocalStorage } from '../hooks';
 
 import languages from '../extras/languages.json';
 
-const LanguageWrapper = ({ children }) => {
+export const LanguageProvider = ({ children }) => {
   const [language, setLanguage] = useLocalStorage('language', languages.EN);
 
   const switchLanguage = () => {
@@ -15,13 +15,5 @@ const LanguageWrapper = ({ children }) => {
     <LanguageContext.Provider value={{ language, switchLanguage }}>
       {children}
     </LanguageContext.Provider>
-  );
-};
-
-export const withLanguage = Component => {
-  return () => (
-    <LanguageWrapper>
-      <Component />
-    </LanguageWrapper>
   );
 };
