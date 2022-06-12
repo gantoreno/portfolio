@@ -25,8 +25,8 @@
         "projects": [
           {
             "title": {
-              "en": "Insightt – Automobile Repossession System",
-              "es": "Insightt – Sistema de Recuperación Automóvil"
+              "en": "Insightt – Repossession Industry Tool",
+              "es": "Insightt – Recuperación Automovilística"
             },
             "pictureUrl": "/assets/img/projects/insightt.png",
             "source": {
@@ -37,7 +37,7 @@
           {
             "title": {
               "en": "Resident – Student Housing Made Easy",
-              "es": "Resident – Facilitando Residencias Estudiantiles"
+              "es": "Resident – Residencias Estudiantiles"
             },
             "pictureUrl": "/assets/img/projects/resident.png",
             "source": {
@@ -58,8 +58,8 @@
           },
           {
             "title": {
-              "en": "Resivenca – Internet + Energia",
-              "es": "Resivenca – Internet + Energia"
+              "en": "Resivenca – Internet + Energy",
+              "es": "Resivenca – Internet + Energía"
             },
             "pictureUrl": "https://mir-s3-cdn-cf.behance.net/projects/max_808/9a9f98109535527.Y3JvcCwxNTk4MSwxMjUwMCwyNjUwLDA.png",
             "source": {
