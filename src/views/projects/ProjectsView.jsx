@@ -8,6 +8,7 @@ import {
   Wrapper,
   FadedHeader,
   NavigationButtons,
+  Tag,
 } from '../../shared';
 import { useLanguage } from '../../hooks';
 
@@ -16,7 +17,13 @@ import languages from '../../extras/languages.json';
 
 import './ProjectsView.scss';
 
-const CommercialProjectOverview = ({ pictureUrl, title, source, language }) => {
+const CommercialProjectOverview = ({
+  pictureUrl,
+  title,
+  source,
+  language,
+  tags = [],
+}) => {
   return (
     <div className="flex-wrap content-center mb-6 rounded shadow-lg lg:flex bg-grey">
       <div className="lg:flex lg:w-1/3">
@@ -30,6 +37,14 @@ const CommercialProjectOverview = ({ pictureUrl, title, source, language }) => {
             <h1 className="mb-6 text-xl font-bold text-left text-white sm:text-2xl">
               {title}
             </h1>
+            {tags.length > 0 && (
+              <p className="mb-6">
+                Tags:{' '}
+                {tags.map(title => (
+                  <Tag title={title} />
+                ))}
+              </p>
+            )}
             <a href={source.link} target="_blank" rel="noreferrer">
               {source.name === 'live' && (
                 <Button
@@ -107,6 +122,7 @@ const CommercialProjectsList = ({ body, language }) => {
           key={id}
           title={project.title[language]}
           pictureUrl={project.pictureUrl}
+          tags={project.tags}
           source={project.source}
           language={language}
         />

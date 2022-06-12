@@ -29,6 +29,18 @@ module.exports = {
           ...colors.purple,
           400: '#999dd4',
         },
+        cyan: {
+          ...colors.purple,
+          400: '#8ac6c7',
+        },
+        pink: {
+          ...colors.pink,
+          400: '#A37F9F',
+        },
+        orange: {
+          ...colors.orange,
+          400: '#B6856B',
+        },
         red: {
           ...colors.red,
           400: '#ac616a',
@@ -36,6 +48,10 @@ module.exports = {
         white: {
           ...colors.white,
           DEFAULT: '#d0d0d0',
+        },
+        clear: {
+          ...colors.clear,
+          400: '#d0d0d0',
         },
       },
     },

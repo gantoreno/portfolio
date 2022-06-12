@@ -1,0 +1,15 @@
+[
+  { "title": "react", "color": "cyan" },
+  { "title": "typescript", "color": "blue" },
+  { "title": "react-native", "color": "cyan" },
+  { "title": "firebase", "color": "yellow" },
+  { "title": "node", "color": "green" },
+  { "title": "aws", "color": "orange" },
+  { "title": "php", "color": "purple" },
+  { "title": "8base", "color": "orange" },
+  { "title": "next", "color": "clear" },
+  { "title": "scss", "color": "pink" },
+  { "title": "next", "color": "white" },
+  { "title": "laravel", "color": "red" },
+  { "title": "javascript", "color": "yellow" }
+]

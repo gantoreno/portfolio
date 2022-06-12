@@ -29,6 +29,14 @@
               "es": "Insightt – Recuperación Automovilística"
             },
             "pictureUrl": "/assets/img/projects/insightt.png",
+            "tags": [
+              "react",
+              "react-native",
+              "node",
+              "aws",
+              "firebase",
+              "scss"
+            ],
             "source": {
               "name": "live",
               "link": "https://insightt.io"
@@ -40,6 +48,7 @@
               "es": "Resident – Residencias Estudiantiles"
             },
             "pictureUrl": "/assets/img/projects/resident.png",
+            "tags": ["react", "typescript", "8base", "scss"],
             "source": {
               "name": "live",
               "link": "https://app.resident.io"
@@ -51,6 +60,7 @@
               "es": "Totalcom Venezuela – ISP"
             },
             "pictureUrl": "https://mir-s3-cdn-cf.behance.net/projects/max_808/0d25a0109534879.Y3JvcCwxNTk4MiwxMjUwMSwyNDEzLDA.png",
+            "tags": ["react", "node", "scss"],
             "source": {
               "name": "behance",
               "link": "https://www.behance.net/gallery/109534879/Totalcom-Venezuela-ISP"
@@ -62,6 +72,7 @@
               "es": "Resivenca – Internet + Energía"
             },
             "pictureUrl": "https://mir-s3-cdn-cf.behance.net/projects/max_808/9a9f98109535527.Y3JvcCwxNTk4MSwxMjUwMCwyNjUwLDA.png",
+            "tags": ["react", "next", "scss"],
             "source": {
               "name": "behance",
               "link": "https://www.behance.net/gallery/109535527/Resivenca-Internet-Energia"
@@ -73,6 +84,7 @@
               "es": "CWV – Project Management System"
             },
             "pictureUrl": "https://mir-s3-cdn-cf.behance.net/projects/max_808/bc47d3109540181.Y3JvcCwxNTk4MSwxMjUwMCwyNDEyLDA.png",
+            "tags": ["php", "laravel", "javascript", "scss"],
             "source": {
               "name": "behance",
               "link": "https://www.behance.net/gallery/109540181/CWV-Project-Management-System"
