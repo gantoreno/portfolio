@@ -1,18 +1,14 @@
 [
-  { "title": "react", "color": "cyan", "icon": "" },
-  { "title": "typescript", "color": "blue", "icon": "ﯤ" },
-  { "title": "react-native", "color": "cyan", "icon": "" },
-  { "title": "firebase", "color": "yellow", "icon": "" },
-  { "title": "node", "color": "green", "icon": "" },
-  { "title": "aws", "color": "orange", "icon": "" },
-  { "title": "php", "color": "purple", "icon": "" },
   { "title": "8base", "color": "orange", "icon": "" },
-  { "title": "scss", "color": "pink", "icon": "" },
-  { "title": "next", "color": "clear", "icon": "卑" },
+  { "title": "aws", "color": "orange", "icon": "" },
+  { "title": "firebase", "color": "yellow", "icon": "" },
+  { "title": "javascript", "color": "yellow", "icon": "" },
   { "title": "laravel", "color": "red", "icon": "" },
-  {
-    "title": "javascript",
-    "color": "yellow",
-    "icon": ""
-  }
+  { "title": "next", "color": "clear", "icon": "卑" },
+  { "title": "node", "color": "green", "icon": "" },
+  { "title": "php", "color": "purple", "icon": "" },
+  { "title": "react", "color": "cyan", "icon": "" },
+  { "title": "react-native", "color": "cyan", "icon": "" },
+  { "title": "scss", "color": "pink", "icon": "" },
+  { "title": "typescript", "color": "blue", "icon": "ﯤ" }
 ]
