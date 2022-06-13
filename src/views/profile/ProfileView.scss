@@ -5,3 +5,11 @@ div.profile-view {
 div.navigation-link {
   color: inherit;
 }
+
+.made-with img {
+  width: auto;
+  height: 12px;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}

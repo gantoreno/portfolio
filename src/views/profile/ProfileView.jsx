@@ -6,6 +6,9 @@ import { useLanguage } from '../../hooks';
 import content from './content.json';
 import logo from '../../assets/svg/logo.svg';
 
+import react from '../../assets/img/react.png';
+import tailwind from '../../assets/img/tailwind.png';
+
 import './ProfileView.scss';
 
 const Logo = () => {
@@ -54,8 +57,25 @@ const NavigationLinks = ({ links, language }) => {
 };
 
 const Copyright = () => (
-  <small className="text-gray-600 hidden xl:flex">
+  <small className="text-gray-600 hidden xl:flex mb-6">
     &copy; {new Date().getFullYear()} Gabriel Moreno. All Rights Reserved.
+  </small>
+);
+
+const MadeWith = () => (
+  <small className="text-gray-600 hidden xl:flex made-with items-center">
+    Made with{' '}
+    <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer">
+      <img src={react} alt="react" className="mx-1" />
+    </a>
+    and
+    <a
+      href="https://tailwindcss.com/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <img src={tailwind} alt="tailwind" className="ml-1" />
+    </a>
   </small>
 );
 
@@ -69,6 +89,7 @@ const ProfileView = () => {
       <NavigationLinks links={content.links} language={language} />
       <SocialMediaButtons className="hidden xl:flex xl:mb-6" />
       <Copyright />
+      <MadeWith />
     </Wrapper>
   );
 };
