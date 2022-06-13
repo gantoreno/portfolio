@@ -16,14 +16,14 @@ const Header = ({ name, occupation }) => {
   return (
     <div className="hidden text-center xl:block">
       <h1 className="mb-6 text-2xl font-bold">{name}</h1>
-      <h3 className="mb-12 text-base text-gray-600">{occupation}</h3>
+      <h3 className="mb-6 text-base text-gray-600">{occupation}</h3>
     </div>
   );
 };
 
 const NavigationLinks = ({ links, language }) => {
   return (
-    <div className="w-full text-gray-600 xl:mb-12">
+    <div className="w-full text-gray-600 xl:mb-6">
       {links.map((link, id) => (
         <NavLink
           id={id}
@@ -33,7 +33,11 @@ const NavigationLinks = ({ links, language }) => {
           activeClassName="text-white font-bold"
           exact
         >
-          <div className="flex items-center w-full mb-6 text-left duration-200 hover:text-white navigation-link">
+          <div
+            className={`flex items-center w-full text-left duration-200 hover:text-white navigation-link ${
+              id !== links.length - 1 ? 'mb-6' : ''
+            }`}
+          >
             <div
               className={`w-8 h-8 flex justify-center items-center bg-${link.color}-400 rounded`}
             >
@@ -63,7 +67,7 @@ const ProfileView = () => {
       <Logo />
       <Header name={content.name} occupation={content.occupation[language]} />
       <NavigationLinks links={content.links} language={language} />
-      <SocialMediaButtons className="hidden xl:flex xl:mb-12" />
+      <SocialMediaButtons className="hidden xl:flex xl:mb-6" />
       <Copyright />
     </Wrapper>
   );
