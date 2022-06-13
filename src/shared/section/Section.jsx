@@ -1,12 +1,12 @@
 import './Section.scss';
 
 export const Title = ({ children }) => {
-  return <h1 className="mb-6 text-xl font-bold sm:text-2xl">{children}</h1>;
+  return <h1 className="mb-6 text-xl sm:text-2xl font-bold">{children}</h1>;
 };
 
 export const Subtitle = ({ children }) => {
   return (
-    <h2 className="mb-12 text-xs text-gray-600 sm:text-base">{children}</h2>
+    <h2 className="mb-12 text-sm text-gray-600 sm:text-base">{children}</h2>
   );
 };
 

@@ -11,7 +11,7 @@ const Button = ({
 }) => {
   return (
     <button
-      className={`p-3 text-xs duration-200 rounded sm:text-base sm:block hover:text-white ${
+      className={`p-3 text-sm sm:text-base duration-200 rounded sm:block hover:text-white ${
         opaque
           ? `bg-white text-black font-bold hover:bg-${hoverBackground}`
           : `text-gray-600`

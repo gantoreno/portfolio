@@ -3,28 +3,18 @@ import { Helmet } from 'react-helmet';
 
 import {
   Entry,
-  Section,
-  Wrapper,
   FadedHeader,
   NavigationButtons,
+  Paragraph,
+  Section,
   SocialMediaButtons,
+  Wrapper,
 } from '../../shared';
 import { useLanguage } from '../../hooks';
 
 import content from './content.json';
 
 import './ContactView.scss';
-
-const SocialMedia = ({ body, language }) => {
-  return (
-    <div className="mb-12">
-      <p className="mb-6 text-xs leading-loose text-left text-gray-600 sm:text-base">
-        {parse(body[language])}
-      </p>
-      <SocialMediaButtons />
-    </div>
-  );
-};
 
 const ContactView = () => {
   const [language] = useLanguage();
@@ -42,7 +32,10 @@ const ContactView = () => {
         {content.entries.map((entry, id) => (
           <Entry id={id} key={id} title={parse(entry.title[language])}>
             {entry.body.type === 'contact:media' && (
-              <SocialMedia body={entry.body} language={language} />
+              <>
+                <Paragraph>{parse(entry.body[language])}</Paragraph>
+                <SocialMediaButtons />
+              </>
             )}
           </Entry>
         ))}

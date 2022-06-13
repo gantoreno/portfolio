@@ -1,8 +1,12 @@
 import parse from 'html-react-parser';
+
+import { Fragment } from 'react';
 import { Helmet } from 'react-helmet';
 
 import {
   Entry,
+  List,
+  Paragraph,
   Section,
   Wrapper,
   FadedHeader,
@@ -13,31 +17,6 @@ import { useLanguage } from '../../hooks';
 import content from './content.json';
 
 import './AboutView.scss';
-
-const SmallDescription = ({ children }) => {
-  return <p className="mb-3">{children}</p>;
-};
-
-const SmallList = ({ list, language }) => {
-  return (
-    <ul>
-      {list.items.map((item, id) => (
-        <li id={id} key={id}>
-          {parse(item[language])}
-        </li>
-      ))}
-    </ul>
-  );
-};
-
-const ListedBody = ({ list, language }) => {
-  return (
-    <div className="mb-3">
-      <SmallDescription>{parse(list.description[language])}</SmallDescription>
-      <SmallList list={list} language={language} />
-    </div>
-  );
-};
 
 const AboutView = () => {
   const [language] = useLanguage();
@@ -54,10 +33,17 @@ const AboutView = () => {
       >
         {content.entries.map((entry, id) => (
           <Entry id={id} key={id} title={parse(entry.title[language])}>
-            {entry.body.type === 'paragraph' && parse(entry.body[language])}
+            {entry.body.type === 'paragraph' && (
+              <Paragraph>{parse(entry.body[language])}</Paragraph>
+            )}
             {entry.body.type === 'list' &&
-              entry.body.lists?.map((list, id) => (
-                <ListedBody id={id} key={id} list={list} language={language} />
+              entry.body.elements?.map((list, id) => (
+                <Fragment key={id}>
+                  {list.description && (
+                    <Paragraph>{parse(list.description[language])}</Paragraph>
+                  )}
+                  <List items={list.items} language={language} />
+                </Fragment>
               ))}
           </Entry>
         ))}
