@@ -49,6 +49,12 @@ const NavigationLinks = ({ links, language }) => {
   );
 };
 
+const Copyright = () => (
+  <small className="text-gray-600 hidden xl:flex">
+    &copy; {new Date().getFullYear()} Gabriel Moreno. All Rights Reserved.
+  </small>
+);
+
 const ProfileView = () => {
   const [language] = useLanguage();
 
@@ -57,7 +63,8 @@ const ProfileView = () => {
       <Logo />
       <Header name={content.name} occupation={content.occupation[language]} />
       <NavigationLinks links={content.links} language={language} />
-      <SocialMediaButtons className="hidden xl:flex" />
+      <SocialMediaButtons className="hidden xl:flex xl:mb-12" />
+      <Copyright />
     </Wrapper>
   );
 };
