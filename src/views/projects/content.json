@@ -25,8 +25,8 @@
         "projects": [
           {
             "title": {
-              "en": "Insightt – Repossession Tool",
-              "es": "Insightt – Recuperación Automóvil"
+              "en": "Insightt &mdash; Repossession Tool",
+              "es": "Insightt &mdash; Recuperación Automóvil"
             },
             "pictureUrl": "/assets/img/projects/insightt.png",
             "tags": ["react", "react-native", "node", "aws", "scss"],
@@ -37,8 +37,8 @@
           },
           {
             "title": {
-              "en": "Resident – Student Housing",
-              "es": "Resident – Residencias Estudiantiles"
+              "en": "Resident &mdash; Student Housing",
+              "es": "Resident &mdash; Residencias Estudiantiles"
             },
             "pictureUrl": "/assets/img/projects/resident.png",
             "tags": ["react", "typescript", "8base", "scss"],
@@ -49,8 +49,8 @@
           },
           {
             "title": {
-              "en": "Totalcom Venezuela – ISP",
-              "es": "Totalcom Venezuela – ISP"
+              "en": "Totalcom Venezuela &mdash; ISP",
+              "es": "Totalcom Venezuela &mdash; ISP"
             },
             "pictureUrl": "https://mir-s3-cdn-cf.behance.net/projects/max_808/0d25a0109534879.Y3JvcCwxNTk4MiwxMjUwMSwyNDEzLDA.png",
             "tags": ["react", "node", "scss"],
@@ -61,8 +61,8 @@
           },
           {
             "title": {
-              "en": "Resivenca – Internet + Energy",
-              "es": "Resivenca – Internet + Energía"
+              "en": "Resivenca &mdash; Internet + Energy",
+              "es": "Resivenca &mdash; Internet + Energía"
             },
             "pictureUrl": "https://mir-s3-cdn-cf.behance.net/projects/max_808/9a9f98109535527.Y3JvcCwxNTk4MSwxMjUwMCwyNjUwLDA.png",
             "tags": ["react", "next", "scss"],
@@ -73,8 +73,8 @@
           },
           {
             "title": {
-              "en": "CWV – Project Management System",
-              "es": "CWV – Project Management System"
+              "en": "CWV &mdash; Project Management System",
+              "es": "CWV &mdash; Project Management System"
             },
             "pictureUrl": "https://mir-s3-cdn-cf.behance.net/projects/max_808/bc47d3109540181.Y3JvcCwxNTk4MSwxMjUwMCwyNDEyLDA.png",
             "tags": ["php", "laravel", "javascript", "scss"],
@@ -100,8 +100,8 @@
             "emoji": "❤️",
             "title": "Curtis",
             "description": {
-              "en": "The cardiovascular unified real-time intelligent system – ECG analysis through an AI-based mobile app.",
-              "es": "El sistema cardiovascular unificado e inteligente a tiempo real – Análisis de electrocardiogramas a través de una app basada en IA."
+              "en": "The cardiovascular unified real-time intelligent system &mdash; ECG analysis through an AI-based mobile app.",
+              "es": "El sistema cardiovascular unificado e inteligente a tiempo real &mdash; Análisis de electrocardiogramas a través de una app basada en IA."
             },
             "githubLink": "https://github.com/gantoreno/curtis-app"
           },
@@ -110,7 +110,7 @@
             "title": "Bango",
             "description": {
               "en": "The zero-tricks lightweight framework - just you, and PHP.",
-              "es": "El framework ligero y sin trucos – solo tú, y PHP."
+              "es": "El framework ligero y sin trucos &mdash; solo tú, y PHP."
             },
             "githubLink": "https://github.com/gantoreno/bango"
           },

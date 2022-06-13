@@ -20,8 +20,8 @@
       },
       "body": {
         "type": "contact:media",
-        "en": "If you have an idea about <u class=\"text-white\">something you'd like to create</u>, <u class=\"text-white\">a website you have in mind</u>, or <u class=\"text-white\">a business you want to start</u>, don't worry – <u class=\"text-white\">I got you covered</u>. You can find me on my social media, I'm constantly updating on each one.",
-        "es": "Si hay algo que <u class=\"text-white\">quisieras crear</u>, <u class=\"text-white\">un sitio web que quieres diseñar</u>, or <u class=\"text-white\">un negocio que quieres empezar</u>, no te preocupes – <u class=\"text-white\">estoy para ayudar</u>. Puedes encontrarme en mis redes sociales, estoy activo constantemente en ellas."
+        "en": "If you have an idea about <u class=\"text-white\">something you'd like to create</u>, <u class=\"text-white\">a website you have in mind</u>, or <u class=\"text-white\">a business you want to start</u>, don't worry &mdash; <u class=\"text-white\">I got you covered</u>. You can find me on my social media, I'm constantly updating on each one.",
+        "es": "Si hay algo que <u class=\"text-white\">quisieras crear</u>, <u class=\"text-white\">un sitio web que quieres diseñar</u>, or <u class=\"text-white\">un negocio que quieres empezar</u>, no te preocupes &mdash; <u class=\"text-white\">estoy para ayudar</u>. Puedes encontrarme en mis redes sociales, estoy activo constantemente en ellas."
       }
     }
   ],
