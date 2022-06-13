@@ -25,18 +25,11 @@
         "projects": [
           {
             "title": {
-              "en": "Insightt – Repossession Industry Tool",
-              "es": "Insightt – Recuperación Automovilística"
+              "en": "Insightt – Repossession Tool",
+              "es": "Insightt – Recuperación Automóvil"
             },
             "pictureUrl": "/assets/img/projects/insightt.png",
-            "tags": [
-              "react",
-              "react-native",
-              "node",
-              "aws",
-              "firebase",
-              "scss"
-            ],
+            "tags": ["react", "react-native", "node", "aws", "scss"],
             "source": {
               "name": "live",
               "link": "https://insightt.io"
@@ -44,7 +37,7 @@
           },
           {
             "title": {
-              "en": "Resident – Student Housing Made Easy",
+              "en": "Resident – Student Housing",
               "es": "Resident – Residencias Estudiantiles"
             },
             "pictureUrl": "/assets/img/projects/resident.png",

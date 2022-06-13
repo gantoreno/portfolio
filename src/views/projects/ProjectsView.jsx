@@ -28,18 +28,17 @@ const CommercialProjectOverview = ({
     <div className="flex-wrap content-center mb-6 rounded shadow-lg lg:flex bg-grey">
       <div className="lg:flex lg:w-1/3">
         <div className="overflow-hidden rounded lg:flex-1">
-          <img src={pictureUrl} alt={title} />
+          <img className="rounded" src={pictureUrl} alt={title} />
         </div>
       </div>
       <div className="lg:flex lg:w-2/3">
         <div className="lg:flex-1">
           <div className="flex flex-col items-start justify-center h-full mt-6 text-left lg:mt-0 lg:ml-6">
-            <h1 className="mb-6 text-xl font-bold text-left text-white sm:text-2xl">
+            <h1 className="mb-3 text-xl font-bold text-left text-white sm:text-2xl">
               {title}
             </h1>
             {tags.length > 0 && (
-              <p className="mb-6">
-                Tags:{' '}
+              <p className="mb-6 leading-7">
                 {tags.map(title => (
                   <Tag title={title} />
                 ))}
