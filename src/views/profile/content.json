@@ -11,7 +11,7 @@
         "en": "Home",
         "es": "Inicio"
       },
-      "icon": "fas fa-home",
+      "icon": "🏠",
       "color": "green"
     },
     {
@@ -20,7 +20,7 @@
         "en": "About",
         "es": "Acerca de mí"
       },
-      "icon": "fas fa-user",
+      "icon": "📖",
       "color": "yellow"
     },
     {
@@ -29,7 +29,7 @@
         "en": "Projects",
         "es": "Proyectos"
       },
-      "icon": "fas fa-code",
+      "icon": "💻",
       "color": "red"
     },
     {
@@ -38,7 +38,7 @@
         "en": "Contact",
         "es": "Contacto"
       },
-      "icon": "fas fa-phone-alt",
+      "icon": "📲",
       "color": "purple"
     }
   ]

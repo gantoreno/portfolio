@@ -33,7 +33,7 @@ const NavigationLinks = ({ links, language }) => {
           key={id}
           to={link.path}
           className="font-medium"
-          activeClassName="text-white font-bold"
+          activeClassName="text-white font-bold active"
           exact
         >
           <div
@@ -41,12 +41,10 @@ const NavigationLinks = ({ links, language }) => {
               id !== links.length - 1 ? 'mb-6' : ''
             }`}
           >
-            <div
-              className={`w-8 h-8 flex justify-center items-center bg-${link.color}-400 rounded`}
-            >
-              <i className={`${link.icon} text-white`}></i>
-            </div>
-            <span className="hidden ml-6 xl:block link-name">
+            <span className="mx-auto xl:mx-0 text-xl xl:text-base navicon">
+              {link.icon}
+            </span>
+            <span className="hidden ml-2 xl:block link-name">
               {link.name[language]}
             </span>
           </div>
