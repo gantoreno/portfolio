@@ -59,7 +59,7 @@ const ProfileView = () => {
   const [language] = useLanguage();
 
   return (
-    <Wrapper className="flex flex-col items-center justify-center h-full p-6 bg-gray-800 border-r border-gray-700 xl:w-2/5 xl:p-24 overflow-hidden overflow-y-hidden profile-view">
+    <Wrapper className="flex flex-col items-center justify-center h-full p-6 bg-gray-800 border-r border-gray-725 xl:w-2/5 xl:p-24 overflow-hidden overflow-y-hidden profile-view">
       <Logo />
       <Header name={content.name} occupation={content.occupation[language]} />
       <NavigationLinks links={content.links} language={language} />
