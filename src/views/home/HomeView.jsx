@@ -48,7 +48,7 @@ const Header = ({
   return (
     <div className="flex flex-col items-center justify-center w-full text-center h-1/2 xl:h-full xl:w-1/2 xl:text-left xl:mr-12 xl:flex xl:flex-col xl:items-start xl:justify-center">
       <h1 className="mb-6 text-2xl font-bold sm:text-4xl">{title}</h1>
-      <h2 className="mb-12 text-base text-gray-600 sm:text-xl">{subtitle}</h2>
+      <h2 className="mb-6 text-base text-gray-600 sm:text-xl">{subtitle}</h2>
       <CallToAction route={callToAction.route} text={callToAction[language]} />
       <LanguageSwitcher language={language} switchLanguage={switchLanguage} />
     </div>
