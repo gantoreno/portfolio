@@ -1,14 +1,80 @@
 [
-  { "title": "8base", "color": "orange", "icon": "" },
-  { "title": "aws", "color": "orange", "icon": "" },
-  { "title": "firebase", "color": "yellow", "icon": "" },
-  { "title": "javascript", "color": "yellow", "icon": "" },
-  { "title": "laravel", "color": "red", "icon": "" },
-  { "title": "next", "color": "clear", "icon": "卑" },
-  { "title": "node", "color": "green", "icon": "" },
-  { "title": "php", "color": "purple", "icon": "" },
-  { "title": "react", "color": "cyan", "icon": "" },
-  { "title": "react-native", "color": "cyan", "icon": "" },
-  { "title": "scss", "color": "pink", "icon": "" },
-  { "title": "typescript", "color": "blue", "icon": "ﯤ" }
+  {
+    "type": "svg",
+    "title": "8base",
+    "color": "orange",
+    "icon": "8base.svg"
+  },
+  {
+    "type": "icon",
+    "title": "aws",
+    "color": "orange",
+    "icon": "devicon-amazonwebservices-original"
+  },
+  {
+    "type": "icon",
+    "title": "firebase",
+    "color": "yellow",
+    "icon": "devicon-firebase-plain"
+  },
+  {
+    "type": "icon",
+    "title": "graphql",
+    "color": "magenta",
+    "icon": "devicon-graphql-plain"
+  },
+  {
+    "type": "icon",
+    "title": "javascript",
+    "color": "yellow",
+    "icon": "devicon-javascript-plain"
+  },
+  {
+    "type": "icon",
+    "title": "laravel",
+    "color": "red",
+    "icon": "devicon-laravel-plain"
+  },
+  {
+    "type": "icon",
+    "title": "next",
+    "color": "clear",
+    "icon": "devicon-nextjs-original"
+  },
+  {
+    "type": "icon",
+    "title": "node",
+    "color": "green",
+    "icon": "devicon-nodejs-plain"
+  },
+  {
+    "type": "icon",
+    "title": "php",
+    "color": "purple",
+    "icon": "devicon-php-plain"
+  },
+  {
+    "type": "icon",
+    "title": "react",
+    "color": "cyan",
+    "icon": "devicon-react-original"
+  },
+  {
+    "type": "icon",
+    "title": "react-native",
+    "color": "cyan",
+    "icon": "devicon-react-original"
+  },
+  {
+    "type": "icon",
+    "title": "scss",
+    "color": "pink",
+    "icon": "devicon-sass-original"
+  },
+  {
+    "type": "icon",
+    "title": "typescript",
+    "color": "blue",
+    "icon": "devicon-typescript-original"
+  }
 ]

@@ -43,6 +43,10 @@ const App = () => {
             src="https://kit.fontawesome.com/90fab40786.js"
             crossorigin="anonymous"
           ></script>
+          <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+          />
         </Helmet>
         <Router>
           <ProfileView />

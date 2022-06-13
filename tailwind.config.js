@@ -38,6 +38,10 @@ module.exports = {
           ...colors.pink,
           400: '#A37F9F',
         },
+        magenta: {
+          ...colors.magenta,
+          400: '#d166ae',
+        },
         orange: {
           ...colors.orange,
           400: '#B6856B',

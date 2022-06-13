@@ -29,7 +29,7 @@
               "es": "Insightt &mdash; Recuperación Automóvil"
             },
             "pictureUrl": "/assets/img/projects/insightt.png",
-            "tags": ["react", "react-native", "node", "aws", "scss"],
+            "tags": ["react", "react-native", "node", "aws", "firebase"],
             "source": {
               "name": "live",
               "link": "https://insightt.io"
@@ -41,7 +41,7 @@
               "es": "Resident &mdash; Residencias Estudiantiles"
             },
             "pictureUrl": "/assets/img/projects/resident.png",
-            "tags": ["react", "typescript", "8base", "scss"],
+            "tags": ["react", "typescript", "8base", "graphql"],
             "source": {
               "name": "live",
               "link": "https://app.resident.io"

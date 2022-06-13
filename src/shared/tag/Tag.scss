@@ -1,16 +1,19 @@
-@import url('https://mshaugh.github.io/nerdfont-webfonts/build/firacode-nerd-font.css');
-
 .tag {
-  padding: 2px 8px !important;
-  // border-radius: 12px;
+  padding: 2px 6px !important;
   white-space: nowrap !important;
   cursor: pointer;
   display: inline-block;
   user-select: none;
+  font-size: 12px;
+  line-height: initial;
   -webkit-user-select: none;
   -moz-user-select: none;
 }
 
-.tag .icon {
-  font-family: 'FiraCode Nerd Font';
+.tag i {
+  font-size: 10px !important;
+}
+
+.tag img {
+  margin-bottom: 3px;
 }

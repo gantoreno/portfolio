@@ -39,7 +39,10 @@ const CommercialProjectOverview = ({
               {parse(title)}
             </h3>
             {tags.length > 0 && (
-              <div className="mb-6 leading-8">
+              <div className="mb-6 leading-6">
+                <span className="text-sm mr-2">
+                  <i className="fas fa-tag"></i> Tags:
+                </span>
                 {tags.map(title => (
                   <Tag title={title} />
                 ))}
