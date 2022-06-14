@@ -24,7 +24,7 @@ export const Paragraph = ({ children }) => {
 
 export const List = ({ items, language }) => {
   return (
-    <ul className="mb-6">
+    <ul className="mb-6 text-sm sm:text-base">
       {items.map((item, id) => (
         <li id={id} key={id}>
           {parse(item[language])}

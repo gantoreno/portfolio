@@ -11,8 +11,7 @@
         "en": "Home",
         "es": "Inicio"
       },
-      "icon": "🏠",
-      "color": "green"
+      "icon": "🏠"
     },
     {
       "path": "/about",
@@ -20,8 +19,7 @@
         "en": "About",
         "es": "Acerca de mí"
       },
-      "icon": "📖",
-      "color": "yellow"
+      "icon": "📖"
     },
     {
       "path": "/projects",
@@ -29,8 +27,7 @@
         "en": "Projects",
         "es": "Proyectos"
       },
-      "icon": "💻",
-      "color": "red"
+      "icon": "💻"
     },
     {
       "path": "/contact",
@@ -38,8 +35,7 @@
         "en": "Contact",
         "es": "Contacto"
       },
-      "icon": "📲",
-      "color": "purple"
+      "icon": "☎️"
     }
   ]
 }

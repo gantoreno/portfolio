@@ -4,11 +4,21 @@ div.profile-view {
 
 div.navigation-link {
   color: inherit;
-  filter: grayscale(1) opacity(0.5);
+  opacity: 0.5;
+  filter: grayscale(1);
+}
+
+div.navigation-link:hover {
+  opacity: 0.75;
+}
+
+.active .navigation-link:hover {
+  opacity: 1;
 }
 
 .active .navigation-link {
-  filter: grayscale(0) opacity(1);
+  opacity: 1;
+  filter: grayscale(0);
 }
 
 .made-with img {
