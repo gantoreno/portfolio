@@ -37,7 +37,7 @@ const ContentView = () => {
 const App = () => {
   return (
     <div className="flex justify-center background">
-      <div className="flex h-screen text-white bg-gray-900 max-w-screen-2xl">
+      <div className="flex h-screen text-white bg-gray-800 max-w-screen-2xl">
         <Helmet>
           <script
             src="https://kit.fontawesome.com/90fab40786.js"
