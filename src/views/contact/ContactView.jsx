@@ -1,49 +1,51 @@
-import parse from 'html-react-parser';
 import { Helmet } from 'react-helmet';
 
 import {
   Entry,
   FadedHeader,
-  NavigationButtons,
   Paragraph,
   Section,
   SocialMediaButtons,
   Wrapper,
 } from '../../shared';
-import { useLanguage } from '../../hooks';
 
 import content from './content.json';
 
 import './ContactView.scss';
+import { SectionSubtitle, SectionTitle } from '../../shared/section/Section';
+import { EntryTitle, Underline } from '../../shared/entry/Entry';
+import { NavigationBar } from '../../shared/navigation-buttons/NavigationButtons';
+import { LinkButton } from '../../shared/button/Button';
 
 const ContactView = () => {
-  const [language] = useLanguage();
-
   return (
     <Wrapper>
       <Helmet>
-        <title>{content.windowTitle[language]}</title>
+        <title>Gabriel Moreno - Contact</title>
       </Helmet>
       <FadedHeader pictureUrl={content.headerPictureUrl} />
-      <Section
-        title={parse(content.title[language])}
-        subtitle={parse(content.subtitle[language])}
-      >
-        {content.entries.map((entry, id) => (
-          <Entry id={id} key={id} title={parse(entry.title[language])}>
-            {entry.body.type === 'contact:media' && (
-              <>
-                <Paragraph>{parse(entry.body[language])}</Paragraph>
-                <SocialMediaButtons />
-              </>
-            )}
-          </Entry>
-        ))}
-        <NavigationButtons
-          prev={content.navigation.previous}
-          color={'magenta-400'}
-          language={language}
-        />
+      <Section>
+        <SectionTitle>Get in touch 📱</SectionTitle>
+        <SectionSubtitle>Let's build something awesome</SectionSubtitle>
+        <Entry>
+          <EntryTitle>Social media</EntryTitle>
+          <Paragraph>
+            If you have an idea about{' '}
+            <Underline>something you'd like to create</Underline>, a{' '}
+            <Underline>website you have in mind</Underline>, or a{' '}
+            <Underline>business you want to start</Underline>, don't worry —{' '}
+            <Underline>I got you covered</Underline>. You can find me on my
+            social media, I'm constantly updating on each one.
+          </Paragraph>
+          <SocialMediaButtons />
+        </Entry>
+        <NavigationBar>
+          <LinkButton
+            to="/projects"
+            text="Back to my projects"
+            leftIcon="fas fa-arrow-left"
+          />
+        </NavigationBar>
       </Section>
     </Wrapper>
   );
