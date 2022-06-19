@@ -24,6 +24,10 @@ export const Underline = ({ children }) => {
   return <u className="text-white">{children}</u>;
 };
 
+export const Bold = ({ children }) => {
+  return <strong className="text-white">{children}</strong>;
+};
+
 export const ExternalLink = ({ href, children }) => {
   return (
     <a

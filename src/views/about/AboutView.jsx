@@ -13,6 +13,7 @@ import {
   EntryTitle,
   ExternalLink,
   ListItem,
+  Bold,
   Underline,
 } from '../../shared/entry/Entry';
 import { NavigationBar } from '../../shared/navigation-buttons/NavigationButtons';
@@ -69,35 +70,60 @@ const AboutView = () => {
             of:
           </Paragraph>
           <List>
-            <ListItem title="⚛️ React">(front-end library of choice).</ListItem>
-            <ListItem title="⚛️ React Native">
+            <ListItem>
+              <Bold>⚛️ React</Bold>(front-end library of choice).
+            </ListItem>
+            <ListItem>
+              <Bold>📱 React Native</Bold>
               (for mobile applications).
             </ListItem>
-            <ListItem title="🐝 Node.js">
-              (with Express for back-end development).
+            <ListItem>
+              <Bold>🐝 Node.js</Bold> (with Express for back-end development).
             </ListItem>
-            <ListItem title="📦 AWS">
-              (for overall system infrastructure).
+            <ListItem>
+              <Bold>📦 AWS</Bold> (for overall system infrastructure).
             </ListItem>
-            <ListItem title="🐬 MySQL">(for relational databases).</ListItem>
-            <ListItem title="🍃 MongoDB">(for NoSQL databases).</ListItem>
+            <ListItem>
+              <Bold>🐬 MySQL</Bold> (for relational databases).
+            </ListItem>
+            <ListItem>
+              <Bold>🍃 MongoDB </Bold> (for NoSQL databases).
+            </ListItem>
           </List>
           <Paragraph>Although I can also (and usually) work with:</Paragraph>
           <List>
-            <ListItem title="🐍 Python">
-              (with TensorFlow, Pandas, NumPy, Django, Flask).
+            <ListItem>
+              <Bold>🐍 Python</Bold> (with TensorFlow, Pandas, NumPy, Django,
+              Flask).
             </ListItem>
-            <ListItem title="💎 Ruby">
-              (on Rails, for full-stack applications &amp; backend services).
+            <ListItem>
+              <Bold>💎 Ruby</Bold> (on Rails, for full-stack applications &amp;
+              backend services).
             </ListItem>
-            <ListItem title="🐘 PHP">
-              (using Laravel &amp; Bango &mdash; my framework).
+            <ListItem>
+              <Bold>🐘 PHP</Bold> (using Laravel &amp; Bango &mdash; my
+              framework).
             </ListItem>
-            <ListItem title="☕️ Java">
-              (through AWT for graphical applications).
+            <ListItem>
+              <Bold>☕️ Java</Bold> (through AWT for graphical applications).
             </ListItem>
-            <ListItem title="➕ C++">
-              (for data structures &amp; algorithms, machine learning).
+            <ListItem>
+              <Bold>➕ C++</Bold> (for data structures &amp; algorithms, machine
+              learning).
+            </ListItem>
+          </List>
+          <Paragraph>
+            Last (but not least), I work pretty well too with the following
+            environments and/or solutions:
+          </Paragraph>
+          <List>
+            <ListItem>
+              <Bold>🎱 8base</Bold> (as a backend-as-a-service provider with
+              GraphQL).
+            </ListItem>
+            <ListItem>
+              <Bold>🔥 Firebase</Bold> (and Google Cloud Platform for real-time
+              applications).
             </ListItem>
           </List>
         </Entry>
