@@ -1,6 +1,6 @@
 import './Entry.scss';
 
-export const Title = ({ children }) => {
+export const EntryTitle = ({ children }) => {
   return (
     <h3 className="mb-6 text-xl font-bold text-left text-white sm:text-2xl">
       {children}
@@ -8,7 +8,7 @@ export const Title = ({ children }) => {
   );
 };
 
-export const Body = ({ children }) => {
+export const EntryBody = ({ children }) => {
   return <div className="text-gray-600 text-left">{children}</div>;
 };
 
@@ -52,9 +52,9 @@ export const ListItem = ({ title, children, ...rest }) => (
 
 const Entry = ({ title, children }) => {
   return (
-    <div className="mb-12">
-      <Title>{title}</Title>
-      <Body>{children}</Body>
+    <div className="mb-12 text-left text-gray-600">
+      <EntryTitle>{title}</EntryTitle>
+      {children}
     </div>
   );
 };

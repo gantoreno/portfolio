@@ -9,8 +9,14 @@ import {
   FadedHeader,
 } from '../../shared';
 import { LinkButton } from '../../shared/button/Button';
-import { ExternalLink, ListItem, Underline } from '../../shared/entry/Entry';
+import {
+  EntryTitle,
+  ExternalLink,
+  ListItem,
+  Underline,
+} from '../../shared/entry/Entry';
 import { NavigationBar } from '../../shared/navigation-buttons/NavigationButtons';
+import { SectionSubtitle, SectionTitle } from '../../shared/section/Section';
 
 import './AboutView.scss';
 
@@ -21,11 +27,13 @@ const AboutView = () => {
         <title>Gabriel Moreno - About</title>
       </Helmet>
       <FadedHeader pictureUrl="/assets/img/about.png" />
-      <Section
-        title="Hello There! 👋🏻"
-        subtitle="I'm Gabriel, from 🇻🇪 &mdash; your trusted software engineer"
-      >
-        <Entry title="What I Do">
+      <Section>
+        <SectionTitle>Hello There! 👋🏻</SectionTitle>
+        <SectionSubtitle>
+          I'm Gabriel, from 🇻🇪 &mdash; your trusted software engineer
+        </SectionSubtitle>
+        <Entry>
+          <EntryTitle>What I do</EntryTitle>
           <Paragraph>
             I'm a software engineer &amp; full-stack web developer specialized
             in <Underline>commercial projects</Underline>,{' '}
@@ -36,7 +44,10 @@ const AboutView = () => {
             team to transform amazing ideas into exceptional realities.
           </Paragraph>
         </Entry>
-        <Entry title="What I also do">
+        <Entry>
+          <EntryTitle>
+            What I <u>also</u> do
+          </EntryTitle>
           <Paragraph>
             When I'm not developing commercial applications, I'm working on{' '}
             <ExternalLink href="https://github.com/gantoreno">
@@ -51,7 +62,8 @@ const AboutView = () => {
             and improving, one day at a time.
           </Paragraph>
         </Entry>
-        <Entry title="The technologies I use">
+        <Entry>
+          <EntryTitle>The technologies I use</EntryTitle>
           <Paragraph>
             You'll often see me using my preferred tech stack, which consists
             of:
@@ -98,7 +110,7 @@ const AboutView = () => {
           <LinkButton
             to="/projects"
             text="See my projects"
-            leftIcon="fas fa-arrow-right"
+            rightIcon="fas fa-arrow-right"
             hoverBackground="yellow-400"
             opaque
           />

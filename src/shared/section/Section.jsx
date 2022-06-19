@@ -1,10 +1,10 @@
 import './Section.scss';
 
-export const Title = ({ children }) => {
+export const SectionTitle = ({ children }) => {
   return <h1 className="mb-6 text-xl sm:text-2xl font-bold">{children}</h1>;
 };
 
-export const Subtitle = ({ children }) => {
+export const SectionSubtitle = ({ children }) => {
   return (
     <h2 className="mb-12 text-sm text-gray-600 sm:text-base">{children}</h2>
   );
@@ -13,8 +13,8 @@ export const Subtitle = ({ children }) => {
 const Section = ({ title, subtitle, children }) => {
   return (
     <div className="h-auto p-6 text-center md:p-24">
-      <Title>{title}</Title>
-      <Subtitle>{subtitle}</Subtitle>
+      <SectionTitle>{title}</SectionTitle>
+      <SectionSubtitle>{subtitle}</SectionSubtitle>
       {children}
     </div>
   );
