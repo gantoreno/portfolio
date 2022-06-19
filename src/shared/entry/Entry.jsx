@@ -1,5 +1,3 @@
-import parse from 'html-react-parser';
-
 import './Entry.scss';
 
 export const Title = ({ children }) => {
@@ -22,17 +20,35 @@ export const Paragraph = ({ children }) => {
   );
 };
 
-export const List = ({ items, language }) => {
+export const Underline = ({ children }) => {
+  return <u className="text-white">{children}</u>;
+};
+
+export const ExternalLink = ({ href, children }) => {
   return (
-    <ul className="mb-6 text-sm sm:text-base">
-      {items.map((item, id) => (
-        <li id={id} key={id}>
-          {parse(item[language])}
-        </li>
-      ))}
-    </ul>
+    <a
+      href={href}
+      target="_blank"
+      rel="noreferrer"
+      class="text-white underline hover:text-yellow-400 duration-200"
+    >
+      {children}
+    </a>
   );
 };
+
+export const List = ({ children, ...rest }) => (
+  <ul className="mb-6 text-sm sm:text-base" {...rest}>
+    {children}
+  </ul>
+);
+
+export const ListItem = ({ title, children, ...rest }) => (
+  <li {...rest}>
+    {title && <strong className="text-white">{title + ' '}</strong>}
+    {children}
+  </li>
+);
 
 const Entry = ({ title, children }) => {
   return (

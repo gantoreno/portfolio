@@ -3,6 +3,12 @@ import { Button } from '../';
 
 import './NavigationButtons.scss';
 
+export const NavigationBar = ({ children }) => (
+  <div className="flex items-center justify-center sm:justify-between">
+    {children}
+  </div>
+);
+
 const NavigationButtons = ({ prev, next, color, language }) => {
   return (
     <div className="flex items-center justify-center sm:justify-between">

@@ -1,4 +1,14 @@
+import { Link } from 'react-router-dom';
+
 import './Button.scss';
+
+export const LinkButton = ({ to, ...rest }) => {
+  return (
+    <Link to={to}>
+      <Button {...rest} />
+    </Link>
+  );
+};
 
 const Button = ({
   text,
