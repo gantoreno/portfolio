@@ -1,7 +1,8 @@
 import { Helmet } from 'react-helmet';
-import { Link } from 'react-router-dom';
 
-import { Button, Wrapper } from '../../shared/';
+import { Wrapper } from '../../shared/';
+import { LinkButton } from '../../shared/button/Button';
+import { Underline } from '../../shared/entry/Entry';
 
 import './HomeView.scss';
 
@@ -14,19 +15,19 @@ const HomeView = () => {
       <div className="flex flex-col-reverse w-full h-full xl:flex-row">
         <div className="flex flex-col items-center justify-center w-full text-center h-1/2 xl:h-full xl:w-1/2 xl:text-left xl:mr-12 xl:flex xl:flex-col xl:items-start xl:justify-center">
           <h1 className="mb-6 text-3xl font-bold sm:text-4xl">
-            If you can <u>imagine</u> it, I can <u>create</u>it.
+            If you can <Underline>imagine</Underline> it, I can{' '}
+            <Underline>create</Underline> it.
           </h1>
           <h2 className="mb-6 text-lg text-gray-600 sm:text-xl">
             Innovation starts here.
           </h2>
-          <Link to="/about" className="mb-6">
-            <Button
-              text="Get started"
-              rightIcon={'fas fa-arrow-right'}
-              hoverBackground={'green-400'}
-              opaque
-            />
-          </Link>
+          <LinkButton
+            to="/about"
+            text="Get started"
+            rightIcon={'fas fa-arrow-right'}
+            hoverBackground={'green-400'}
+            opaque
+          />
         </div>
         <div className="flex items-center justify-center mb-6 text-center xl:h-full xl:w-1/2 xl:text-right xl:mb-0 xl:ml-12 xl:flex xl:flex-col md:items-start md:justify-center">
           <img
