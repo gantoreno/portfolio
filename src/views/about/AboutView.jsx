@@ -10,14 +10,12 @@ import {
 } from '../../shared';
 import { LinkButton } from '../../shared/button/Button';
 import {
-  EntryTitle,
   ExternalLink,
   ListItem,
   Bold,
   Underline,
 } from '../../shared/entry/Entry';
 import { NavigationBar } from '../../shared/navigation-buttons/NavigationButtons';
-import { SectionSubtitle, SectionTitle } from '../../shared/section/Section';
 
 import './AboutView.scss';
 
@@ -29,12 +27,12 @@ const AboutView = () => {
       </Helmet>
       <FadedHeader pictureUrl="/assets/img/about.png" />
       <Section>
-        <SectionTitle>Hello There! 👋🏻</SectionTitle>
-        <SectionSubtitle>
+        <Section.Title>Hello There! 👋🏻</Section.Title>
+        <Section.Subtitle>
           I'm Gabriel, from 🇻🇪 &mdash; your trusted software engineer
-        </SectionSubtitle>
+        </Section.Subtitle>
         <Entry>
-          <EntryTitle>What I do</EntryTitle>
+          <Entry.Title>What I do</Entry.Title>
           <Paragraph>
             I'm a software engineer &amp; full-stack web developer specialized
             in <Underline>commercial projects</Underline>,{' '}
@@ -46,9 +44,9 @@ const AboutView = () => {
           </Paragraph>
         </Entry>
         <Entry>
-          <EntryTitle>
+          <Entry.Title>
             What I <u>also</u> do
-          </EntryTitle>
+          </Entry.Title>
           <Paragraph>
             When I'm not developing commercial applications, I'm working on{' '}
             <ExternalLink href="https://github.com/gantoreno">
@@ -64,7 +62,7 @@ const AboutView = () => {
           </Paragraph>
         </Entry>
         <Entry>
-          <EntryTitle>The technologies I use</EntryTitle>
+          <Entry.Title>The technologies I use</Entry.Title>
           <Paragraph>
             You'll often see me using my preferred tech stack, which consists
             of:

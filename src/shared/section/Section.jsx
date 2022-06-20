@@ -14,4 +14,7 @@ const Section = ({ children }) => {
   return <div className="h-auto p-6 text-center md:p-24">{children}</div>;
 };
 
+Section.Title = SectionTitle;
+Section.Subtitle = SectionSubtitle;
+
 export default Section;

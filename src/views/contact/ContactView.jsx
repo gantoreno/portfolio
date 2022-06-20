@@ -10,8 +10,7 @@ import {
 } from '../../shared';
 
 import './ContactView.scss';
-import { SectionSubtitle, SectionTitle } from '../../shared/section/Section';
-import { EntryTitle, Underline } from '../../shared/entry/Entry';
+import { Underline } from '../../shared/entry/Entry';
 import { NavigationBar } from '../../shared/navigation-buttons/NavigationButtons';
 import { LinkButton } from '../../shared/button/Button';
 
@@ -23,10 +22,10 @@ const ContactView = () => {
       </Helmet>
       <FadedHeader pictureUrl="/assets/img/contact.png" />
       <Section>
-        <SectionTitle>Get in touch 📱</SectionTitle>
-        <SectionSubtitle>Let's build something awesome</SectionSubtitle>
+        <Section.Title>Get in touch 📱</Section.Title>
+        <Section.Subtitle>Let's build something awesome</Section.Subtitle>
         <Entry>
-          <EntryTitle>Social media</EntryTitle>
+          <Entry.Title>Social media</Entry.Title>
           <Paragraph>
             If you have an idea about{' '}
             <Underline>something you'd like to create</Underline>, a{' '}

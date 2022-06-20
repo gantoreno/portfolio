@@ -1,5 +1,6 @@
-import './Entry.scss';
 import { default as M, ResponsiveMasonry } from 'react-responsive-masonry';
+
+import './Entry.scss';
 
 export const EntryTitle = ({ children }) => {
   return (
@@ -7,10 +8,6 @@ export const EntryTitle = ({ children }) => {
       {children}
     </h3>
   );
-};
-
-export const EntryBody = ({ children }) => {
-  return <div className="text-gray-600 text-left">{children}</div>;
 };
 
 export const Paragraph = ({ children, className }) => {
@@ -80,13 +77,10 @@ export const Code = ({ children }) => (
   <code class="bg-gray-750 text-gray-600 rounded">{children}</code>
 );
 
-const Entry = ({ title, children }) => {
-  return (
-    <div className="mb-12 text-left text-gray-600">
-      <EntryTitle>{title}</EntryTitle>
-      {children}
-    </div>
-  );
+const Entry = ({ children }) => {
+  return <div className="mb-12 text-left text-gray-600">{children}</div>;
 };
+
+Entry.Title = EntryTitle;
 
 export default Entry;

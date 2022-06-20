@@ -1,6 +1,19 @@
-export { default as Button } from './button/Button';
+export {
+  default as Button,
+  LinkButton,
+  ExternalLinkButton,
+} from './button/Button';
 export { default as FadedHeader } from './faded-header/FadedHeader';
-export { default as Entry, Paragraph, List } from './entry/Entry';
+export {
+  default as Entry,
+  Paragraph,
+  List,
+  Underline,
+  Bold,
+  Code,
+  Figure,
+  ExternalLink,
+} from './entry/Entry';
 export { default as Section } from './section/Section';
 export { default as Wrapper } from './wrapper/Wrapper';
 export { default as NavigationButtons } from './navigation-buttons/NavigationButtons';

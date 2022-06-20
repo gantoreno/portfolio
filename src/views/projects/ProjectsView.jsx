@@ -1,4 +1,5 @@
 import { Helmet } from 'react-helmet';
+import React from 'react';
 
 import {
   Entry,
@@ -104,12 +105,12 @@ const ProjectsView = () => {
       </Helmet>
       <FadedHeader pictureUrl="/assets/img/code.png" />
       <Section>
-        <SectionTitle>My projects 👨🏻‍💻</SectionTitle>
-        <SectionSubtitle>
+        <Section.Title>My projects 👨🏻‍💻</Section.Title>
+        <Section.Subtitle>
           Take a look at some of the things I've worked on
-        </SectionSubtitle>
+        </Section.Subtitle>
         <Entry>
-          <EntryTitle>Commercial projects</EntryTitle>
+          <Entry.Title>Commercial projects</Entry.Title>
           <Paragraph>
             For the past 3+ years, I've been working really close to known
             companies from around the world, doing{' '}
@@ -150,7 +151,7 @@ const ProjectsView = () => {
           />
         </Entry>
         <Entry>
-          <EntryTitle>Personal &amp; open source</EntryTitle>
+          <Entry.Title>Personal &amp; open source</Entry.Title>
           <Paragraph>
             <Underline>Open source</Underline> &amp;{' '}
             <Underline>side projects</Underline> are important too! I've spent a
@@ -205,7 +206,7 @@ const ProjectsView = () => {
           </Masonry>
         </Entry>
         <Entry>
-          <EntryTitle>Themes &amp; tools</EntryTitle>
+          <Entry.Title>Themes &amp; tools</Entry.Title>
           <Paragraph>
             I'm a big fan of building my own tools &amp; making them look as I
             feel comfortable with. This, of course, involves the colors on my{' '}
