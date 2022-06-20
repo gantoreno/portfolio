@@ -77,7 +77,7 @@ export const Figure = ({ src, alt, caption }) => (
 );
 
 export const Code = ({ children }) => (
-  <code class="bg-gray-800 text-gray-600 rounded">{children}</code>
+  <code class="bg-gray-800 text-white rounded">{children}</code>
 );
 
 export const CodeBlock = withSnackbar(

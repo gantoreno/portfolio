@@ -213,7 +213,7 @@ const ProjectsView = () => {
           <Figure
             src="/assets/img/tools.png"
             alt="VSCode and iTerm2"
-            caption="Visual Studio Code along iTerm2 with Google Sans Mono @ 12px"
+            caption="Visual Studio Code, along iTerm2 with Google Sans Mono @ 12px"
           />
           <Paragraph>
             You can grab it from the{' '}
@@ -230,6 +230,41 @@ const ProjectsView = () => {
             terminal's <Underline>16 color palette</Underline> and copy it to
             your preferred terminal emulator if you want to match it with the
             editor as I do.
+          </Paragraph>
+          <Figure
+            src="/assets/img/colors.png"
+            alt="iTerm2"
+            caption="My iTerm2 colorscheme"
+          />
+          <Paragraph>
+            I've crafted a whole <Underline>ecosystem</Underline> &amp;{' '}
+            <Underline>design language based</Underline> on my favorite colors,
+            creating a warm &amp; cozy atmosphere that is easy in the eyes for
+            long coding sessions. Also, do you know the{' '}
+            <ExternalLink href="https://www.vim.org/">Vim</ExternalLink> editor?
+            Well, I have a colorscheme for you too.
+          </Paragraph>
+          <Figure
+            src="/assets/img/vim.png"
+            alt="The Vim editor"
+            caption="iTerm2 running (Neo)vim, along with the Vim Gabriel colorscheme."
+          />
+          <Paragraph>
+            If you're a <Underline>heavy command-line user</Underline> (like
+            me), you're familiar with command-line text editors (like
+            Vim/Neovim), and, for an extra touch of consistency, you can also
+            grab my{' '}
+            <ExternalLink href="https://github.com/gantoreno/vim-gabriel">
+              Vim theme
+            </ExternalLink>{' '}
+            and use it to finally complete the ecosystem (or simply import{' '}
+            <Code>gantoreno/vim-gabriel</Code> in your <Code>.vimrc</Code>/
+            <Code>init.vim</Code> with your package manager of choice). Make
+            sure to check that out! (Also, feel free to have a look around my{' '}
+            <ExternalLink href="https://github.com/gantoreno/dotfiles">
+              dotfiles
+            </ExternalLink>{' '}
+            to see all my configs &amp; tools).
           </Paragraph>
         </Entry>
         <NavigationBar>
