@@ -1,8 +1,6 @@
 import { Helmet } from 'react-helmet';
 
-import { Wrapper } from '../../shared/';
-import { LinkButton } from '../../shared/button/Button';
-import { Underline } from '../../shared/entry/Entry';
+import { Wrapper, LinkButton, Underline } from '../../shared/';
 
 import './HomeView.scss';
 

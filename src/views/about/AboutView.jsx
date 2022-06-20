@@ -7,15 +7,12 @@ import {
   Section,
   Wrapper,
   FadedHeader,
-} from '../../shared';
-import { LinkButton } from '../../shared/button/Button';
-import {
   ExternalLink,
-  ListItem,
   Bold,
   Underline,
-} from '../../shared/entry/Entry';
-import { NavigationBar } from '../../shared/navigation-buttons/NavigationButtons';
+  LinkButton,
+  NavigationBar,
+} from '../../shared';
 
 import './AboutView.scss';
 
@@ -68,60 +65,60 @@ const AboutView = () => {
             of:
           </Paragraph>
           <List>
-            <ListItem>
+            <List.Item>
               <Bold>⚛️ React</Bold> (front-end library of choice).
-            </ListItem>
-            <ListItem>
+            </List.Item>
+            <List.Item>
               <Bold>📱 React Native</Bold> (for mobile applications).
-            </ListItem>
-            <ListItem>
+            </List.Item>
+            <List.Item>
               <Bold>🐝 Node.js</Bold> (with Express for back-end development).
-            </ListItem>
-            <ListItem>
+            </List.Item>
+            <List.Item>
               <Bold>📦 AWS</Bold> (for overall system infrastructure).
-            </ListItem>
-            <ListItem>
+            </List.Item>
+            <List.Item>
               <Bold>🐬 MySQL</Bold> (for relational databases).
-            </ListItem>
-            <ListItem>
+            </List.Item>
+            <List.Item>
               <Bold>🍃 MongoDB </Bold> (for NoSQL databases).
-            </ListItem>
+            </List.Item>
           </List>
           <Paragraph>Although I can also (and usually) work with:</Paragraph>
           <List>
-            <ListItem>
+            <List.Item>
               <Bold>🐍 Python</Bold> (with TensorFlow, Pandas, NumPy, Django,
               Flask).
-            </ListItem>
-            <ListItem>
+            </List.Item>
+            <List.Item>
               <Bold>💎 Ruby</Bold> (on Rails, for full-stack applications &amp;
               backend services).
-            </ListItem>
-            <ListItem>
+            </List.Item>
+            <List.Item>
               <Bold>🐘 PHP</Bold> (using Laravel &amp; Bango &mdash; my
               framework).
-            </ListItem>
-            <ListItem>
+            </List.Item>
+            <List.Item>
               <Bold>☕️ Java</Bold> (through AWT for graphical applications).
-            </ListItem>
-            <ListItem>
+            </List.Item>
+            <List.Item>
               <Bold>➕ C++</Bold> (for data structures &amp; algorithms, machine
               learning).
-            </ListItem>
+            </List.Item>
           </List>
           <Paragraph>
             Last (but not least), I work pretty well too with the following
             environments and/or solutions:
           </Paragraph>
           <List>
-            <ListItem>
+            <List.Item>
               <Bold>🎱 8base</Bold> (as a backend-as-a-service provider with
               GraphQL).
-            </ListItem>
-            <ListItem>
+            </List.Item>
+            <List.Item>
               <Bold>🔥 Firebase</Bold> (and Google Cloud Platform for real-time
               applications).
-            </ListItem>
+            </List.Item>
           </List>
         </Entry>
         <NavigationBar>

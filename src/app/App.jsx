@@ -1,10 +1,5 @@
 import { Helmet } from 'react-helmet';
-import {
-  BrowserRouter as Router,
-  Route,
-  Switch,
-  useLocation,
-} from 'react-router-dom';
+import { BrowserRouter, Route, Switch, useLocation } from 'react-router-dom';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
 import {
@@ -34,27 +29,25 @@ const ContentView = () => {
   );
 };
 
-const App = () => {
-  return (
-    <div className="flex justify-center background">
-      <div className="flex h-screen text-white bg-gray-900 max-w-screen-2xl">
-        <Helmet>
-          <script
-            src="https://kit.fontawesome.com/90fab40786.js"
-            crossorigin="anonymous"
-          ></script>
-          <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
-          />
-        </Helmet>
-        <Router>
-          <ProfileView />
-          <ContentView />
-        </Router>
-      </div>
+const App = () => (
+  <div className="flex justify-center background">
+    <div className="flex h-screen text-white bg-gray-900 max-w-screen-2xl">
+      <Helmet>
+        <script
+          src="https://kit.fontawesome.com/90fab40786.js"
+          crossorigin="anonymous"
+        ></script>
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+        />
+      </Helmet>
+      <BrowserRouter>
+        <ProfileView />
+        <ContentView />
+      </BrowserRouter>
     </div>
-  );
-};
+  </div>
+);
 
 export default App;

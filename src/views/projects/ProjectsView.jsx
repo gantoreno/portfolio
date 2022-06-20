@@ -8,21 +8,17 @@ import {
   Section,
   Tag,
   Wrapper,
-} from '../../shared';
-
-import './ProjectsView.scss';
-import { SectionSubtitle, SectionTitle } from '../../shared/section/Section';
-import {
   Code,
-  EntryTitle,
   ExternalLink,
   Figure,
   Masonry,
   Underline,
-} from '../../shared/entry/Entry';
-import { ExternalLinkButton, LinkButton } from '../../shared/button/Button';
+  ExternalLinkButton,
+  LinkButton,
+  NavigationBar,
+} from '../../shared';
 
-import { NavigationBar } from '../../shared/navigation-buttons/NavigationButtons';
+import './ProjectsView.scss';
 
 const CommercialProject = ({ pictureUrl, title, source, tags = [] }) => {
   return (

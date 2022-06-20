@@ -54,6 +54,8 @@ export const ListItem = ({ title, children, ...rest }) => (
   </li>
 );
 
+List.Item = ListItem;
+
 export const Masonry = ({ children }) => (
   <ResponsiveMasonry columnsCountBreakPoints={{ 200: 1, 1024: 2 }}>
     <M gutter="24px">{children}</M>

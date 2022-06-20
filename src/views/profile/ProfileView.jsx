@@ -23,7 +23,7 @@ const Banner = ({ title, subtitle }) => (
 const NavigationLink = ({ to, icon, title }) => (
   <NavLink
     to={to}
-    className="font-medium mr-auto"
+    className="font-medium mx-auto lg:mr-auto xl:ml-0"
     activeClassName="text-white font-bold active"
     exact
   >

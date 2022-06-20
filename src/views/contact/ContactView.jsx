@@ -7,12 +7,12 @@ import {
   Section,
   SocialMediaButtons,
   Wrapper,
+  Underline,
+  NavigationBar,
+  LinkButton,
 } from '../../shared';
 
 import './ContactView.scss';
-import { Underline } from '../../shared/entry/Entry';
-import { NavigationBar } from '../../shared/navigation-buttons/NavigationButtons';
-import { LinkButton } from '../../shared/button/Button';
 
 const ContactView = () => {
   return (
