@@ -232,7 +232,7 @@ const ProjectsView = () => {
           <Figure
             src="/assets/img/colors.png"
             alt="iTerm2"
-            caption="My iTerm2 colorscheme"
+            caption="My iTerm2 setup &amp; colorscheme definition"
           />
           <Paragraph>
             I've crafted a whole <Underline>ecosystem</Underline> &amp;{' '}
@@ -245,7 +245,7 @@ const ProjectsView = () => {
           <Figure
             src="/assets/img/vim.png"
             alt="The Vim editor"
-            caption="iTerm2 running (Neo)vim, along with the Vim Gabriel colorscheme."
+            caption="iTerm2 running (Neo)vim, along with the Vim Gabriel colorscheme"
           />
           <Paragraph>
             If you're a <Underline>heavy command-line user</Underline> (like
