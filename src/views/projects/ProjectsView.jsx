@@ -1,21 +1,20 @@
 import { Helmet } from 'react-helmet';
-import React from 'react';
 
 import {
+  Code,
   Entry,
+  ExternalLink,
+  ExternalLinkButton,
   FadedHeader,
+  Figure,
+  LinkButton,
+  Masonry,
+  NavigationBar,
   Paragraph,
   Section,
   Tag,
-  Wrapper,
-  Code,
-  ExternalLink,
-  Figure,
-  Masonry,
   Underline,
-  ExternalLinkButton,
-  LinkButton,
-  NavigationBar,
+  Wrapper,
 } from '../../shared';
 
 import './ProjectsView.scss';

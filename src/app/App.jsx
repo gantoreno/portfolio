@@ -1,13 +1,13 @@
 import { Helmet } from 'react-helmet';
 import { BrowserRouter, Route, Switch, useLocation } from 'react-router-dom';
-import { TransitionGroup, CSSTransition } from 'react-transition-group';
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
 import {
-  ProfileView,
-  HomeView,
   AboutView,
-  ProjectsView,
   ContactView,
+  HomeView,
+  ProfileView,
+  ProjectsView,
 } from '../views';
 
 import './App.scss';

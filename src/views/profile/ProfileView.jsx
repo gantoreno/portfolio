@@ -1,9 +1,8 @@
 import { NavLink } from 'react-router-dom';
 
-import { Wrapper, SocialMediaButtons } from '../../shared';
+import { SocialMediaButtons, Wrapper } from '../../shared';
 
 import logo from '../../assets/svg/logo.svg';
-
 import react from '../../assets/img/react.png';
 import tailwind from '../../assets/img/tailwind.png';
 

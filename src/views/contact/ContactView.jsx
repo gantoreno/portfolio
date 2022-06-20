@@ -3,13 +3,13 @@ import { Helmet } from 'react-helmet';
 import {
   Entry,
   FadedHeader,
+  LinkButton,
+  NavigationBar,
   Paragraph,
   Section,
   SocialMediaButtons,
-  Wrapper,
   Underline,
-  NavigationBar,
-  LinkButton,
+  Wrapper,
 } from '../../shared';
 
 import './ContactView.scss';

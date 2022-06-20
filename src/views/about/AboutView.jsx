@@ -1,17 +1,17 @@
 import { Helmet } from 'react-helmet';
 
 import {
+  Bold,
   Entry,
+  ExternalLink,
+  FadedHeader,
+  LinkButton,
   List,
+  NavigationBar,
   Paragraph,
   Section,
-  Wrapper,
-  FadedHeader,
-  ExternalLink,
-  Bold,
   Underline,
-  LinkButton,
-  NavigationBar,
+  Wrapper,
 } from '../../shared';
 
 import './AboutView.scss';
