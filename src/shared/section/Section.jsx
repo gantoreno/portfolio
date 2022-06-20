@@ -10,14 +10,8 @@ export const SectionSubtitle = ({ children }) => {
   );
 };
 
-const Section = ({ title, subtitle, children }) => {
-  return (
-    <div className="h-auto p-6 text-center md:p-24">
-      <SectionTitle>{title}</SectionTitle>
-      <SectionSubtitle>{subtitle}</SectionSubtitle>
-      {children}
-    </div>
-  );
+const Section = ({ children }) => {
+  return <div className="h-auto p-6 text-center md:p-24">{children}</div>;
 };
 
 export default Section;

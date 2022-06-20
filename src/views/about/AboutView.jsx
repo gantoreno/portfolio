@@ -127,11 +127,7 @@ const AboutView = () => {
           </List>
         </Entry>
         <NavigationBar>
-          <LinkButton
-            to="/home"
-            text="Back to home"
-            leftIcon="fas fa-arrow-left"
-          />
+          <LinkButton to="/" text="Back to home" leftIcon="fas fa-arrow-left" />
           <LinkButton
             to="/projects"
             text="See my projects"
