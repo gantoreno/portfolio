@@ -2,6 +2,7 @@ import { Helmet } from 'react-helmet';
 
 import {
   Code,
+  CodeBlock,
   Entry,
   ExternalLink,
   ExternalLinkButton,
@@ -215,17 +216,20 @@ const ProjectsView = () => {
             caption="Visual Studio Code along iTerm2 with Google Sans Mono @ 12px"
           />
           <Paragraph>
-            You can download it in the{' '}
+            You can grab it from the{' '}
             <ExternalLink href="https://marketplace.visualstudio.com/items?itemName=gantoreno.gabriel">
               Visual Studio Code Marketplace
             </ExternalLink>
             , or by opening the command palette with <Code>⌘</Code>{' '}
             <Code>p</Code> (or <Code>^</Code> <Code>p</Code> if you're on
-            Windows) and typing in <Code>ext install gabriel</Code>, I'm sure
-            you'll recognize it. Aditionally, you can copy the terminal's{' '}
-            <Underline>16 color palette</Underline> and copy it to your
-            preferred terminal emulator if you want to match it with the editor
-            as I do.
+            Windows) and typing in the following:{' '}
+          </Paragraph>
+          <CodeBlock>ext install gabriel</CodeBlock>
+          <Paragraph>
+            You'll know it when you see it. Aditionally, you can copy the
+            terminal's <Underline>16 color palette</Underline> and copy it to
+            your preferred terminal emulator if you want to match it with the
+            editor as I do.
           </Paragraph>
         </Entry>
         <NavigationBar>

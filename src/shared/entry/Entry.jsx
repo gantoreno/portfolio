@@ -1,4 +1,5 @@
 import { default as M, ResponsiveMasonry } from 'react-responsive-masonry';
+import { withSnackbar, useSnackbar } from 'react-simple-snackbar';
 
 import './Entry.scss';
 
@@ -76,7 +77,41 @@ export const Figure = ({ src, alt, caption }) => (
 );
 
 export const Code = ({ children }) => (
-  <code class="bg-gray-750 text-gray-600 rounded">{children}</code>
+  <code class="bg-gray-800 text-gray-600 rounded">{children}</code>
+);
+
+export const CodeBlock = withSnackbar(
+  ({ children, openSnackbar }) => {
+    const copy = () => {
+      navigator.clipboard.writeText(children).then(() => {
+        openSnackbar('✅ Command copied to the clipboard');
+      });
+    };
+
+    return (
+      <pre className="mb-6 text-left w-full text-white p-3 rounded bg-gray-800 text-xs sm:text-sm relative">
+        {children}
+        <span
+          className="absolute top-3 right-3 cursor-pointer text-gray-600 opacity-50 hover:opacity-100 transition-all"
+          onClick={copy}
+        >
+          {'📋'}
+        </span>
+      </pre>
+    );
+  },
+  {
+    style: {
+      background: '#d0d0d0',
+      color: '#0d0d0d',
+      fontFamily: 'Quicksand',
+      fontWeight: 'bold',
+      textAlign: 'center',
+    },
+    closeStyle: {
+      display: 'none',
+    },
+  }
 );
 
 const Entry = ({ children }) => {

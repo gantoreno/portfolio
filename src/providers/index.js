@@ -1,7 +1,10 @@
+import SnackbarProvider from 'react-simple-snackbar';
 import { LanguageProvider } from './language';
 
 const Providers = ({ children }) => (
-  <LanguageProvider>{children}</LanguageProvider>
+  <SnackbarProvider>
+    <LanguageProvider>{children}</LanguageProvider>
+  </SnackbarProvider>
 );
 
 export default Providers;
