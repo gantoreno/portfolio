@@ -2,6 +2,14 @@ import { Link } from 'react-router-dom';
 
 import './Button.scss';
 
+export const ExternalLinkButton = ({ href, ...rest }) => {
+  return (
+    <a href={href} target="_blank" rel="noreferrer">
+      <Button {...rest} />
+    </a>
+  );
+};
+
 export const LinkButton = ({ to, ...rest }) => {
   return (
     <Link to={to}>

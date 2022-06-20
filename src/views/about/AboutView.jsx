@@ -71,11 +71,10 @@ const AboutView = () => {
           </Paragraph>
           <List>
             <ListItem>
-              <Bold>⚛️ React</Bold>(front-end library of choice).
+              <Bold>⚛️ React</Bold> (front-end library of choice).
             </ListItem>
             <ListItem>
-              <Bold>📱 React Native</Bold>
-              (for mobile applications).
+              <Bold>📱 React Native</Bold> (for mobile applications).
             </ListItem>
             <ListItem>
               <Bold>🐝 Node.js</Bold> (with Express for back-end development).

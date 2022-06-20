@@ -1,4 +1,5 @@
 import './Entry.scss';
+import { default as M, ResponsiveMasonry } from 'react-responsive-masonry';
 
 export const EntryTitle = ({ children }) => {
   return (
@@ -12,9 +13,11 @@ export const EntryBody = ({ children }) => {
   return <div className="text-gray-600 text-left">{children}</div>;
 };
 
-export const Paragraph = ({ children }) => {
+export const Paragraph = ({ children, className }) => {
   return (
-    <p className="mb-6 text-sm sm:text-base text-left text-gray-600">
+    <p
+      className={`mb-6 text-sm sm:text-base text-left text-gray-600 ${className}`}
+    >
       {children}
     </p>
   );
@@ -52,6 +55,29 @@ export const ListItem = ({ title, children, ...rest }) => (
     {title && <strong className="text-white">{title + ' '}</strong>}
     {children}
   </li>
+);
+
+export const Masonry = ({ children }) => (
+  <ResponsiveMasonry columnsCountBreakPoints={{ 200: 1, 1024: 2 }}>
+    <M gutter="24px">{children}</M>
+  </ResponsiveMasonry>
+);
+
+export const Figure = ({ src, alt, caption }) => (
+  <figure className="mb-6">
+    <img src={src} alt={alt} />
+    {caption && (
+      <center>
+        <figcaption>
+          <small className="text-xs sm:text-sm">{caption}</small>
+        </figcaption>
+      </center>
+    )}
+  </figure>
+);
+
+export const Code = ({ children }) => (
+  <code class="bg-gray-750 text-gray-600 rounded">{children}</code>
 );
 
 const Entry = ({ title, children }) => {

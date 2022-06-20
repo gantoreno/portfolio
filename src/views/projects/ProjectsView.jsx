@@ -1,30 +1,29 @@
-import parse from 'html-react-parser';
 import { Helmet } from 'react-helmet';
 
 import {
-  Button,
   Entry,
   FadedHeader,
-  NavigationButtons,
   Paragraph,
   Section,
   Tag,
   Wrapper,
 } from '../../shared';
-import { useLanguage } from '../../hooks';
-
-import content from './content.json';
-import languages from '../../extras/languages.json';
 
 import './ProjectsView.scss';
+import { SectionSubtitle, SectionTitle } from '../../shared/section/Section';
+import {
+  Code,
+  EntryTitle,
+  ExternalLink,
+  Figure,
+  Masonry,
+  Underline,
+} from '../../shared/entry/Entry';
+import { ExternalLinkButton, LinkButton } from '../../shared/button/Button';
 
-const CommercialProjectOverview = ({
-  pictureUrl,
-  title,
-  source,
-  language,
-  tags = [],
-}) => {
+import { NavigationBar } from '../../shared/navigation-buttons/NavigationButtons';
+
+const CommercialProject = ({ pictureUrl, title, source, tags = [] }) => {
   return (
     <div className="flex-wrap content-center mb-6 rounded shadow-lg lg:flex bg-grey">
       <div className="lg:flex lg:w-1/3">
@@ -35,9 +34,9 @@ const CommercialProjectOverview = ({
       <div className="lg:flex lg:w-2/3">
         <div className="lg:flex-1">
           <div className="flex flex-col items-start justify-center h-full mt-6 text-left lg:mt-0 lg:ml-6">
-            <h3 className="mb-3 text-xl sm:text-2xl font-bold text-left text-white">
-              {parse(title)}
-            </h3>
+            <h4 className="mb-3 text-xl sm:text-2xl font-bold text-left text-white">
+              {title}
+            </h4>
             {tags.length > 0 && (
               <div className="mb-6 leading-6">
                 <span className="text-sm mr-2">
@@ -48,28 +47,15 @@ const CommercialProjectOverview = ({
                 ))}
               </div>
             )}
-            <a href={source.link} target="_blank" rel="noreferrer">
-              {source.name === 'live' && (
-                <Button
-                  text={language === languages.EN ? 'View live' : 'Ver en vivo'}
-                  rightIcon={'fab fa-brands fa-chrome ml-3'}
-                  hoverBackground="red-400"
-                  opaque
-                />
-              )}
-              {source.name === 'behance' && (
-                <Button
-                  text={
-                    language === languages.EN
-                      ? 'View on Bēhance'
-                      : 'Ver en Bēhance'
-                  }
-                  rightIcon={'fab fa-behance ml-3'}
-                  hoverBackground="red-400"
-                  opaque
-                />
-              )}
-            </a>
+            {source && (
+              <ExternalLinkButton
+                href={source}
+                text="View"
+                leftIcon="fa-solid fa-arrow-up-right-from-square"
+                hoverBackground="red-400"
+                opaque
+              />
+            )}
           </div>
         </div>
       </div>
@@ -77,7 +63,7 @@ const CommercialProjectOverview = ({
   );
 };
 
-const GitHubProjectCard = ({
+const GitHubProject = ({
   emoji,
   title,
   description,
@@ -94,139 +80,172 @@ const GitHubProjectCard = ({
         <h3 className="text-xl font-bold text-white sm:text-2xl">{title}</h3>
       </div>
       <div className="p-6 border-b border-gray-725 text-left text-sm sm:text-base">
-        {parse(description)}
+        {description}
       </div>
       <div className="p-6">
-        <a href={link} target="_blank" rel="noreferrer">
-          <Button
-            text={
-              language === languages.EN ? `View on GitHub` : `Ver en GitHub`
-            }
-            rightIcon={'fab fa-github'}
-            hoverBackground={'red-400'}
-            className={'mx-auto'}
-            opaque
-          />
-        </a>
-      </div>
-    </div>
-  );
-};
-
-const CommercialProjectsList = ({ body, language }) => {
-  return (
-    <div className="mb-12">
-      <Paragraph>{parse(body[language])}</Paragraph>
-      {body.projects.map((project, id) => (
-        <CommercialProjectOverview
-          id={id}
-          key={id}
-          title={project.title[language]}
-          pictureUrl={project.pictureUrl}
-          tags={project.tags}
-          source={project.source}
-          language={language}
+        <ExternalLinkButton
+          href={link}
+          text="View on GitHub"
+          rightIcon="fab fa-github"
+          hoverBackground="red-400"
+          className="mx-auto"
+          opaque
         />
-      ))}
-    </div>
-  );
-};
-
-const PersonalProjectsGrid = ({ body, language }) => {
-  return (
-    <div className="mb-6">
-      <Paragraph>{parse(body[language])}</Paragraph>
-      <div className="flex flex-col mb-12 lg:flex-row">
-        <div className="w-full mb-6 mr-0 lg:w-1/2 lg:mr-3 project-grid">
-          {body.projects.map(
-            (project, id) =>
-              id % 2 === 0 && (
-                <GitHubProjectCard
-                  id={id}
-                  key={id}
-                  emoji={project.emoji}
-                  title={project.title}
-                  description={project.description[language]}
-                  link={project.githubLink}
-                  className="mb-6"
-                  language={language}
-                />
-              )
-          )}
-        </div>
-        <div className="w-full ml-0 lg:w-1/2 lg:ml-3 project-grid">
-          {body.projects.map(
-            (project, id) =>
-              id % 2 !== 0 && (
-                <GitHubProjectCard
-                  id={id}
-                  key={id}
-                  emoji={project.emoji}
-                  title={project.title}
-                  description={project.description[language]}
-                  link={project.githubLink}
-                  className="mb-6"
-                  language={language}
-                />
-              )
-          )}
-        </div>
       </div>
-    </div>
-  );
-};
-
-const ThemesAndTools = ({ body, language }) => {
-  return (
-    <div>
-      <Paragraph>{parse(body[language])}</Paragraph>
-      <figure className="mb-6">
-        <img src={body.pictureUrl} alt="Themes and tools" />
-        <center>
-          <figcaption>
-            <small className="text-xs sm:text-sm">
-              {parse(body.pictureCaption[language])}
-            </small>
-          </figcaption>
-        </center>
-      </figure>
-      <Paragraph>{parse(body.bottomText[language])}</Paragraph>
     </div>
   );
 };
 
 const ProjectsView = () => {
-  const [language] = useLanguage();
-
   return (
     <Wrapper>
       <Helmet>
-        <title>{content.windowTitle[language]}</title>
+        <title>Gabriel Moreno - Projects</title>
       </Helmet>
-      <FadedHeader pictureUrl={content.headerPictureUrl} />
-      <Section
-        title={parse(content.title[language])}
-        subtitle={parse(content.subtitle[language])}
-      >
-        {content.entries.map((entry, id) => (
-          <Entry id={id} key={id} title={parse(entry.title[language])}>
-            {entry.body.type === 'projects:tools' && (
-              <ThemesAndTools body={entry.body} language={language} />
-            )}
-            {entry.body.type === 'projects:commercial' && (
-              <CommercialProjectsList body={entry.body} language={language} />
-            )}
-            {entry.body.type === 'projects:personal' && (
-              <PersonalProjectsGrid body={entry.body} language={language} />
-            )}
-          </Entry>
-        ))}
-        <NavigationButtons
-          prev={content.navigation.previous}
-          next={content.navigation.next}
-          color={'red-400'}
-          language={language}
-        />
+      <FadedHeader pictureUrl="/assets/img/code.png" />
+      <Section>
+        <SectionTitle>My projects 👨🏻‍💻</SectionTitle>
+        <SectionSubtitle>
+          Take a look at some of the things I've worked on
+        </SectionSubtitle>
+        <Entry>
+          <EntryTitle>Commercial projects</EntryTitle>
+          <Paragraph>
+            For the past 3+ years, I've been working really close to known
+            companies from around the world, doing{' '}
+            <Underline>web consulting</Underline> &amp;{' '}
+            <Underline>project assessments</Underline>. These are some of the
+            most remarkable projects I've had the fortune to develop and see in
+            action:
+          </Paragraph>
+          <CommercialProject
+            title="Insightt — Repossession Tool"
+            pictureUrl="/assets/img/projects/insightt.png"
+            source="https://insightt.io"
+            tags={['react', 'react-native', 'node', 'aws', 'firebase']}
+          />
+          <CommercialProject
+            title="Resident — Student Housing"
+            pictureUrl="/assets/img/projects/resident.png"
+            source="https://app.resident.io"
+            tags={['react', 'typescript', '8base', 'graphql']}
+          />
+          <CommercialProject
+            title="Totalcom Venezuela — ISP"
+            pictureUrl="https://mir-s3-cdn-cf.behance.net/projects/max_808/0d25a0109534879.Y3JvcCwxNTk4MiwxMjUwMSwyNDEzLDA.png"
+            source="https://www.behance.net/gallery/109534879/Totalcom-Venezuela-ISP"
+            tags={['react', 'node', 'scss']}
+          />
+          <CommercialProject
+            title="Resivenca — Internet + Energy"
+            pictureUrl="https://mir-s3-cdn-cf.behance.net/projects/max_808/9a9f98109535527.Y3JvcCwxNTk4MSwxMjUwMCwyNjUwLDA.png"
+            source="https://www.behance.net/gallery/109535527/Resivenca-Internet-Energia"
+            tags={['react', 'next', 'scss']}
+          />
+          <CommercialProject
+            title="CWV — Project Management System"
+            pictureUrl="https://mir-s3-cdn-cf.behance.net/projects/max_808/bc47d3109540181.Y3JvcCwxNTk4MSwxMjUwMCwyNDEyLDA.png"
+            source="https://www.behance.net/gallery/109540181/CWV-Project-Management-System"
+            tags={['php', 'laravel', 'javascript', 'scss']}
+          />
+        </Entry>
+        <Entry>
+          <EntryTitle>Personal &amp; open source</EntryTitle>
+          <Paragraph>
+            <Underline>Open source</Underline> &amp;{' '}
+            <Underline>side projects</Underline> are important too! I've spent a
+            major part of the past couple years working on{' '}
+            <Underline>web development</Underline>,{' '}
+            <Underline>ai-related stuff</Underline> &amp;{' '}
+            <Underline>small interesting projects</Underline>. Some of them are:
+          </Paragraph>
+          <Masonry>
+            <GitHubProject
+              emoji="❤️"
+              title="Curtis"
+              description="The cardiovascular unified real-time intelligent system — ECG analysis through an AI-based mobile app."
+              link="https://github.com/gantoreno/curtis-app"
+            />
+            <GitHubProject
+              emoji="🐘"
+              title="Bango"
+              description="The zero-tricks lightweight framework - just you, and PHP."
+              link="https://github.com/gantoreno/bango"
+            />
+            <GitHubProject
+              emoji="🧠"
+              title="Iris"
+              description="A C++ neural networks engine."
+              link="https://github.com/gantoreno/iris"
+            />
+            <GitHubProject
+              emoji="🍎"
+              title="Macfetch"
+              description="A macOS Neofetch alternative written in C++."
+              link="https://github.com/gantoreno/macfetch"
+            />
+            <GitHubProject
+              emoji="📝"
+              title="Aether"
+              description="An interactive editor that performs JavaScript code analysis, and runs on Electron."
+              link="https://github.com/gantoreno/aether"
+            />
+            <GitHubProject
+              emoji="🩺"
+              title="PyTop"
+              description="A Python-based Windows app monitor."
+              link="https://github.com/gantoreno/pytop"
+            />
+            <GitHubProject
+              emoji="🎧"
+              title="Muso"
+              description="A Telegram bot that listens to voice messages, and recognizes music."
+              link="https://github.com/gantoreno/muso"
+            />
+          </Masonry>
+        </Entry>
+        <Entry>
+          <EntryTitle>Themes &amp; tools</EntryTitle>
+          <Paragraph>
+            I'm a big fan of building my own tools &amp; making them look as I
+            feel comfortable with. This, of course, involves the colors on my{' '}
+            <Underline>text editor</Underline> of choice (Visual Studio Code)
+            and my <Underline>terminal emulator</Underline> (iTerm2). That's why
+            I created my own colorscheme, <Underline>VSCode Gabriel</Underline>.
+          </Paragraph>
+          <Figure
+            src="/assets/img/tools.png"
+            alt="VSCode and iTerm2"
+            caption="Visual Studio Code along iTerm2 with Google Sans Mono @ 12px"
+          />
+          <Paragraph>
+            You can download it in the{' '}
+            <ExternalLink href="https://marketplace.visualstudio.com/items?itemName=gantoreno.gabriel">
+              Visual Studio Code Marketplace
+            </ExternalLink>
+            , or by opening the command palette with <Code>⌘</Code>{' '}
+            <Code>p</Code> (or <Code>^</Code> <Code>p</Code> if you're on
+            Windows) and typing in <Code>ext install gabriel</Code>, I'm sure
+            you'll recognize it. Aditionally, you can copy the terminal's{' '}
+            <Underline>16 color palette</Underline> and copy it to your
+            preferred terminal emulator if you want to match it with the editor
+            as I do.
+          </Paragraph>
+        </Entry>
+        <NavigationBar>
+          <LinkButton
+            to="/about"
+            text="Back to about"
+            leftIcon="fas fa-arrow-left"
+          />
+          <LinkButton
+            to="/contact"
+            text="Contact me"
+            rightIcon="fas fa-arrow-right"
+            hoverBackground="red-400"
+            opaque
+          />
+        </NavigationBar>
       </Section>
     </Wrapper>
   );

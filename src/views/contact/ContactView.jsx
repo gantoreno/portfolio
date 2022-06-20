@@ -9,8 +9,6 @@ import {
   Wrapper,
 } from '../../shared';
 
-import content from './content.json';
-
 import './ContactView.scss';
 import { SectionSubtitle, SectionTitle } from '../../shared/section/Section';
 import { EntryTitle, Underline } from '../../shared/entry/Entry';
@@ -23,7 +21,7 @@ const ContactView = () => {
       <Helmet>
         <title>Gabriel Moreno - Contact</title>
       </Helmet>
-      <FadedHeader pictureUrl={content.headerPictureUrl} />
+      <FadedHeader pictureUrl="/assets/img/contact.png" />
       <Section>
         <SectionTitle>Get in touch 📱</SectionTitle>
         <SectionSubtitle>Let's build something awesome</SectionSubtitle>

@@ -9,7 +9,7 @@ const Tag = ({ title }) => {
 
   return (
     <span
-      class={`tag text-${meta.color}-400 bg-${meta.color}-400 bg-opacity-25 border border-${meta.color}-400 border-opacity-75 font-medium mr-1 rounded`}
+      className={`tag text-${meta.color}-400 bg-${meta.color}-400 bg-opacity-25 border border-${meta.color}-400 border-opacity-75 font-medium mr-1 rounded`}
     >
       <>
         {meta.type === 'icon' && <i className={meta.icon}></i>}
