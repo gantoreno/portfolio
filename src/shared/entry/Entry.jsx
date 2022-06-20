@@ -1,5 +1,5 @@
 import { default as M, ResponsiveMasonry } from 'react-responsive-masonry';
-import { withSnackbar, useSnackbar } from 'react-simple-snackbar';
+import { withSnackbar } from 'react-simple-snackbar';
 
 import './Entry.scss';
 
