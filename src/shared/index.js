@@ -16,10 +16,7 @@ export {
   Underline,
 } from './entry/Entry';
 export { default as FadedHeader } from './faded-header/FadedHeader';
-export {
-  default as NavigationButtons,
-  NavigationBar,
-} from './navigation-buttons/NavigationButtons';
+export { default as NavigationBar } from './navigation-buttons/NavigationButtons';
 export { default as Section } from './section/Section';
 export { default as SocialMediaButtons } from './social-media-buttons/SocialMediaButtons';
 export { default as Tag } from './tag/Tag';

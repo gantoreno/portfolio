@@ -49,7 +49,6 @@ const CommercialProject = ({ pictureUrl, title, source, tags = [] }) => {
                 href={source}
                 text="View"
                 leftIcon="fa-solid fa-arrow-up-right-from-square"
-                hoverBackground="red-400"
                 opaque
               />
             )}
@@ -84,7 +83,6 @@ const GitHubProject = ({
           href={link}
           text="View on GitHub"
           rightIcon="fab fa-github"
-          hoverBackground="red-400"
           className="mx-auto"
           opaque
         />
@@ -277,7 +275,6 @@ const ProjectsView = () => {
             to="/contact"
             text="Contact me"
             rightIcon="fas fa-arrow-right"
-            hoverBackground="red-400"
             opaque
           />
         </NavigationBar>

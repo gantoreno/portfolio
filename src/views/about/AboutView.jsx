@@ -127,7 +127,6 @@ const AboutView = () => {
             to="/projects"
             text="See my projects"
             rightIcon="fas fa-arrow-right"
-            hoverBackground="yellow-400"
             opaque
           />
         </NavigationBar>
