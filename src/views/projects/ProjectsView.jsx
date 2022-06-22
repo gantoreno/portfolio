@@ -1,4 +1,5 @@
 import { Helmet } from 'react-helmet';
+import { Item } from 'react-masonry-list';
 
 import {
   Code,
@@ -59,7 +60,7 @@ const CommercialProject = ({ pictureUrl, title, source, tags = [] }) => {
   );
 };
 
-const GitHubProject = ({ emoji, title, description, link, className }) => {
+const GitHubProject = ({ emoji, title, description, link }) => {
   return (
     <div className="project-card bg-gray-800 rounded border border-gray-725 text-center">
       <div className="p-6 border-b border-gray-725">

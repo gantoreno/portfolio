@@ -59,6 +59,13 @@ li {
   position: absolute;
   top: 0;
   left: -18px;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+
+.active .navicon:focus::after {
+  outline: none;
 }
 
 .background {

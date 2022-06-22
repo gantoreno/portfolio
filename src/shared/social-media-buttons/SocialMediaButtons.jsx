@@ -8,7 +8,7 @@ const Icon = ({ icon, url, color }) => {
       href={url}
       target="_blank"
       rel="noreferrer"
-      className={joinClassNames('p-3 cursor-pointer', `hover:text-${color}`)}
+      className={joinClassNames('m-3 cursor-pointer', `hover:text-${color}`)}
     >
       <i className={joinClassNames('duration-200', icon)}></i>
     </a>

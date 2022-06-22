@@ -22,11 +22,11 @@ const Banner = ({ title, subtitle }) => (
 const NavigationLink = ({ to, icon, title }) => (
   <NavLink
     to={to}
-    className="font-medium mx-auto lg:mr-auto xl:ml-0"
+    className="font-medium mx-auto lg:mr-auto xl:ml-0 mb-6"
     activeClassName="text-white font-bold active"
     exact
   >
-    <div className="flex items-center w-full text-left duration-200 hover:text-white navigation-link mb-6">
+    <div className="flex items-center w-full text-left duration-200 hover:text-white navigation-link">
       <span className="mx-auto xl:mx-0 text-xl xl:text-base navicon">
         {icon}
       </span>
