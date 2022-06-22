@@ -1,5 +1,6 @@
 import { default as M, ResponsiveMasonry } from 'react-responsive-masonry';
 import { withSnackbar } from 'react-simple-snackbar';
+
 import { joinClassNames } from '../../utils';
 
 import './Entry.scss';
@@ -39,7 +40,7 @@ export const ExternalLink = ({ href, children }) => {
       href={href}
       target="_blank"
       rel="noreferrer"
-      class="text-white underline hover:text-yellow-400 duration-200"
+      className="text-white underline hover:text-yellow-400 duration-200"
     >
       {children}
     </a>

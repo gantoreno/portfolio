@@ -7,12 +7,14 @@ const Wrapper = ({ children, className }) => {
   return (
     <div
       className={joinClassNames(
-        'wrapper h-screen flex flex-col overflow-y-scroll relative',
+        'wrapper flex flex-col relative min-h-screen',
         className
       )}
     >
-      {children}
-      <ScrollFade />
+      <div className="w-4/5 xl:w-3/5 ml-auto">
+        {children}
+        <ScrollFade />
+      </div>
     </div>
   );
 };

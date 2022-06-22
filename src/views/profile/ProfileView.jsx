@@ -9,7 +9,7 @@ import tailwind from '../../assets/img/tailwind.png';
 import './ProfileView.scss';
 
 const Logo = () => {
-  return <img src={logo} className="w-10 mb-12" alt="Logo" />;
+  return <img src={logo} className="w-10 mb-12 mx-auto" alt="Logo" />;
 };
 
 const Banner = ({ title, subtitle }) => (
@@ -36,13 +36,13 @@ const NavigationLink = ({ to, icon, title }) => (
 );
 
 const Copyright = () => (
-  <small className="text-gray-600 hidden xl:flex mb-6">
+  <small className="text-gray-600 hidden xl:flex mb-6 mx-auto">
     &copy; {new Date().getFullYear()} Gabriel Moreno. All Rights Reserved.
   </small>
 );
 
 const MadeWith = () => (
-  <small className="text-gray-600 hidden xl:flex made-with items-center">
+  <small className="text-gray-600 hidden xl:flex made-with items-center mx-auto">
     Made with{' '}
     <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer">
       <img src={react} alt="react" className="mx-1" />
@@ -59,20 +59,22 @@ const MadeWith = () => (
 );
 
 const ProfileView = () => (
-  <Wrapper className="flex flex-col items-center justify-center h-full p-6 bg-gray-800 border-r border-gray-725 xl:w-2/5 xl:p-24 overflow-hidden overflow-y-hidden profile-view">
-    <Logo />
-    <Banner
-      title="Gabriel A. Moreno H."
-      subtitle="Software Engineer, Full-Stack Web Developer &amp; IT Consultant"
-    />
-    <NavigationLink to="/" icon="🏠" title="Home" />
-    <NavigationLink to="/about" icon="📖" title="About" />
-    <NavigationLink to="/projects" icon="💻" title="Projects" />
-    <NavigationLink to="/contact" icon="☎️" title="Contact" />
-    <SocialMediaButtons className="hidden xl:flex xl:mb-6" />
-    <Copyright />
-    <MadeWith />
-  </Wrapper>
+  <div className="absolute top-0 left-0 h-full w-1/5 xl:w-2/5">
+    <div className="sticky top-0 left-0 z-10 h-screen bg-gray-800 border-r border-gray-700 flex flex-col justify-center align-middle p-6 xl:p-24">
+      <Logo />
+      <Banner
+        title="Gabriel A. Moreno H."
+        subtitle="Software Engineer, Full-Stack Web Developer &amp; IT Consultant"
+      />
+      <NavigationLink to="/" icon="🏠" title="Home" />
+      <NavigationLink to="/about" icon="📖" title="About" />
+      <NavigationLink to="/projects" icon="💻" title="Projects" />
+      <NavigationLink to="/contact" icon="☎️" title="Contact" />
+      <SocialMediaButtons className="hidden xl:flex xl:mb-6" />
+      <Copyright />
+      <MadeWith />
+    </div>
+  </div>
 );
 
 export default ProfileView;

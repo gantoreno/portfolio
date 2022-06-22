@@ -16,7 +16,7 @@ const ContentView = () => {
   const location = useLocation();
 
   return (
-    <TransitionGroup className="w-full xl:w-3/5">
+    <TransitionGroup className="w-full">
       <CSSTransition key={location.key} timeout={300} classNames="page">
         <Switch>
           <Route path="/" component={HomeView} exact />
@@ -30,8 +30,8 @@ const ContentView = () => {
 };
 
 const App = () => (
-  <div className="flex justify-center background">
-    <div className="flex h-screen text-white bg-gray-900 max-w-screen-2xl">
+  <div className="flex justify-center background relative mx-auto ">
+    <div className="flex text-white bg-gray-900 relative w-screen max-w-screen-2xl">
       <Helmet>
         <script
           src="https://kit.fontawesome.com/90fab40786.js"

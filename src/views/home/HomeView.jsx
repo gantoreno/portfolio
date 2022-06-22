@@ -6,12 +6,12 @@ import './HomeView.scss';
 
 const HomeView = () => {
   return (
-    <Wrapper className="items-start justify-center p-6 sm:p-24">
+    <Wrapper className="h-screen w-full">
       <Helmet>
         <title>Gabriel Moreno - Home</title>
       </Helmet>
-      <div className="flex flex-col-reverse w-full h-full xl:flex-row">
-        <div className="flex flex-col items-center justify-center w-full text-center h-1/2 xl:h-full xl:w-1/2 xl:text-left xl:mr-12 xl:flex xl:flex-col xl:items-start xl:justify-center">
+      <div className="flex flex-col-reverse ml-auto xl:flex-row justify-center align-middle h-screen p-6 xl:p-24">
+        <div className="flex flex-col items-center justify-center text-center h-1/2 xl:h-full xl:w-1/2 xl:text-left xl:mr-12 xl:flex xl:flex-col xl:items-start xl:justify-center">
           <h1 className="mb-6 text-3xl font-bold sm:text-4xl">
             If you can <Underline>imagine</Underline> it, I can{' '}
             <Underline>create</Underline> it.
