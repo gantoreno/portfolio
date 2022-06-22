@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
 
-import { SocialMediaButtons, Wrapper } from '../../shared';
+import { SocialMediaButtons } from '../../shared';
 
 import logo from '../../assets/svg/logo.svg';
 import react from '../../assets/img/react.png';
