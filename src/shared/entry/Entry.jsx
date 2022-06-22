@@ -1,5 +1,6 @@
 import { default as M, ResponsiveMasonry } from 'react-responsive-masonry';
 import { withSnackbar } from 'react-simple-snackbar';
+import { joinClassNames } from '../../utils';
 
 import './Entry.scss';
 
@@ -14,7 +15,10 @@ export const EntryTitle = ({ children }) => {
 export const Paragraph = ({ children, className }) => {
   return (
     <p
-      className={`mb-6 text-sm sm:text-base text-left text-gray-600 ${className}`}
+      className={joinClassNames(
+        'mb-6 text-sm sm:text-base text-left text-gray-600',
+        className
+      )}
     >
       {children}
     </p>

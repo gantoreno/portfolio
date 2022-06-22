@@ -1,3 +1,5 @@
+import { joinClassNames } from '../../utils';
+
 import './SocialMediaButtons.scss';
 
 const Icon = ({ icon, url, color }) => {
@@ -6,9 +8,9 @@ const Icon = ({ icon, url, color }) => {
       href={url}
       target="_blank"
       rel="noreferrer"
-      className={`p-3 hover:text-${color} cursor-pointer`}
+      className={joinClassNames('p-3 cursor-pointer', `hover:text-${color}`)}
     >
-      <i className={`${icon} duration-200`}></i>
+      <i className={joinClassNames('duration-200', icon)}></i>
     </a>
   );
 };
@@ -16,7 +18,10 @@ const Icon = ({ icon, url, color }) => {
 const SocialMediaButtons = ({ className }) => {
   return (
     <div
-      className={`flex xl:flex-col xl:items-center xl:justify-center ${className}`}
+      className={joinClassNames(
+        'flex xl:flex-col xl:items-center xl:justify-center',
+        className
+      )}
     >
       <div className="w-full text-xl text-center text-gray-600">
         <Icon
