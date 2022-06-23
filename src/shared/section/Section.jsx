@@ -11,7 +11,9 @@ export const SectionSubtitle = ({ children }) => {
 };
 
 const Section = ({ children }) => {
-  return <div className="h-auto p-6 text-center md:p-24">{children}</div>;
+  return (
+    <section className="h-auto p-6 text-center md:p-24">{children}</section>
+  );
 };
 
 Section.Title = SectionTitle;

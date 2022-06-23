@@ -59,7 +59,7 @@ const MadeWith = () => (
 );
 
 const ProfileView = () => (
-  <div className="absolute top-0 left-0 h-full w-1/5 xl:w-2/5">
+  <nav className="absolute top-0 left-0 h-full w-1/5 xl:w-2/5">
     <div className="sticky top-0 left-0 z-10 h-screen bg-gray-800 border-r border-gray-700 flex flex-col justify-center align-middle p-6 xl:p-24">
       <Logo />
       <Banner
@@ -74,7 +74,7 @@ const ProfileView = () => (
       <Copyright />
       <MadeWith />
     </div>
-  </div>
+  </nav>
 );
 
 export default ProfileView;

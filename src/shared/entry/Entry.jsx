@@ -120,7 +120,9 @@ export const CodeBlock = withSnackbar(
 );
 
 const Entry = ({ children }) => {
-  return <div className="mb-12 text-left text-gray-600">{children}</div>;
+  return (
+    <article className="mb-12 text-left text-gray-600">{children}</article>
+  );
 };
 
 Entry.Title = EntryTitle;
