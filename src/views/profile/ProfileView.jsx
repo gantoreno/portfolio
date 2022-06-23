@@ -14,8 +14,8 @@ const Logo = () => {
 
 const Banner = ({ title, subtitle }) => (
   <div className="hidden text-center xl:block">
-    <h1 className="mb-6 text-2xl font-bold">{title}</h1>
-    <h3 className="mb-6 text-base text-gray-600">{subtitle}</h3>
+    <h4 className="mb-6 text-2xl font-bold">{title}</h4>
+    <h5 className="mb-6 text-base text-gray-600">{subtitle}</h5>
   </div>
 );
 
