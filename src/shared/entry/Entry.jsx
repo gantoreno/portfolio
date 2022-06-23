@@ -1,6 +1,7 @@
 import { default as M, ResponsiveMasonry } from 'react-responsive-masonry';
-import { withSnackbar } from 'react-simple-snackbar';
+import { useSnackbar } from 'react-simple-snackbar';
 
+import { snackbarSettings } from '../../settings';
 import { joinClassNames } from '../../utils';
 
 import './Entry.scss';
@@ -85,39 +86,29 @@ export const Code = ({ children }) => (
   <code class="bg-gray-800 text-white rounded">{children}</code>
 );
 
-export const CodeBlock = withSnackbar(
-  ({ children, openSnackbar }) => {
-    const copy = () => {
-      navigator.clipboard.writeText(children).then(() => {
-        openSnackbar('✅ Command copied to the clipboard');
-      });
-    };
+export const CodeBlock = ({ children }) => {
+  const [open] = useSnackbar(snackbarSettings);
 
-    return (
-      <pre className="mb-6 text-left w-full text-white p-3 rounded bg-gray-800 text-xs sm:text-sm relative">
+  const copy = () => {
+    navigator.clipboard.writeText(children).then(() => {
+      open('✅ Command copied to the clipboard');
+    });
+  };
+
+  return (
+    <div className="relative mb-6">
+      <pre className="text-left w-full text-white p-3 rounded bg-gray-800 text-xs sm:text-sm">
         {children}
-        <span
-          className="absolute top-3 right-3 cursor-pointer text-gray-600 opacity-50 hover:opacity-100 transition-all"
-          onClick={copy}
-        >
-          {'📋'}
-        </span>
       </pre>
-    );
-  },
-  {
-    style: {
-      background: '#d0d0d0',
-      color: '#0d0d0d',
-      fontFamily: 'Quicksand',
-      fontWeight: 'bold',
-      textAlign: 'center',
-    },
-    closeStyle: {
-      display: 'none',
-    },
-  }
-);
+      <span
+        className="absolute top-3 right-3 cursor-pointer text-gray-600 opacity-50 hover:opacity-100 transition-all"
+        onClick={copy}
+      >
+        {'📋'}
+      </span>
+    </div>
+  );
+};
 
 const Entry = ({ children }) => {
   return (
