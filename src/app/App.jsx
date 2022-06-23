@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import { BrowserRouter, Route, Switch, useLocation } from 'react-router-dom';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
@@ -11,6 +12,22 @@ import {
 } from '../views';
 
 import './App.scss';
+
+const ScrollToTop = ({ children }) => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    const canControlScrollRestoration = 'scrollRestoration' in window.history;
+
+    if (canControlScrollRestoration) {
+      window.history.scrollRestoration = 'manual';
+    }
+
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return <>{children}</>;
+};
 
 const ContentView = () => {
   const location = useLocation();
@@ -45,6 +62,7 @@ const App = () => (
       <BrowserRouter>
         <ProfileView />
         <ContentView />
+        <ScrollToTop />
       </BrowserRouter>
     </div>
   </div>
