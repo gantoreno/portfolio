@@ -1,6 +1,7 @@
 import { Helmet } from 'react-helmet';
 
 import {
+  Emoji,
   Entry,
   FadedHeader,
   LinkButton,
@@ -22,7 +23,9 @@ const ContactView = () => {
       </Helmet>
       <FadedHeader pictureUrl="/assets/img/contact.png" />
       <Section>
-        <Section.Title>Get in touch 📱</Section.Title>
+        <Section.Title>
+          Get in touch <Emoji name="mobile-phone" />
+        </Section.Title>
         <Section.Subtitle>Let's build something awesome</Section.Subtitle>
         <Entry>
           <Entry.Title>Social media</Entry.Title>

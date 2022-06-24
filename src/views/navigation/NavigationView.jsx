@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
 
-import { SocialMediaButtons } from '../../shared';
+import { Emoji, SocialMediaButtons } from '../../shared';
 
 import logo from '../../assets/svg/logo.svg';
 import react from '../../assets/img/react.png';
@@ -66,10 +66,22 @@ const NavigationView = () => (
         title="Gabriel A. Moreno H."
         subtitle="Software Engineer, Full-Stack Web Developer &amp; IT Consultant"
       />
-      <NavigationLink to="/" icon="🏠" title="Home" />
-      <NavigationLink to="/about" icon="📖" title="About" />
-      <NavigationLink to="/projects" icon="💻" title="Projects" />
-      <NavigationLink to="/contact" icon="☎️" title="Contact" />
+      <NavigationLink to="/" icon={<Emoji name="house" />} title="Home" />
+      <NavigationLink
+        to="/about"
+        icon={<Emoji name="open-book" />}
+        title="About"
+      />
+      <NavigationLink
+        to="/projects"
+        icon={<Emoji name="laptop" />}
+        title="Projects"
+      />
+      <NavigationLink
+        to="/contact"
+        icon={<Emoji name="telephone" />}
+        title="Contact"
+      />
       <SocialMediaButtons className="hidden xl:flex xl:mb-6" />
       <Copyright />
       <MadeWith />

@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet';
 import {
   Code,
   CodeBlock,
+  Emoji,
   Entry,
   ExternalLink,
   ExternalLinkButton,
@@ -100,7 +101,9 @@ const ProjectsView = () => {
       </Helmet>
       <FadedHeader pictureUrl="/assets/img/code.png" />
       <Section>
-        <Section.Title>My projects 👨🏻‍💻</Section.Title>
+        <Section.Title>
+          My projects <Emoji name="man-technologist-light-skin-tone" />
+        </Section.Title>
         <Section.Subtitle>
           Take a look at some of the things I've worked on
         </Section.Subtitle>
@@ -163,37 +166,37 @@ const ProjectsView = () => {
               link="https://github.com/gantoreno/curtis-app"
             />
             <GitHubProject
-              emoji="🐘"
+              emoji={<Emoji name="elephant" />}
               title="Bango"
               description="The zero-tricks lightweight framework - just you, and PHP."
               link="https://github.com/gantoreno/bango"
             />
             <GitHubProject
-              emoji="🧠"
+              emoji={<Emoji name="brain" />}
               title="Iris"
               description="A C++ neural networks engine."
               link="https://github.com/gantoreno/iris"
             />
             <GitHubProject
-              emoji="🍎"
+              emoji={<Emoji name="red-apple" />}
               title="Macfetch"
               description="A macOS Neofetch alternative written in C++."
               link="https://github.com/gantoreno/macfetch"
             />
             <GitHubProject
-              emoji="📝"
+              emoji={<Emoji name="memo" />}
               title="Aether"
               description="An interactive editor that performs JavaScript code analysis, and runs on Electron."
               link="https://github.com/gantoreno/aether"
             />
             <GitHubProject
-              emoji="🩺"
+              emoji={<Emoji name="stethoscope" />}
               title="PyTop"
               description="A Python-based Windows app monitor."
               link="https://github.com/gantoreno/pytop"
             />
             <GitHubProject
-              emoji="🎧"
+              emoji={<Emoji name="headphone" />}
               title="Muso"
               description="A Telegram bot that listens to voice messages, and recognizes music."
               link="https://github.com/gantoreno/muso"

@@ -1,3 +1,4 @@
+import { Emoji as E } from 'react-apple-emojis';
 import { default as M, ResponsiveMasonry } from 'react-responsive-masonry';
 import { useSnackbar } from 'react-simple-snackbar';
 
@@ -33,6 +34,12 @@ export const Underline = ({ children }) => {
 
 export const Bold = ({ children }) => {
   return <strong className="text-white">{children}</strong>;
+};
+
+export const Emoji = ({ name, className, ...rest }) => {
+  return (
+    <E name={name} className={joinClassNames('emoji', className)} {...rest} />
+  );
 };
 
 export const ExternalLink = ({ href, children }) => {
@@ -101,10 +108,10 @@ export const CodeBlock = ({ children }) => {
         {children}
       </pre>
       <span
-        className="absolute top-3 right-3 cursor-pointer text-gray-600 opacity-50 hover:opacity-100 transition-all"
+        className="absolute top-3 text-xs sm:text-sm right-3 cursor-pointer text-gray-600 opacity-50 hover:opacity-100 transition-all"
         onClick={copy}
       >
-        {'📋'}
+        {<Emoji name="clipboard" />}
       </span>
     </div>
   );

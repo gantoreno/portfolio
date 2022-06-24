@@ -8,6 +8,7 @@ export {
   Bold,
   Code,
   CodeBlock,
+  Emoji,
   ExternalLink,
   Figure,
   List,

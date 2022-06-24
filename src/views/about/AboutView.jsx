@@ -2,6 +2,7 @@ import { Helmet } from 'react-helmet';
 
 import {
   Bold,
+  Emoji,
   Entry,
   ExternalLink,
   FadedHeader,
@@ -24,9 +25,12 @@ const AboutView = () => {
       </Helmet>
       <FadedHeader pictureUrl="/assets/img/about.png" />
       <Section>
-        <Section.Title>Hello There! 👋🏻</Section.Title>
+        <Section.Title>
+          Hello There! <Emoji name="waving-hand-light-skin-tone" />
+        </Section.Title>
         <Section.Subtitle>
-          I'm Gabriel, from 🇻🇪 &mdash; your trusted software engineer
+          I'm Gabriel, from <Emoji name="flag-venezuela" /> &mdash; your trusted
+          software engineer
         </Section.Subtitle>
         <Entry>
           <Entry.Title>What I do</Entry.Title>
@@ -66,44 +70,73 @@ const AboutView = () => {
           </Paragraph>
           <List>
             <List.Item>
-              <Bold>⚛️ React</Bold> (front-end library of choice).
+              <Bold>
+                <Emoji name="atom-symbol" /> React
+              </Bold>{' '}
+              (front-end library of choice).
             </List.Item>
             <List.Item>
-              <Bold>📱 React Native</Bold> (for mobile applications).
+              <Bold>
+                <Emoji name="mobile-phone" /> React Native
+              </Bold>{' '}
+              (for mobile applications).
             </List.Item>
             <List.Item>
-              <Bold>🐝 Node.js</Bold> (with Express for back-end development).
+              <Bold>
+                <Emoji name="honeybee" /> Node.js
+              </Bold>{' '}
+              (with Express for back-end development).
             </List.Item>
             <List.Item>
-              <Bold>📦 AWS</Bold> (for overall system infrastructure).
+              <Bold>
+                <Emoji name="package" /> AWS
+              </Bold>{' '}
+              (for overall system infrastructure).
             </List.Item>
             <List.Item>
-              <Bold>🐬 MySQL</Bold> (for relational databases).
+              <Bold>
+                <Emoji name="dolphin" /> MySQL
+              </Bold>{' '}
+              (for relational databases).
             </List.Item>
             <List.Item>
-              <Bold>🍃 MongoDB </Bold> (for NoSQL databases).
+              <Bold>
+                <Emoji name="leaf-fluttering-in-wind" /> MongoDB{' '}
+              </Bold>{' '}
+              (for NoSQL databases).
             </List.Item>
           </List>
           <Paragraph>Although I can also (and usually) work with:</Paragraph>
           <List>
             <List.Item>
-              <Bold>🐍 Python</Bold> (with TensorFlow, Pandas, NumPy, Django,
-              Flask).
+              <Bold>
+                <Emoji name="snake" /> Python
+              </Bold>{' '}
+              (with TensorFlow, Pandas, NumPy, Django, Flask).
             </List.Item>
             <List.Item>
-              <Bold>💎 Ruby</Bold> (on Rails, for full-stack applications &amp;
-              backend services).
+              <Bold>
+                <Emoji name="diamond-suit" /> Ruby
+              </Bold>{' '}
+              (on Rails, for full-stack applications &amp; backend services).
             </List.Item>
             <List.Item>
-              <Bold>🐘 PHP</Bold> (using Laravel &amp; Bango &mdash; my
-              framework).
+              <Bold>
+                <Emoji name="elephant" /> PHP
+              </Bold>{' '}
+              (using Laravel &amp; Bango &mdash; my framework).
             </List.Item>
             <List.Item>
-              <Bold>☕️ Java</Bold> (through AWT for graphical applications).
+              <Bold>
+                <Emoji name="hot-beverage" /> Java
+              </Bold>{' '}
+              (through AWT for graphical applications).
             </List.Item>
             <List.Item>
-              <Bold>➕ C++</Bold> (for data structures &amp; algorithms, machine
-              learning).
+              <Bold>
+                <Emoji name="plus" /> C++
+              </Bold>{' '}
+              (for data structures &amp; algorithms, machine learning).
             </List.Item>
           </List>
           <Paragraph>
@@ -112,12 +145,16 @@ const AboutView = () => {
           </Paragraph>
           <List>
             <List.Item>
-              <Bold>🎱 8base</Bold> (as a backend-as-a-service provider with
-              GraphQL).
+              <Bold>
+                <Emoji name="pool-8-ball" /> 8base
+              </Bold>{' '}
+              (as a backend-as-a-service provider with GraphQL).
             </List.Item>
             <List.Item>
-              <Bold>🔥 Firebase</Bold> (and Google Cloud Platform for real-time
-              applications).
+              <Bold>
+                <Emoji name="fire" /> Firebase
+              </Bold>{' '}
+              (and Google Cloud Platform for real-time applications).
             </List.Item>
           </List>
         </Entry>

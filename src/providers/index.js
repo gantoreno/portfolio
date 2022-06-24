@@ -1,10 +1,13 @@
-import SnackbarProvider from 'react-simple-snackbar';
+import { EmojiProvider } from './emoji';
 import { LanguageProvider } from './language';
+import { SnackbarProvider } from './snackbar';
 
 const Providers = ({ children }) => (
-  <SnackbarProvider>
-    <LanguageProvider>{children}</LanguageProvider>
-  </SnackbarProvider>
+  <EmojiProvider>
+    <SnackbarProvider>
+      <LanguageProvider>{children}</LanguageProvider>
+    </SnackbarProvider>
+  </EmojiProvider>
 );
 
 export default Providers;
