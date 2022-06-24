@@ -11,7 +11,7 @@ const Wrapper = ({ children, className }) => {
         className
       )}
     >
-      <main className="w-4/5 xl:w-3/5 ml-auto">
+      <main className="w-5/6 xl:w-3/5 ml-auto">
         {children}
         <ScrollFade />
       </main>
