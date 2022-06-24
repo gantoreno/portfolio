@@ -18,14 +18,24 @@ import {
   Wrapper,
 } from '../../shared';
 
+import tools from '../../assets/img/tools.png';
+import colors from '../../assets/img/colors.png';
+import vim from '../../assets/img/vim.png';
+
+import insightt from '../../assets/img/projects/insightt.png';
+import resident from '../../assets/img/projects/resident.png';
+import totalcom from '../../assets/img/projects/totalcom.png';
+import resivenca from '../../assets/img/projects/resivenca.png';
+import codework from '../../assets/img/projects/codework.png';
+
 import './ProjectsView.scss';
 
-const CommercialProject = ({ pictureUrl, title, source, tags = [] }) => {
+const CommercialProject = ({ picture, title, source, tags = [] }) => {
   return (
     <div className="flex-wrap content-center mb-6 rounded shadow-lg lg:flex bg-grey">
       <div className="lg:flex lg:w-1/3">
         <div className="overflow-hidden rounded lg:flex-1">
-          <img className="rounded" src={pictureUrl} alt={title} />
+          <img className="rounded" src={picture} alt={title} />
         </div>
       </div>
       <div className="lg:flex lg:w-2/3">
@@ -106,31 +116,31 @@ const ProjectsView = () => {
           </Paragraph>
           <CommercialProject
             title="Insightt — Repossession Tool"
-            pictureUrl="/assets/img/projects/insightt.png"
+            picture={insightt}
             source="https://insightt.io"
             tags={['react', 'react-native', 'node', 'aws', 'firebase']}
           />
           <CommercialProject
             title="Resident — Student Housing"
-            pictureUrl="/assets/img/projects/resident.png"
+            picture={resident}
             source="https://app.resident.io"
             tags={['react', 'typescript', '8base', 'graphql']}
           />
           <CommercialProject
             title="Totalcom Venezuela — ISP"
-            pictureUrl="https://mir-s3-cdn-cf.behance.net/projects/max_808/0d25a0109534879.Y3JvcCwxNTk4MiwxMjUwMSwyNDEzLDA.png"
+            picture={totalcom}
             source="https://www.behance.net/gallery/109534879/Totalcom-Venezuela-ISP"
             tags={['react', 'node', 'scss']}
           />
           <CommercialProject
             title="Resivenca — Internet + Energy"
-            pictureUrl="https://mir-s3-cdn-cf.behance.net/projects/max_808/9a9f98109535527.Y3JvcCwxNTk4MSwxMjUwMCwyNjUwLDA.png"
+            picture={resivenca}
             source="https://www.behance.net/gallery/109535527/Resivenca-Internet-Energia"
             tags={['react', 'next', 'scss']}
           />
           <CommercialProject
             title="CWV — Project Management System"
-            pictureUrl="https://mir-s3-cdn-cf.behance.net/projects/max_808/bc47d3109540181.Y3JvcCwxNTk4MSwxMjUwMCwyNDEyLDA.png"
+            picture={codework}
             source="https://www.behance.net/gallery/109540181/CWV-Project-Management-System"
             tags={['php', 'laravel', 'javascript', 'scss']}
           />
@@ -200,7 +210,7 @@ const ProjectsView = () => {
             I created my own colorscheme, <Underline>VSCode Gabriel</Underline>.
           </Paragraph>
           <Figure
-            src="/assets/img/tools.png"
+            src={tools}
             alt="VSCode and iTerm2"
             caption="Visual Studio Code, along iTerm2 with Google Sans Mono @ 12px"
           />
@@ -221,7 +231,7 @@ const ProjectsView = () => {
             editor as I do.
           </Paragraph>
           <Figure
-            src="/assets/img/colors.png"
+            src={colors}
             alt="iTerm2"
             caption="My iTerm2 setup &amp; colorscheme definition"
           />
@@ -234,7 +244,7 @@ const ProjectsView = () => {
             Well, I have a colorscheme for you too.
           </Paragraph>
           <Figure
-            src="/assets/img/vim.png"
+            src={vim}
             alt="The Vim editor"
             caption="iTerm2 running (Neo)vim, along with the Vim Gabriel colorscheme"
           />
