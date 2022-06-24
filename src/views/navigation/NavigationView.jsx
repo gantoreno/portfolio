@@ -6,7 +6,7 @@ import logo from '../../assets/svg/logo.svg';
 import react from '../../assets/img/react.png';
 import tailwind from '../../assets/img/tailwind.png';
 
-import './ProfileView.scss';
+import './NavigationView.scss';
 
 const Logo = () => {
   return <img src={logo} className="w-10 mb-12 mx-auto" alt="Logo" />;
@@ -58,7 +58,7 @@ const MadeWith = () => (
   </small>
 );
 
-const ProfileView = () => (
+const NavigationView = () => (
   <nav className="absolute top-0 left-0 h-full w-1/5 xl:w-2/5">
     <div className="sticky top-0 left-0 z-10 h-screen bg-gray-800 border-r border-gray-700 flex flex-col justify-center align-middle p-6 xl:p-24">
       <Logo />
@@ -77,4 +77,4 @@ const ProfileView = () => (
   </nav>
 );
 
-export default ProfileView;
+export default NavigationView;

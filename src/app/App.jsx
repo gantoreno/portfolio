@@ -7,7 +7,7 @@ import {
   AboutView,
   ContactView,
   HomeView,
-  ProfileView,
+  NavigationView,
   ProjectsView,
 } from '../views';
 
@@ -60,7 +60,7 @@ const App = () => (
         />
       </Helmet>
       <BrowserRouter>
-        <ProfileView />
+        <NavigationView />
         <ContentView />
         <ScrollToTop />
       </BrowserRouter>
