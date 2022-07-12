@@ -49,7 +49,7 @@ li {
 
 @media (min-width: 1280px) {
   .active .navicon::after {
-    opacity: 0;
+    display: none !important;
   }
 }
 
