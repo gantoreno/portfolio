@@ -60,7 +60,7 @@ const MadeWith = () => (
 
 const NavigationView = () => (
   <nav className="absolute top-0 left-0 h-full w-1/6 xl:w-2/5">
-    <div className="sticky top-0 left-0 z-10 h-screen bg-gray-800 border-r border-gray-700 flex flex-col justify-center align-middle p-3 xl:p-24">
+    <div className="sticky top-0 left-0 z-10 h-screen bg-gray-900 border-r border-gray-700 flex flex-col justify-center align-middle p-3 xl:p-24">
       <Logo />
       <Banner
         title="Gabriel A. Moreno H."
