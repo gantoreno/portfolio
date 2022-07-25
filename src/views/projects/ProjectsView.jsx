@@ -160,7 +160,7 @@ const ProjectsView = () => {
           </Paragraph>
           <Masonry>
             <GitHubProject
-              emoji="❤️"
+              emoji={<Emoji name="red-heart" />}
               title="Curtis"
               description="The cardiovascular unified real-time intelligent system — ECG analysis through an AI-based mobile app."
               link="https://github.com/gantoreno/curtis-app"
